@@ -83,14 +83,22 @@ export default async function Page({
 					return (
 						<Link
 							key={post.slug}
-							className={`flex flex-col  rounded-3xl overflow-hidden`}
+							className={`relative flex flex-col  rounded-3xl overflow-hidden`}
 							href={`/blog/${post.slug}`}
 						>
+							<div
+								className="absolute inset-0 z-10 h-full w-full rounded-3xl pointer-events-none"
+								style={{
+									boxShadow: "inset 0 0 0 1px rgba(150,150,150,0.2)",
+								}}
+							/>
 							<div
 								className={cn(
 									'relative flex flex-col w-full bg-secondary overflow-hidden h-full'
 								)}
 							>
+
+
 
 								<div className='w-full bg-secondary aspect-video'>
 									{post.metadata.image ? (
@@ -126,7 +134,7 @@ export default async function Page({
 						href={`/blog?page=${currentPage - 1}`}
 						className="px-3  py-2 flex items-center gap-2 rounded-full bg-secondary hover:bg-accent transition-colors"
 					>
-						<ChevronLeft className='w-4 h-4'/>
+						<ChevronLeft className='w-4 h-4' />
 					</Link>
 				)}
 
@@ -162,7 +170,7 @@ export default async function Page({
 						href={`/blog?page=${currentPage + 1}`}
 						className="px-3 py-2 flex items-center gap-2 rounded-full bg-secondary hover:bg-accent transition-colors"
 					>
-						<ChevronRight className='w-4 h-4'/>
+						<ChevronRight className='w-4 h-4' />
 					</Link>
 				)}
 			</div>
