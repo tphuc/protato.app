@@ -1,0 +1,16 @@
+rm_45_appstore.jpeg
+rm_45_ask_ai.jpeg
+rm_45_commands_1.jpeg
+rm_45_commands_2.jpeg
+rm_45_context_selection.jpeg
+rm_45_context_selection_2.jpeg
+rm_45_custom_command.jpeg
+rm_45_folders_library.jpeg
+rm_45_keyboard_actions_1.jpeg
+rm_45_keyboard_actions_2.jpeg
+rm_45_new_commands.jpeg
+rm_45_new_folder.jpeg
+rm_45_paraphase_1.jpeg
+rm_45_paraphase_2.jpeg
+rm_45_translate_options.jpeg
+rm_45_user_profile.jpeg
