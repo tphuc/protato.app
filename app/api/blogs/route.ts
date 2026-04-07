@@ -5,7 +5,7 @@ export async function GET() {
   try {
     const posts = getLastNBlogPosts(20);
     
-    const formattedPosts = posts.map(post => ({
+    const formattedPosts = posts?.map?.(post => ({
       title: post.metadata.title,
       summary: post.metadata.summary,
       keywords: post.metadata.keywords,

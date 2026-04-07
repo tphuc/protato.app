@@ -135,7 +135,7 @@ export function getLastNBlogPosts(n: number): {
 	slug: string;
 }[] {
 	const allPosts = getMDXData(path.join(process.cwd(), 'app', 'blog', 'markdown'));
-	return allPosts.slice(-n).reverse()
+	return allPosts?.slice(-n)?.reverse()
 }
 
 export function getBlogPosts(): {
