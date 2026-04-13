@@ -1,167 +1,312 @@
 import React from "react";
 
+const sections = [
+  {
+    num: "01 — Overview",
+    title: "What is Protato?",
+    content: (
+      <>
+        <p className="text-sm font-light leading-relaxed text-gray-700 dark:text-gray-300 mb-3">
+          Protato is a design and mockup tool that helps you create and export
+          visual assets for personal and professional use. By downloading,
+          installing, or using Protato, you agree to these Terms. If you
+          don&apos;t agree, please don&apos;t use the App.
+        </p>
+        <div className="border-l-4 border-orange-500 bg-orange-50 dark:bg-orange-950/40 rounded-r-md px-4 py-3 text-sm text-orange-800 dark:text-orange-300">
+          Your files and projects remain entirely on your device. Protato never
+          stores or uploads your content to any server.
+        </div>
+      </>
+    ),
+  },
+  {
+    num: "02 — Eligibility",
+    title: "Who can use it?",
+    content: (
+      <p className="text-sm font-light leading-relaxed text-gray-700 dark:text-gray-300">
+        You must be at least 9 years old, or the minimum legal age in your
+        region, to use Protato.
+      </p>
+    ),
+  },
+  {
+    num: "03 — Account",
+    title: "Sign in with Apple",
+    content: (
+      <>
+        <p className="text-sm font-light leading-relaxed text-gray-700 dark:text-gray-300 mb-3">
+          Protato uses Sign in with Apple solely to associate your purchases and
+          sync access across your devices. We keep it simple:
+        </p>
+        <BulletList
+          items={[
+            "You're responsible for your own Apple account security",
+            "We never access or store your Apple credentials",
+          ]}
+        />
+      </>
+    ),
+  },
+  {
+    num: "04 — Payments",
+    title: "Purchases & billing",
+    content: (
+      <>
+        <p className="text-sm font-light leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
+          Premium features are available through in-app purchases, including
+          lifetime access and optional subscriptions. All payments go through
+          Apple via the App Store.
+        </p>
+        <SubSection title="Subscriptions">
+          Subscriptions auto-renew unless you cancel at least 24 hours before
+          the renewal date.
+        </SubSection>
+        <SubSection title="Cancellation">
+          Manage or cancel subscriptions through your Apple ID account settings.
+          We&apos;re unable to do this on your behalf.
+        </SubSection>
+        <SubSection title="Refunds">
+          Refunds are handled by Apple in accordance with their App Store
+          policies.
+        </SubSection>
+      </>
+    ),
+  },
+  {
+    num: "05 — Acceptable use",
+    title: "What's not allowed",
+    content: (
+      <BulletList
+        items={[
+          "Disrupting or interfering with the App's normal operation",
+          "Reverse-engineering or modifying any part of the App",
+          "Bypassing purchase restrictions or access controls",
+          "Using the App in violation of any applicable law",
+        ]}
+      />
+    ),
+  },
+  {
+    num: "06 — Your content",
+    title: "You own what you make",
+    content: (
+      <>
+        <p className="text-sm font-light leading-relaxed text-gray-700 dark:text-gray-300 mb-3">
+          Protato lets you create and work with your own files and assets. You
+          retain full ownership of anything you create using the App.
+        </p>
+        <BulletList
+          items={[
+            "All content lives on your device — never on our servers",
+            "No project data is uploaded or shared without your action",
+          ]}
+        />
+      </>
+    ),
+  },
+  {
+    num: "07 — Intellectual property",
+    title: "Our work",
+    content: (
+      <p className="text-sm font-light leading-relaxed text-gray-700 dark:text-gray-300">
+        Protato — including its design, code, and branding — is owned by Protato
+        LLC. You may not copy, distribute, or modify the App without our written
+        permission.
+      </p>
+    ),
+  },
+  {
+    num: '08 — Warranties',
+    title: 'Provided "as is"',
+    content: (
+      <p className="text-sm font-light leading-relaxed text-gray-700 dark:text-gray-300">
+        Protato is provided without warranties of any kind. We don&apos;t
+        guarantee the App will always be uninterrupted, error-free, or behave
+        identically in every scenario.
+      </p>
+    ),
+  },
+  {
+    num: "09 — Liability",
+    title: "Limits of liability",
+    content: (
+      <p className="text-sm font-light leading-relaxed text-gray-700 dark:text-gray-300">
+        To the fullest extent permitted by law, Protato and its developers are
+        not liable for indirect or consequential damages. Total liability will
+        not exceed the amount you paid for the App in the past 12 months.
+      </p>
+    ),
+  },
+  {
+    num: "10 — Privacy",
+    title: "Minimal data, by design",
+    content: (
+      <p className="text-sm font-light leading-relaxed text-gray-700 dark:text-gray-300">
+        Protato is built with privacy as a foundation. Please refer to our
+        Privacy Policy for full details on what little we collect and why.
+      </p>
+    ),
+  },
+  {
+    num: "11 — Termination",
+    title: "When access may end",
+    content: (
+      <p className="text-sm font-light leading-relaxed text-gray-700 dark:text-gray-300">
+        We may suspend or terminate your access if you violate these Terms,
+        misuse the App, or if we discontinue the App entirely. Upon termination,
+        you must stop using Protato.
+      </p>
+    ),
+  },
+  {
+    num: "12 — Updates to these terms",
+    title: "Changes over time",
+    content: (
+      <p className="text-sm font-light leading-relaxed text-gray-700 dark:text-gray-300">
+        We may update these Terms occasionally. Continued use of Protato after
+        changes are posted means you accept the revised Terms.
+      </p>
+    ),
+  },
+];
 
-export default function Page() {
+// ─── Sub-components ──────────────────────────────────────────────────────────
+
+function BulletList({ items }: { items: string[] }) {
   return (
-    <div className="flex justify-center px-4 py-16">
-      <article className="prose dark:prose-invert py-20 max-w-3xl">
-        <p>Last updated: November 24, 2025</p>
+    <ul className="divide-y divide-gray-100 dark:divide-gray-800">
+      {items.map((item) => (
+        <li
+          key={item}
+          className="flex gap-3 py-2 text-sm font-light text-gray-700 dark:text-gray-300"
+        >
+          <span className="text-orange-500 font-bold shrink-0">—</span>
+          {item}
+        </li>
+      ))}
+    </ul>
+  );
+}
 
-        <h1>Terms & Conditions</h1>
+function SubSection({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="mt-4">
+      <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">
+        {title}
+      </h3>
+      <p className="text-sm font-light leading-relaxed text-gray-700 dark:text-gray-300">
+        {children}
+      </p>
+    </div>
+  );
+}
 
-        <p>
-          Welcome to <strong>Protato</strong> (“the App”).<br />
-          By downloading, installing, or using Protato, you agree to be bound by these Terms & Conditions (“Terms”). If you do not agree, do not use the App.
+function SectionBlock({
+  num,
+  title,
+  content,
+}: {
+  num: string;
+  title: string;
+  content: React.ReactNode;
+}) {
+  return (
+    <div className="mb-10">
+      <p className="text-[10px] font-mono tracking-widest uppercase text-orange-500 mb-1">
+        {num}
+      </p>
+      <h2 className="font-serif text-2xl font-normal text-foreground mb-3">
+        {title}
+      </h2>
+      {content}
+    </div>
+  );
+}
+
+// ─── Page ─────────────────────────────────────────────────────────────────────
+
+export default function TermsPage() {
+  const pills: string[] = [
+    "Files stay on your device",
+    "iOS & macOS",
+    "Apple payments",
+    "Privacy-first",
+  ];
+
+  return (
+    <div className="flex justify-center px-4 py-20 min-h-screen">
+      <article className="w-full max-w-2xl">
+        {/* Header */}
+        <p className="font-mono text-[10px] tracking-widest uppercase text-muted-foreground mb-2">
+          Effective April 13, 2026
+        </p>
+        <h1 className="font-serif text-5xl leading-tight tracking-tight text-foreground mb-1">
+          Terms Of <em>Use</em>
+        </h1>
+        <p className="text-sm font-light text-gray-500 dark:text-gray-400 mb-8">
+          For Protato — design mockup &amp; visual asset tool on iOS and macOS
         </p>
 
-        <p>
-          These Terms apply to the Protato applications available on iOS and macOS.
-        </p>
+        {/* Trust pills */}
+        <div className="flex flex-wrap gap-2 mb-8">
+          {pills.map((pill, i) => (
+            <span
+              key={pill}
+              className="inline-flex items-center gap-1.5 font-mono text-[11px] tracking-wide px-3 py-1 rounded-full border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-gray-900"
+            >
+              {i === 0 && (
+                <span className="w-1.5 h-1.5 rounded-full bg-green-500 shrink-0" />
+              )}
+              {pill}
+            </span>
+          ))}
+        </div>
 
-        <h2>1. Purpose of the App</h2>
-        <p>
-          Protato is a design and mockup tool that helps you create and export visual assets.
-          The App is intended for personal and professional use.
-        </p>
+        <hr className="border-t border-gray-100 dark:border-gray-800 mb-10" />
 
-        <p>
-          <strong>Your files and projects remain on your device.</strong> Protato does not store or host your content.
-        </p>
+        {/* Sections */}
+        {sections.map((s) => (
+          <SectionBlock key={s.num} num={s.num} title={s.title} content={s.content} />
+        ))}
 
-        <h2>2. Eligibility</h2>
-        <p>
-          You must be at least 13 years old (or the minimum legal age in your region) to use Protato.
-        </p>
+        {/* Contact */}
+        <div className="mb-10">
+          <p className="text-[10px] font-mono tracking-widest uppercase text-orange-500 mb-1">
+            13 — Contact
+          </p>
+          <h2 className="font-serif text-2xl font-normal text-foreground mb-3">
+            Questions?
+          </h2>
+          <p className="text-sm font-light text-gray-700 dark:text-gray-300 mb-4">
+            We&apos;re happy to help with any questions about these Terms.
+          </p>
+          <div className="flex items-center justify-between flex-wrap gap-4 bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-xl px-6 py-4">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-1">
+                Email us
+              </p>
+              <p className="font-mono text-sm text-orange-500">
+                hello@protato.app
+              </p>
+            </div>
+            <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+              Protato LLC
+            </p>
+          </div>
+        </div>
 
-        <h2>3. Account & Authentication</h2>
-        <p>
-          Protato uses Sign in with Apple solely to associate your purchases and sync access across your devices.
-        </p>
-        <ul>
-          <li>You are responsible for your Apple account</li>
-          <li>We do not access or store your Apple credentials</li>
-        </ul>
-
-        <h2>4. Purchases & Payments</h2>
-        <p>
-          Protato offers premium features through in-app purchases, including lifetime access and optional subscriptions.
-        </p>
-
-        <p>
-          All payments are processed by Apple via the App Store.
-        </p>
-
-        <h3>4.1 Subscriptions</h3>
-        <p>
-          Subscriptions automatically renew unless cancelled at least 24 hours before the renewal date.
-        </p>
-
-        <h3>4.2 Cancellation</h3>
-        <p>
-          You can manage or cancel subscriptions through your Apple ID account settings. We cannot manage subscriptions on your behalf.
-        </p>
-
-        <h3>4.3 Refunds</h3>
-        <p>
-          Refunds are handled by Apple in accordance with App Store policies.
-        </p>
-
-        <h2>5. Acceptable Use</h2>
-        <p>When using Protato, you agree not to:</p>
-        <ul>
-          <li>Attempt to disrupt or interfere with the App</li>
-          <li>Reverse-engineer or modify the App</li>
-          <li>Bypass purchase or access restrictions</li>
-          <li>Use the App in violation of applicable laws</li>
-        </ul>
-
-        <h2>6. User Content</h2>
-        <p>
-          Protato allows you to create and work with your own files and assets.
-        </p>
-
-        <p className="font-semibold text-green-700">
-          We do NOT collect or store your files.
-        </p>
-
-        <ul>
-          <li>All content remains on your device</li>
-          <li>No project data is uploaded to our servers</li>
-        </ul>
-
-        <p>
-          You retain full ownership of any content you create using the App.
-        </p>
-
-        <h2>7. Intellectual Property</h2>
-        <p>
-          Protato, including its design, code, and branding, is owned by [Insert Company Name].
-        </p>
-
-        <p>
-          You may not copy, distribute, or modify the App without permission.
-        </p>
-
-        <h2>8. Disclaimer of Warranties</h2>
-        <p>
-          Protato is provided “as is” and “as available” without warranties of any kind.
-        </p>
-
-        <p>We do not guarantee that:</p>
-        <ul>
-          <li>The App will always be uninterrupted or error-free</li>
-          <li>All features will function as expected in every scenario</li>
-        </ul>
-
-        <p>
-          Use of the App is at your own risk.
-        </p>
-
-        <h2>9. Limitation of Liability</h2>
-        <p>To the fullest extent permitted by law:</p>
-        <ul>
-          <li>
-            Protato and its developers are not liable for indirect or consequential damages
-          </li>
-          <li>
-            Total liability will not exceed the amount you paid for the App in the past 12 months
-          </li>
-        </ul>
-
-        <h2>10. Privacy</h2>
-        <p>
-          Protato is designed with a privacy-first approach and collects minimal data.
-          Please refer to our Privacy Policy for full details.
-        </p>
-
-        <h2>11. Termination</h2>
-        <p>We may suspend or terminate access if:</p>
-        <ul>
-          <li>You violate these Terms</li>
-          <li>You misuse the App</li>
-          <li>We discontinue the App</li>
-        </ul>
-
-        <p>
-          Upon termination, you must stop using the App.
-        </p>
-
-        <h2>12. Changes to These Terms</h2>
-        <p>
-          We may update these Terms over time. Continued use of the App means you accept the updated Terms.
-        </p>
-
-        <h2>13. Contact</h2>
-        <p>
-          For questions regarding these Terms:
-        </p>
-        <p>
-          <strong>hello@protato.app</strong>
-        </p>
-
-        <p className="mt-12 text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} Protato. All rights reserved.
-        </p>
+        {/* Footer */}
+        <div className="border-t border-gray-100 dark:border-gray-800 pt-6 text-center">
+          <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+            © {new Date().getFullYear()} Protato LLC — All rights reserved
+          </p>
+        </div>
       </article>
     </div>
   );
