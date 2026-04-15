@@ -64,7 +64,7 @@ export default function Nav() {
 
         <div className='hidden md:flex items-center justify-center flex-1 gap-2'>
           <Link
-            href={`https://apps.apple.com/app/protato/id${iosAppId}`}
+            href={`https://apps.apple.com/app/protato-3d-mockup-generator/id${iosAppId}`}
           >
             <Button className="text-md">
                Download iOS app
