@@ -96,17 +96,17 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "url": "https://rewritemate.app",
+              "url": "https://protato.app",
               "name": siteConfig.name,
-              "alternateName": "RewriteMate",
+              "alternateName": "Protato 3D Mockup",
               "description": siteConfig.description,
               "publisher": {
                 "@type": "Organization",
-                "name": "RewriteMate",
-                "url": "https://rewritemate.app",
+                "name": "Protato 3D Mockup",
+                "url": "https://protato.app",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://rewritemate.app/opengraph.webp",
+                  "url": "https://protato.app/opengraph.webp",
                   "width": 1200,
                   "height": 630
                 }
