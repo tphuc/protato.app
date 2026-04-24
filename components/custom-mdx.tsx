@@ -86,9 +86,9 @@ function RoundedImage(props: any) {
 			<DialogTrigger asChild>
 
 				<img
-					width={800}
-					height={600}
-					className="rounded-md cursor-pointer bg-border w-full max-w-[90vw] rounded-md border shadow-sm drop-shadow-sm"
+					width={1500}
+					height={1000}
+					className="rounded-md cursor-pointer bg-border w-full max-w-[90vw] rounded-md border"
 
 					{...props}
 					alt={props?.alt || ''}
@@ -97,14 +97,15 @@ function RoundedImage(props: any) {
 
 			</DialogTrigger>
 
-			<DialogContent className="max-w-[95vw] max-h-[95vh] p-0 flex flex-col items-center justify-center bg-transparent shadow-none border-none">
-				<DialogTitle className='text-sm'>{props.alt}</DialogTitle>
+			<DialogContent className="w-screen rounded-none bg-background h-screen max-w-none p-0 flex items-center justify-center">
+				<DialogTitle className="absolute top-4 text-sm">
+					{props.alt}
+				</DialogTitle>
+
 				<img
 					src={props.src}
 					alt={props.alt || ''}
-					width={1200}
-					height={900}
-					className="rounded-md max-h-[90vh] w-auto h-auto"
+					className="w-full h-full object-contain"
 				/>
 			</DialogContent>
 		</Dialog>
@@ -302,25 +303,25 @@ const RewriteMateCTA = ({
 			}}
 			className="rounded-2xl p-4 md:p-6 space-y-2"
 		>
-		
-				<h3 style={{margin:0}} className="text-2xl tracking-tighter font-semibold text-white">
-					{current.title}
-				</h3>
 
-				<p style={{margin:0}} className="text-white/80">
-					{current.headline}
-				</p>
+			<h3 style={{ margin: 0 }} className="text-2xl tracking-tighter font-semibold text-white">
+				{current.title}
+			</h3>
 
-				<a
-					className="inline-flex mt-4 no-underline"
-					target="_blank"
-					rel="noopener noreferrer"
-					href="https://apps.apple.com/app/rewritemate-ai-keyboard/id6755306532"
-				>
-					<div className="flex items-center  gap-2 bg-white text-black rounded-full px-4 py-2 font-medium">
-						{current.cta}
-					</div>
-				</a>
+			<p style={{ margin: 0 }} className="text-white/80">
+				{current.headline}
+			</p>
+
+			<a
+				className="inline-flex mt-4 no-underline"
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://apps.apple.com/app/rewritemate-ai-keyboard/id6755306532"
+			>
+				<div className="flex items-center  gap-2 bg-white text-black rounded-full px-4 py-2 font-medium">
+					{current.cta}
+				</div>
+			</a>
 
 		</div>
 	)
@@ -358,7 +359,7 @@ export const CustomMDX: FC<MDXRemoteProps> = (props) => {
 				blockDangerousJS: false
 			}}
 
-			
+
 		/>
 	);
 };
