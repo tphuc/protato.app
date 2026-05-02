@@ -74,7 +74,7 @@ export default async function Blog({ params }: any) {
 
 	return (
 		<main className="relative mx-auto max-w-3xl px-4 md:px-0 py-16">
-			<div className='min-h-20' />
+			<div className='min-h-4' />
 			<article>
 				<header className="mb-12 space-y-4">
 					<img src={post.metadata?.image} style={{objectFit:'cover'}} alt='thumbnail' className='aspect-video w-full rounded-2xl'></img>
