@@ -204,6 +204,9 @@ export default function Home() {
             <span style={{ fontSize: '16px', fontWeight: '700' }}>Bowora</span>
           </div>
         </a>
+        <a href="https://sidehunt.io/project/protato-3d-mockup" target="_blank" rel="noopener">
+          <img src="https://sidehunt.io/badges/sidehunt-badge-light.svg" alt="Featured on Sidehunt" width="200" height="60" />
+        </a>
       </div>
       <Footer2 />
 
