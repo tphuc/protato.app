@@ -1,5 +1,6 @@
 import { Discord, Instagram, Threads, Tiktok, X } from "@/components/icons"
 import Link from "next/link"
+import { iosAppId, macAppId } from "../config"
 
 
 export default function Footer2() {
@@ -23,8 +24,8 @@ export default function Footer2() {
 
           <div>
             <ul className="space-y-3">
-              <li><Link href="/" className="hover:text-foreground/90 transition">Download for iOS</Link></li>
-              <li><Link href="/macos" className="hover:text-foreground/90 transition">Download for macOS</Link></li>
+              <li><Link  href={`https://apps.apple.com/app/protato-3d-mockup-generator/id${iosAppId}`} className="hover:text-foreground/90 transition">Download for iOS</Link></li>
+              <li><Link  href={`https://apps.apple.com/app/protato-3d-mockup-generator/id${macAppId}`} className="hover:text-foreground/90 transition">Download for macOS</Link></li>
               <li><Link href="/#pricing" className="hover:text-foreground/90 transition">Pricing</Link></li>
               <li><Link href="#" className="hover:text-foreground/90 transition">Features</Link></li>
               {/* <li><Link href="#" className="hover:text-foreground/90 transition">Updates</Link></li> */}
