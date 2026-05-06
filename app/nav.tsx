@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Menu } from 'lucide-react'
+import { ChevronDown, Menu } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -13,7 +13,53 @@ import {
 
 import { ContactButtonClient } from '@/components/contact-button'
 import { DialogTitle } from '@radix-ui/react-dialog'
-import { iosAppId } from './config'
+import { iosAppId, macAppId } from './config'
+import {
+
+  DropdownMenu,
+
+  DropdownMenuTrigger,
+
+  DropdownMenuContent,
+
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu"
+
+const Download = () => {
+  return <DropdownMenu>
+    <DropdownMenuTrigger className='flex font-medium items-center gap-1'>
+      Download
+      <ChevronDown className='w-4 h-4' />
+    </DropdownMenuTrigger>
+
+    <DropdownMenuContent
+      align="start"
+      className="w-56 p-1 rounded-xl"
+    >
+      <DropdownMenuItem asChild>
+        <Link
+          href={`https://apps.apple.com/app/protato-3d-mockup-generator/id${iosAppId}`}
+          target="_blank"
+          className='font-medium'
+        >
+          <span className='px-1'></span> Download iOS app
+        </Link>
+
+      </DropdownMenuItem>
+
+      <DropdownMenuItem asChild>
+        <Link
+          href={`https://apps.apple.com/app/protato-3d-mockup-generator/id${macAppId}`}
+          target="_blank"
+          className='font-medium'
+
+        >
+          <span className='px-1'></span> Download macOS app
+        </Link>
+      </DropdownMenuItem>
+    </DropdownMenuContent>
+  </DropdownMenu>
+}
 
 const AppleLogoSvg = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -33,7 +79,7 @@ const AppleLogoSvg = (props: React.SVGProps<SVGSVGElement>) => (
 
 export default function Nav() {
   return (
-    <nav className="fixed top-0 z-50 w-full border-b bg-background/80  backdrop-blur-md">
+    <nav className="sticky max-w-[100vw] top-0 z-50 w-[100vw] border-b bg-background/80  backdrop-blur-md">
       <div className="relative h-full w-full mx-auto   px-4 py-3 rounded-full flex max-w-screen-lg items-center justify-between gap-3">
         {/* <div
         className="absolute inset-0 z-10 h-full w-full rounded-full pointer-events-none"
@@ -54,7 +100,7 @@ export default function Nav() {
 
           </Link>
           <div className="hidden md:flex text-lg font-semibold">Protato</div>
-          <div className='flex-1 md:hidden'/>
+          <div className='flex-1 md:hidden' />
         </div>
 
         {/* Desktop Nav */}
@@ -63,13 +109,9 @@ export default function Nav() {
         </div>
 
         <div className='hidden md:flex items-center justify-center flex-1 gap-2'>
-          <Link
-            href={`https://apps.apple.com/app/protato-3d-mockup-generator/id${iosAppId}`}
-          >
-            <Button className="text-md">
-               Download iOS app
-            </Button>
-          </Link>
+          <Download />
+
+
         </div>
 
         {/* Mobile Drawer */}
@@ -98,7 +140,7 @@ export default function Nav() {
 const NavLinks = () => {
   return (
     <div className="flex flex-col items-start gap-6 md:flex-row md:items-center">
-     
+
 
       <Link
         href="/blog"

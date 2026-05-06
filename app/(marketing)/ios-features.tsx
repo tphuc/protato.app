@@ -1,5 +1,5 @@
 import { Icloud, Shield, Sparkles, PaintPallete } from "@/components/icons"
-import { Plus, Cpu, Camera, Layers, Box, Palette, Zap } from "lucide-react"
+import { Plus, Cpu, Camera, Layers, Box, Palette, Zap, Clapperboard, Lightbulb } from "lucide-react"
 import Image from "next/image"
 import {
     Hand,
@@ -11,7 +11,7 @@ import {
 export default function IOSFeatures() {
     return (
         <section className="mx-auto max-w-4xl py-20">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 ">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-2">
 
                 {/* Large Hero Feature */}
                 <div className="md:col-span-4 md:row-span-2 rounded-3xl flex flex-col gap-4 justify-end">
@@ -74,7 +74,7 @@ export default function IOSFeatures() {
                 </div>
 
                 {/* Feature 1 */}
-                <div className="rounded-3xl md:col-span-2 p-5 flex flex-col justify-between gap-2">
+                <div className="rounded-3xl bg-background md:col-span-2 p-5 flex flex-col justify-between gap-2">
                     <Hand className="w-8 h-8 text-foreground/90" />
                     <div>
                         <p className="font-semibold text-xl">
@@ -87,7 +87,7 @@ export default function IOSFeatures() {
                 </div>
 
                 {/* Feature 2 */}
-                <div className="rounded-3xl md:col-span-2 p-5 flex flex-col justify-between gap-2">
+                <div className="rounded-3xl bg-background md:col-span-2 p-5 flex flex-col justify-between gap-2">
                     <Projector className="w-8 h-8 text-foreground/90" />
                     <div>
                         <p className="font-semibold text-xl">
@@ -100,7 +100,7 @@ export default function IOSFeatures() {
                 </div>
 
                 {/* Feature 3 */}
-                <div className="rounded-3xl md:col-span-2 p-5 flex flex-col justify-between gap-2">
+                <div className="rounded-3xl bg-background md:col-span-2 p-5 flex flex-col justify-between gap-2">
                     <Download className="w-8 h-8 text-foreground/90" />
                     <div>
                         <p className="font-semibold text-xl">
@@ -113,7 +113,7 @@ export default function IOSFeatures() {
                 </div>
 
                 {/* Feature 4 */}
-                <div className="rounded-3xl md:col-span-2 p-5 flex flex-col justify-between gap-2">
+                <div className="rounded-3xl bg-background md:col-span-2 p-5 flex flex-col justify-between gap-2">
                     <Smartphone className="w-8 h-8 text-foreground/90" />
                     <div>
                         <p className="font-semibold text-xl">
@@ -121,6 +121,32 @@ export default function IOSFeatures() {
                         </p>
                         <p className="text-sm text-muted-foreground">
                             Optimized for mobile workflows, wherever you are.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Feature 5 */}
+                <div className="rounded-3xl bg-background md:col-span-2 p-5 flex flex-col justify-between gap-2">
+                    <Clapperboard className="w-8 h-8 text-foreground/90" />
+                    <div>
+                        <p className="font-semibold text-xl">
+                            Animation timeline
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                            Record camera moves and create cinematic clips with keyframe editing.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Feature 6 */}
+                <div className="rounded-3xl bg-background md:col-span-2 p-5 flex flex-col justify-between gap-2">
+                    <Lightbulb className="w-8 h-8 text-foreground/90" />
+                    <div>
+                        <p className="font-semibold text-xl">
+                            Studio lighting presets
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                            Switch between Studio, Dramatic, and Flat lighting with one tap.
                         </p>
                     </div>
                 </div>

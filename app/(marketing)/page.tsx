@@ -131,7 +131,7 @@ export default function Home() {
           <Link
             href={`https://apps.apple.com/app/protato/id${macAppId}`}
           >
-            <Button variant={'secondary'} className="text-md">
+            <Button className="text-md">
                Download macOS app
             </Button>
           </Link>

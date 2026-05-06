@@ -73,7 +73,7 @@ export default async function Blog({ params }: any) {
 	if (!post) notFound();
 
 	return (
-		<main className="relative mx-auto max-w-3xl px-4 md:px-0 py-16">
+		<main className="relative  mx-auto max-w-3xl px-4 md:px-0 py-16">
 			<div className='min-h-4' />
 			<article>
 				<header className="mb-12 space-y-4">
@@ -97,14 +97,14 @@ export default async function Blog({ params }: any) {
 				</header>
 
 				{/* Blog content */}
-				<div className="prose prose-neutral max-w-none">
+				<div className="prose prose-neutral dark:prose-invert max-w-none">
 					<CustomMDX source={post.content} />
 				</div>
 
 				<BlogAuthor
 					name="Felix Tran"
-					role="Indie Developer & RewriteMate Founder"
-					bio=""
+					role="Indie Developer & Protato Editorial Lead"
+					bio="Write about everyday workflows. Especially around design, writing, and shipping ideas fast"
 				/>
 			</article>
 		</main>

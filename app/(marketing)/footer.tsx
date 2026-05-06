@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Footer2() {
   return (
-    <div className="bg-secondary text-foreground">
+    <div className="bg-secondary border-t border-neutral-500/20 text-foreground">
 
       <div className="max-w-screen-xl mx-auto px-6">
 

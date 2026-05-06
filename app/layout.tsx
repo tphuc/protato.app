@@ -114,15 +114,15 @@ export default function RootLayout({
             })
           }}
         />
-        {/* <ThemeProvider
+        <ThemeProvider
           attribute="class"
           defaultTheme="light"
+          forcedTheme="light"
           enableSystem={false}
-          
-          disableTransitionOnChange
-        > */}
+          enableColorScheme={true}
+        >
           {children}
-        {/* </ThemeProvider> */}
+        </ThemeProvider>
           <Analytics/>
       </body>
     </html>
