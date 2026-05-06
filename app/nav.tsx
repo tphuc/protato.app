@@ -27,7 +27,7 @@ import {
 
 const Download = () => {
   return <DropdownMenu>
-    <DropdownMenuTrigger className='flex font-medium items-center gap-1'>
+    <DropdownMenuTrigger className='flex font-medium text-blue-500 items-center gap-1'>
       Download
       <ChevronDown className='w-4 h-4' />
     </DropdownMenuTrigger>
@@ -79,7 +79,7 @@ const AppleLogoSvg = (props: React.SVGProps<SVGSVGElement>) => (
 
 export default function Nav() {
   return (
-    <nav className="sticky max-w-[100vw] top-0 z-50 w-[100vw] border-b bg-background/80  backdrop-blur-md">
+    <nav className="sticky  top-0 z-50 w-full border-b bg-background/80  backdrop-blur-md">
       <div className="relative h-full w-full mx-auto   px-4 py-3 rounded-full flex max-w-screen-lg items-center justify-between gap-3">
         {/* <div
         className="absolute inset-0 z-10 h-full w-full rounded-full pointer-events-none"
@@ -109,7 +109,7 @@ export default function Nav() {
         </div>
 
         <div className='hidden md:flex items-center justify-center flex-1 gap-2'>
-          <Download />
+          {/* <Download /> */}
 
 
         </div>
@@ -150,7 +150,7 @@ const NavLinks = () => {
       </Link>
 
 
-
+      <Download/>
       <ContactButtonClient />
     </div>
   )
