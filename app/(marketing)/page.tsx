@@ -210,6 +210,18 @@ export default function Home() {
         <a href="https://startuups.com//projects/protato-3d-mockup" target="_blank" rel="noopener">
           <img src="https://startuups.com//images/badges/startuupscom.badge.svg" alt="Featured on startuups" width="150" height="54" />
         </a>
+        <a
+          href="https://wavel.io"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://wavel.io/Wavel-embed-badge-with-dark-bg.webp"
+            alt="Featured on Wavel"
+            className="h-[60px] w-auto rounded-lg shadow-sm"
+          />
+        </a>
+
       </div>
       <Footer2 />
 
