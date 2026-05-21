@@ -222,6 +222,10 @@ export default function Home() {
           />
         </a>
 
+        <a href="https://sellwithboost.com" target="_blank" rel="noopener noreferrer">
+  <img src="https://sellwithboost.com/badge/listing.svg" alt="Listed on Sell With boost" style={{height:40}} />
+</a>
+
       </div>
       <Footer2 />
 
