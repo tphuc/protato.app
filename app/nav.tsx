@@ -143,6 +143,13 @@ const NavLinks = () => {
 
 
       <Link
+        href="/guides"
+        className="w-full font-medium md:w-auto"
+      >
+        Guides
+      </Link>
+
+      <Link
         href="/blog"
         className="w-full font-medium md:w-auto"
       >

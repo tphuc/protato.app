@@ -7,37 +7,38 @@ import PricingCard from "./pricing";
 import Footer2 from "./footer";
 import { iosAppId, macAppId } from "../config";
 import Backlinks from "./backlinks";
+import UseCases from "./use-cases";
 
 const roles = [
   {
     icon: <DeveloperCode className="w-8 h-8 fill-background" />,
     title: "Developers",
     description:
-      "Turn screenshots and recordings into beautiful mockups for App Store pages, documentation, and launches.",
+      "Generate App Store screenshots, documentation assets, and launch visuals in minutes — without waiting on a designer or learning 3D software.",
   },
   {
     icon: <PaintPallete className="w-8 h-8 fill-background" />,
     title: "Designers",
     description:
-      "Refine lighting, materials, and composition to create visuals that match your product and design system.",
+      "Fine-tune lighting, materials, and composition to present your UI work exactly the way you envisioned — on real devices.",
   },
   {
     icon: <TextBubble className="w-8 h-8 fill-background" />,
     title: "Content & Marketing",
     description:
-      "Create polished visuals and short animations for landing pages, campaigns, and social content—without a complex setup.",
+      "Create scroll-stopping social visuals, landing page hero shots, and short product animations — no complex render pipelines or design handoffs.",
   },
   {
     icon: <BubbleLeftRight className="w-8 h-8 fill-background" />,
     title: "Product & Teams",
     description:
-      "Build consistent mockups for demos, updates, and internal presentations across your workflow.",
+      "Keep demos, pitch decks, and internal updates consistent and polished — with mockups that look like the real shipped product.",
   },
   {
     icon: <BriefCase className="w-8 h-8 fill-background" />,
     title: "Founders & Operators",
     description:
-      "Generate high-quality visuals on demand for launches, pitches, and quick product updates.",
+      "Ship beautiful product visuals for launches, investor decks, and growth experiments — fast, without a dedicated design team.",
   },
 ];
 
@@ -71,13 +72,13 @@ export default function Home() {
             />
           </div>
           <div className="relative pb-5 space-y-4">
-            <h1 className="relative mx-auto max-w-xl text-center text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+            <h1 className="relative mx-auto max-w-2xl text-center text-4xl md:text-5xl font-bold tracking-tight leading-tight">
               <span className="bg-gradient-to-br from-slate-600 via-slate-800 to-slate-700 bg-clip-text text-transparent">
-                Create Studio Quality 3D Mockups In Seconds
+                Turn Screenshots Into Studio-Quality 3D Mockups
               </span>
             </h1>
-            <p className="text-center max-w-md mx-auto text-xl">
-              Drop your screenshots or videos into real devices, tweak lighting, and export polished visuals
+            <p className="text-center max-w-lg mx-auto text-xl">
+              No 3D skills needed. Drop in your screenshots or videos, adjust lighting and materials in real time, and export polished mockups ready for the App Store, social media, or your next pitch.
             </p>
           </div>
         </div>
@@ -107,6 +108,25 @@ export default function Home() {
 
         </div>
 
+
+        <div className="mx-auto max-w-3xl grid grid-cols-2 md:grid-cols-4 gap-4 px-4 py-10">
+          <div className="text-center">
+            <p className="text-2xl md:text-3xl font-bold tracking-tight">18+</p>
+            <p className="text-sm text-muted-foreground">Device models</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl md:text-3xl font-bold tracking-tight">4K</p>
+            <p className="text-sm text-muted-foreground">Export resolution</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl md:text-3xl font-bold tracking-tight">Real-time</p>
+            <p className="text-sm text-muted-foreground">No render queue</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl md:text-3xl font-bold tracking-tight">Offline</p>
+            <p className="text-sm text-muted-foreground">Works without internet</p>
+          </div>
+        </div>
 
       </main>
 
@@ -142,7 +162,7 @@ export default function Home() {
           <div className="mx-auto max-w-5xl px-6">
             <div className="max-w-2xl mb-16">
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
-                Protato gives you precision control to create high quality mockups
+                Purpose-built for everyone who ships apps and products
               </h2>
             </div>
 
@@ -169,6 +189,7 @@ export default function Home() {
       </div>
 
 
+      <UseCases />
       <PricingCard />
       {/* <PricingPlansPage /> */}
       <FaqSection />

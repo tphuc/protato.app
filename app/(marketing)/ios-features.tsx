@@ -17,10 +17,10 @@ export default function IOSFeatures() {
                 <div className="md:col-span-4 md:row-span-2 rounded-3xl flex flex-col gap-4 justify-end">
                     <div>
                         <p className="text-2xl md:text-4xl text-center font-semibold tracking-tight">
-                            Create 3D mockups anywhere
+                            Professional mockups. Right from your pocket.
                         </p>
                         <p className="text-muted-foreground text-center px-[10%]">
-                            Import screenshots or videos and see them instantly rendered on real devices.
+                            Import your screenshots or videos and see them instantly rendered on realistic 3D devices. Tweak lighting, swap models, and export — all in real time.
                         </p>
                     </div>
 
@@ -81,7 +81,7 @@ export default function IOSFeatures() {
                             Touch-first controls
                         </p>
                         <p className="text-sm text-muted-foreground">
-                            Orbit, pan, and adjust with simple gestures.
+                            Orbit, pan, and adjust your scene with intuitive gestures — no menu diving.
                         </p>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ export default function IOSFeatures() {
                             Real-time preview
                         </p>
                         <p className="text-sm text-muted-foreground">
-                            See lighting and reflections update instantly.
+                            Every change — lighting, materials, camera — updates instantly. No render queue.
                         </p>
                     </div>
                 </div>
@@ -104,10 +104,10 @@ export default function IOSFeatures() {
                     <Download className="w-8 h-8 text-foreground/90" />
                     <div>
                         <p className="font-semibold text-xl">
-                            High-quality exports
+                            Export up to 4K
                         </p>
                         <p className="text-sm text-muted-foreground">
-                            Export images and videos in up to 4K, ready for sharing.
+                            Export images and videos in up to 4K resolution, at 1x, 2x, or 3x — ready for any screen.
                         </p>
                     </div>
                 </div>
@@ -117,10 +117,10 @@ export default function IOSFeatures() {
                     <Smartphone className="w-8 h-8 text-foreground/90" />
                     <div>
                         <p className="font-semibold text-xl">
-                            Built for iPhone & iPad
+                            Multiple devices, one scene
                         </p>
                         <p className="text-sm text-muted-foreground">
-                            Optimized for mobile workflows, wherever you are.
+                            Place iPhones, iPads, and MacBooks together in a single shot for rich product visuals.
                         </p>
                     </div>
                 </div>
@@ -133,7 +133,7 @@ export default function IOSFeatures() {
                             Animation timeline
                         </p>
                         <p className="text-sm text-muted-foreground">
-                            Record camera moves and create cinematic clips with keyframe editing.
+                            Record camera moves, add keyframes, and create cinematic product clips — all on device.
                         </p>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ export default function IOSFeatures() {
                             Studio lighting presets
                         </p>
                         <p className="text-sm text-muted-foreground">
-                            Switch between Studio, Dramatic, and Flat lighting with one tap.
+                            Switch between Studio, Dramatic, and Flat lighting with one tap — or fine-tune your own setup.
                         </p>
                     </div>
                 </div>

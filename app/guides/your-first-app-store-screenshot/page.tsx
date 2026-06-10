@@ -1,0 +1,237 @@
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { iosAppId, macAppId } from "@/app/config"
+
+export default function Guide01() {
+    return (
+        <main className="mx-auto max-w-3xl px-6 py-20">
+
+            <div className="mb-4">
+                <span className="text-xs font-medium text-muted-foreground tracking-widest uppercase">
+                    How-to guide 01
+                </span>
+            </div>
+
+            <h1 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
+                How to create your first App Store screenshot project on iPhone.
+            </h1>
+
+            <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">
+                This is the cleanest starting point for Protato. Everything else grows from the same project model: frame, size, background, overlays, and export all stay editable after creation.
+            </p>
+
+            <div className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">
+                <span className="font-medium text-foreground">6 steps</span>
+                <span className="w-1 h-1 rounded-full bg-muted-foreground/30" />
+                <span>iPhone</span>
+            </div>
+
+            {/* What You'll Build / Use */}
+            <div className="mt-10 grid gap-6 sm:grid-cols-2">
+                <div className="rounded-2xl border border-border/60 bg-secondary/20 p-6">
+                    <p className="text-xs font-medium text-muted-foreground tracking-widest uppercase mb-3">
+                        What you&apos;ll build
+                    </p>
+                    <p className="text-base leading-relaxed">
+                        One clean device mockup with your screenshot on a 3D iPhone frame, a background treatment, a headline, and an export-ready image.
+                    </p>
+                </div>
+                <div className="rounded-2xl border border-border/60 bg-secondary/20 p-6">
+                    <p className="text-xs font-medium text-muted-foreground tracking-widest uppercase mb-3">
+                        What you&apos;ll use
+                    </p>
+                    <p className="text-base leading-relaxed">
+                        Project creation, device model picker, aspect ratio, background styling, media import, text overlays, and still image export.
+                    </p>
+                </div>
+            </div>
+
+            {/* CTA bar */}
+            <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-2xl border border-border/60 bg-secondary/30 p-5">
+                <p className="text-sm text-muted-foreground flex-1">
+                    If you want the setup path in the app now, open Protato on your iPhone or install it on your Mac to follow along.
+                </p>
+                <div className="flex items-center gap-3 shrink-0">
+                    <Link href={`https://apps.apple.com/app/protato/id${iosAppId}`}>
+                        <Button className="text-sm" variant="default">
+                             Download iOS app
+                        </Button>
+                    </Link>
+                    <Link href={`https://apps.apple.com/app/protato/id${macAppId}`}>
+                        <Button className="text-sm" variant="outline">
+                             Download macOS app
+                        </Button>
+                    </Link>
+                </div>
+            </div>
+
+            <hr className="my-14 border-border/40" />
+
+            {/* Steps */}
+            <div className="space-y-16">
+                <Step
+                    number="01"
+                    title="Create a new project and choose a device model."
+                    description={[
+                        "Open Protato and you will see the default scene with a device already loaded. By default it shows the latest iPhone model — this is your starting anchor.",
+                        "If you want a different device, tap the Devices button (phone icon above the canvas), then use the + and — buttons to swap models. Choose from iPhone 17 Pro Max, iPhone 17 Air, iPad A16, MacBook Pro 14\", and more.",
+                        "For a first tutorial, the iPhone frame is the clearest path because it matches the most common App Store screenshot workflow.",
+                    ]}
+                />
+                <Step
+                    number="02"
+                    title="Set the canvas size and choose a background."
+                    description={[
+                        "Open the Settings sheet (sliders icon in the top-left toolbar) and go to the Ratio tab. Pick a canvas shape that matches your target output — 9:16 for social stories, 16:9 for widescreen, or 1:1 for square.",
+                        "Next, go to the Background tab. Choose a starting background:",
+                    ]}
+                    items={[
+                        "None — leaves the background transparent for a clean PNG export",
+                        "Solid — pick a single brand color from the palette or color wheel",
+                        "Gradient — choose from 80+ two-color presets or create your own",
+                        "Mesh — smooth multi-color blended gradients for an Apple-style look",
+                        "Image — use a photo from your library as the backdrop",
+                    ]}
+                />
+                <Step
+                    number="03"
+                    title="Import your screenshot and fit it onto the device."
+                    description={[
+                        "Still in the Settings sheet, go to the Media tab. Tap the import button and choose your app screenshot from Photos or Files.",
+                        "The image appears on the device screen instantly — curved to match the display, with realistic reflections and perspective. If the crop doesn't look right, adjust the device's position using Pan mode or the Transform tab.",
+                        "This is where the project stops being a blank template and starts becoming a usable marketing asset.",
+                    ]}
+                />
+                <Step
+                    number="04"
+                    title="Add the headline and supporting copy."
+                    description={[
+                        "Tap the Add Text button (T+ icon) above the canvas. A text label appears and the Text Editor panel slides up from the bottom.",
+                        "Tap the text directly on the canvas and type your headline — something that describes the benefit shown in the screenshot.",
+                        "In the Text Editor, explore the tabs:",
+                    ]}
+                    items={[
+                        "Presets — quick font size and style presets",
+                        "Color — solid fill or multi-stop gradient for the text",
+                        "Stroke — add an outline around your text",
+                        "Style — choose from System, Rounded, Serif, or Monospaced fonts; adjust weight, alignment, and tracking",
+                        "Layout — position the text on screen, scale it, rotate it, and choose whether it appears behind or in front of the device",
+                    ]}
+                />
+                <Step
+                    number="05"
+                    title="Refine spacing, hierarchy, and layer placement."
+                    description={[
+                        "Tighten the composition by switching between the Orbit and Pan modes to adjust the camera angle and device position.",
+                        "If you added multiple text elements, use the Layout tab's placement setting to order them — text behind the device creates depth, text in front reads as a clear headline.",
+                        "Toggle the Grid overlay (⊞ icon) to check alignment. Make sure the device, text, and background feel balanced as a single composition.",
+                    ]}
+                />
+                <Step
+                    number="06"
+                    title="Export the finished still image."
+                    description={[
+                        "Tap the Export button (arrow-up icon in the top toolbar). Choose your format — PNG for transparent backgrounds, JPEG for smaller file sizes.",
+                        "Select the quality scale: 1x, 2x, or 3x. Higher scales produce sharper, larger images suitable for App Store and print.",
+                        "Tap Export. The iOS Share Sheet appears — save to Photos, send in Messages, AirDrop to your Mac, or upload directly to App Store Connect.",
+                        "This closes the loop on your first project. The same project can now grow into a full screenshot set, a localization pass, or an animated variant.",
+                    ]}
+                />
+            </div>
+
+            <hr className="my-16 border-border/40" />
+
+            {/* Continue section */}
+            <div>
+                <p className="text-xs font-medium text-muted-foreground tracking-widest uppercase mb-6">
+                    Continue
+                </p>
+                <p className="text-lg font-semibold mb-6">
+                    Keep the workflow moving.
+                </p>
+
+                <div className="space-y-4">
+                    <ContinueCard
+                        title="How to make a polished iPhone mockup from a raw screenshot."
+                        description="Take the same foundation and refine lighting, materials, and composition for a premium single-image deliverable."
+                        href="/guides/studio-lighting-and-materials"
+                    />
+                    <ContinueCard
+                        title="How to build a full App Store screenshot set in one project."
+                        description="Expand the same project model into a complete campaign set instead of stopping at one canvas."
+                        href="/guides/multi-device-scene"
+                    />
+                    <ContinueCard
+                        title="Project presets for first-time App Store screenshot setups."
+                        description="See the feature page behind project creation, default frames, and canvas options used in this guide."
+                        href="/guides/your-first-app-store-screenshot"
+                    />
+                </div>
+            </div>
+
+        </main>
+    )
+}
+
+function Step({
+    number,
+    title,
+    description,
+    items,
+}: {
+    number: string
+    title: string
+    description: string[]
+    items?: string[]
+}) {
+    return (
+        <div>
+            <p className="text-xs font-medium text-muted-foreground tracking-widest uppercase mb-3">
+                Step {number}
+            </p>
+            <h2 className="text-2xl font-semibold tracking-tight mb-4">
+                {title}
+            </h2>
+            <div className="space-y-4">
+                {description.map((p, i) => (
+                    <p key={i} className="text-base text-muted-foreground leading-relaxed">
+                        {p}
+                    </p>
+                ))}
+                {items && (
+                    <ul className="space-y-2 ml-5">
+                        {items.map((item, i) => (
+                            <li key={i} className="text-base text-muted-foreground leading-relaxed list-disc">
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                )}
+            </div>
+        </div>
+    )
+}
+
+function ContinueCard({
+    title,
+    description,
+    href,
+}: {
+    title: string
+    description: string
+    href: string
+}) {
+    return (
+        <Link
+            href={href}
+            className="group block rounded-2xl border border-border/60 bg-secondary/20 p-5 hover:bg-secondary/40 hover:border-border transition-all"
+        >
+            <h3 className="font-semibold group-hover:text-foreground transition-colors">
+                {title}
+            </h3>
+            <p className="mt-1 text-sm text-muted-foreground">
+                {description}
+            </p>
+        </Link>
+    )
+}

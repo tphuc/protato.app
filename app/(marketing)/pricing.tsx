@@ -10,9 +10,9 @@ export default function PricingCard() {
     <div id='pricing'>
      
       <section className="w-full flex flex-col items-center gap-10 justify-center py-20 px-2 ">
-      <h1 className="relative mx-auto max-w-2xl text-center py-[5%] text-4xl md:text-6xl font-bold tracking-tight leading-tight">
-       No complex setup. No learning curve
-      </h1>
+      <h2 className="relative mx-auto max-w-2xl text-center py-[5%] text-4xl md:text-6xl font-bold tracking-tight leading-tight">
+        Start free. Upgrade when you need more.
+      </h2>
         <div className="w-full max-w-4xl rounded-4xl bg-gradient-to-b from-orange-400/80 to-orange-400 text-primary-foreground px-10 py-16 md:px-16 md:py-20 ">
 
           {/* Title */}
@@ -62,6 +62,11 @@ export default function PricingCard() {
                 <span className="text-xl font-medium md:text-2xl text-primary-foreground/80">
                   /month
                 </span>
+                <div>
+                  <span className="text-base text-primary-foreground/70">
+                    Unlimited exports on iPhone and Mac
+                  </span>
+                </div>
               </div>
             </TabsContent>
 
@@ -82,7 +87,11 @@ export default function PricingCard() {
                 <span className="text-lg font-medium md:text-xl text-primary-foreground/80">
                   /month
                 </span>
-               
+                <div>
+                  <span className="text-base text-primary-foreground/70">
+                    Best value — 2 months free vs monthly
+                  </span>
+                </div>
               </div>
             </TabsContent>
 
@@ -94,6 +103,11 @@ export default function PricingCard() {
                 <p className="text-xl md:text-2xl text-primary-foreground/80">
                  Pay once. Use forever on iPhone and Mac.
                 </p>
+                <div>
+                  <span className="text-base text-primary-foreground/70">
+                    All future updates included
+                  </span>
+                </div>
               </div>
             </TabsContent>
 
