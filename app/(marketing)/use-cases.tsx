@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { iosAppId } from "../config"
 
 const useCases = [
   {
@@ -101,8 +102,8 @@ export default function UseCases() {
 
         <div className="mt-16 text-center">
           <Link
-            href="https://apps.apple.com/app/protato/id6761607577"
-            className="inline-flex items-center gap-2 text-lg font-medium text-foreground hover:text-foreground/70 transition-colors"
+            href={`https://apps.apple.com/app/protato/id${iosAppId}`}
+            className="inline-flex items-center gap-2 text-lg font-medium text-blue-500 hover:text-blue-600 transition-colors"
           >
             Start with the iPhone mockup generator
             <span className="text-sm" aria-hidden="true">→</span>

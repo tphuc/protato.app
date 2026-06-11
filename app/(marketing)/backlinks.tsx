@@ -1,6 +1,6 @@
 export default function Backlinks() {
   return (
-    <div className="flex items-center gap-2 justify-center py-4 border-t border-border/50 bg-secondary/50 border-b w-full overflow-x-scroll scrollbar-hide no-scrollbar">
+    <div className="flex flex-wrap items-center gap-2 justify-center py-4 border-t border-border/50 bg-secondary/50 border-b w-full overflow-x-scroll scrollbar-hide no-scrollbar">
       <a href="https://twelve.tools" target="_blank">
         <img src="https://twelve.tools/badge0-white.svg" alt="Featured on Twelve Tools" width="200" height="54" />
       </a>

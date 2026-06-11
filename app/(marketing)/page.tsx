@@ -1,5 +1,5 @@
 import { FaqSection } from "@/components/faq";
-import { AppleLogoSvg, BriefCase, BubbleLeftRight, DeveloperCode, PaintPallete, Sparkles, TextBubble } from "@/components/icons";
+import { AppStore, AppleLogoSvg, BriefCase, BubbleLeftRight, DeveloperCode, PaintPallete, Sparkles, TextBubble } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import IOSFeatures from "./ios-features";
@@ -78,7 +78,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-center max-w-lg mx-auto text-xl">
-              No 3D skills needed. Drop in your screenshots or videos, adjust lighting and materials in real time, and export polished mockups ready for the App Store, social media, or your next pitch.
+              Drop in your screenshots or videos, adjust lighting and materials in real time, and export polished mockups ready for the App Store, social media, or your next pitch.
             </p>
           </div>
         </div>
@@ -87,18 +87,18 @@ export default function Home() {
 
 
 
-          {/* <Link className="z-20 whitespace-nowrap border-1 dark:border-foreground shadow-xs inline-flex font-semibold items-center gap-2 rounded-full bg-gradient-to-b from-foreground/80 to-foreground  px-5 py-2 text-background hover:opacity-90" href='https://apps.apple.com/vn/app/rewritemate/id6755306532'>
-            Download for iOS
-            <AppleLogoSvg
-              className={`h-4 w-4`}
-            />
-          </Link> */}
-
-          <div className='flex items-center justify-center flex-1 gap-2'>
+          <div className='flex flex-wrap items-center justify-center flex-1 gap-2'>
             <Link
               href={`https://apps.apple.com/app/protato/id${iosAppId}`}>
-              <Button className="text-md">
-                 Download iOS app
+              <Button className="text-md fill-background rounded-full px-4">
+                <AppStore  /> Download iOS app
+              </Button>
+            </Link>
+
+            <Link
+              href={`https://apps.apple.com/app/protato/id${macAppId}`}>
+             <Button className="text-md fill-background rounded-full px-4">
+                <AppStore /> Download macOS app
               </Button>
             </Link>
           </div>
@@ -151,11 +151,11 @@ export default function Home() {
         <div className='flex items-center justify-center flex-1 gap-2'>
           <Link
             href={`https://apps.apple.com/app/protato/id${macAppId}`}
+            className="text-md font-medium text-blue-500 hover:text-blue-600"
           >
-            <Button className="text-md">
-               Download macOS app
-            </Button>
+            Get it for Free on Mac App Store
           </Link>
+          
         </div>
 
         <section className="text-background/90 grow-progress py-24">

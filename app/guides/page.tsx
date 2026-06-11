@@ -66,7 +66,7 @@ export default function GuidesIndex() {
                         className="group block rounded-2xl border border-border/60 bg-secondary/20 p-6 hover:bg-secondary/40 hover:border-border transition-all"
                     >
                         <div className="flex items-start gap-4">
-                            <span className="text-3xl font-bold text-muted-foreground/30 group-hover:text-muted-foreground/50 transition-colors shrink-0 w-12">
+                            <span className="text-3xl font-bold text-blue-500 transition-colors shrink-0 w-12">
                                 {guide.number}
                             </span>
                             <div className="flex-1 min-w-0">

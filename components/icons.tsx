@@ -1,56 +1,56 @@
 export const ChevronLeft = (props: any) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-    </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+  </svg>
 
 )
 
 
 
 export const UTurnLeft = (props: any) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
-    </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+  </svg>
 
 
 )
 
 export const UTurnRight = (props: any) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
-    </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+  </svg>
 )
 
 export const Pen = (props: any) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
-  <path strokeLinecap="round" strokeLinejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
-</svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+  </svg>
 )
 
 export const Expand = (props: any) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={24}
-      height={24}
-      viewBox="0 0 24 24"
-      fill="none"
-      color="currentColor"
-   
-      {...props}
-    >
-      <path stroke="currentColor" strokeWidth={1.5} d="M15 3h6v6M9 21H3v-6" />
-      <path
-        stroke="currentColor"
-        strokeLinejoin="round"
-        strokeWidth={1.5}
-        d="m20.68 3.32-7.225 7.225M10.508 13.507 3 21"
-      />
-    </svg>
-  )
-
-export const Sparkles = (props:  React.SVGProps<SVGSVGElement>) => (
   <svg
- 
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    fill="none"
+    color="currentColor"
+
+    {...props}
+  >
+    <path stroke="currentColor" strokeWidth={1.5} d="M15 3h6v6M9 21H3v-6" />
+    <path
+      stroke="currentColor"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="m20.68 3.32-7.225 7.225M10.508 13.507 3 21"
+    />
+  </svg>
+)
+
+export const Sparkles = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 28 38"
     width={28}
@@ -69,7 +69,7 @@ export const Sparkles = (props:  React.SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-export const Translate = (props:  React.SVGProps<SVGSVGElement>) => (
+export const Translate = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@ export const Translate = (props:  React.SVGProps<SVGSVGElement>) => (
 )
 
 
-export const Grid  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const Grid = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@ export const Grid  = (props:  React.SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-export const Globe = (props:  React.SVGProps<SVGSVGElement>) => (
+export const Globe = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +123,7 @@ export const Globe = (props:  React.SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-export const MicroPhone = (props:  React.SVGProps<SVGSVGElement>) => (
+export const MicroPhone = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
@@ -147,21 +147,21 @@ export const MicroPhone = (props:  React.SVGProps<SVGSVGElement>) => (
 
 export const AppleLogoSvg = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width={19}
-  height={25}
-  viewBox="0 0 19 25"
-  fill="currentColor"
-  {...props}
->
-  <path
-    fill="inherit"
-    d="M13.7 5.602c-1.747 0-3.177 1.066-4.09 1.066-.973 0-2.239-1.066-3.762-1.066-2.895 0-5.825 2.46-5.825 6.96 0 2.813 1.079 5.778 2.426 7.688 1.149 1.617 2.156 2.918 3.61 2.918 1.43 0 2.062-.926 3.843-.926 1.805 0 2.215.926 3.797.926 1.57 0 2.614-1.441 3.61-2.86 1.101-1.628 1.57-3.21 1.582-3.292-.094-.024-3.094-1.254-3.094-4.688 0-2.976 2.355-4.312 2.496-4.418-1.559-2.238-3.938-2.308-4.594-2.308Zm-.821-1.899c.715-.867 1.219-2.05 1.219-3.246 0-.164-.012-.328-.036-.457-1.171.047-2.578.773-3.41 1.758-.668.75-1.277 1.945-1.277 3.14 0 .188.035.364.047.422.07.012.187.035.316.035 1.043 0 2.356-.703 3.14-1.652Z"
-  />
-</svg>
+    xmlns="http://www.w3.org/2000/svg"
+    width={19}
+    height={25}
+    viewBox="0 0 19 25"
+    fill="currentColor"
+    {...props}
+  >
+    <path
+      fill="inherit"
+      d="M13.7 5.602c-1.747 0-3.177 1.066-4.09 1.066-.973 0-2.239-1.066-3.762-1.066-2.895 0-5.825 2.46-5.825 6.96 0 2.813 1.079 5.778 2.426 7.688 1.149 1.617 2.156 2.918 3.61 2.918 1.43 0 2.062-.926 3.843-.926 1.805 0 2.215.926 3.797.926 1.57 0 2.614-1.441 3.61-2.86 1.101-1.628 1.57-3.21 1.582-3.292-.094-.024-3.094-1.254-3.094-4.688 0-2.976 2.355-4.312 2.496-4.418-1.559-2.238-3.938-2.308-4.594-2.308Zm-.821-1.899c.715-.867 1.219-2.05 1.219-3.246 0-.164-.012-.328-.036-.457-1.171.047-2.578.773-3.41 1.758-.668.75-1.277 1.945-1.277 3.14 0 .188.035.364.047.422.07.012.187.035.316.035 1.043 0 2.356-.703 3.14-1.652Z"
+    />
+  </svg>
 )
 
-export const PaperPlane = (props:  React.SVGProps<SVGSVGElement>) => (
+export const PaperPlane = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={27}
@@ -177,7 +177,7 @@ export const PaperPlane = (props:  React.SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-export const Pencil = (props:  React.SVGProps<SVGSVGElement>) => (
+export const Pencil = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
@@ -199,7 +199,7 @@ export const Pencil = (props:  React.SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-export const Battery  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const Battery = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
@@ -219,7 +219,7 @@ export const Battery  = (props:  React.SVGProps<SVGSVGElement>) => (
 )
 
 
-export const Icloud  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const Icloud = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     // width={319}
@@ -237,7 +237,7 @@ export const Icloud  = (props:  React.SVGProps<SVGSVGElement>) => (
 )
 
 
-export const Shield  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const Shield = (props: React.SVGProps<SVGSVGElement>) => (
 
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -254,7 +254,7 @@ export const Shield  = (props:  React.SVGProps<SVGSVGElement>) => (
 )
 
 
-export const BriefCase  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const BriefCase = (props: React.SVGProps<SVGSVGElement>) => (
 
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +270,7 @@ export const BriefCase  = (props:  React.SVGProps<SVGSVGElement>) => (
 )
 
 
-export const BubbleLeftRight  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const BubbleLeftRight = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 375 294"
@@ -290,7 +290,7 @@ export const BubbleLeftRight  = (props:  React.SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-export const DeveloperCode  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const DeveloperCode = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 375 294"
@@ -310,7 +310,7 @@ export const DeveloperCode  = (props:  React.SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-export const PaintPallete  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const PaintPallete = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 321 270"
@@ -330,7 +330,7 @@ export const PaintPallete  = (props:  React.SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-export const TextBubble  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const TextBubble = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 287 284"
@@ -351,36 +351,43 @@ export const TextBubble  = (props:  React.SVGProps<SVGSVGElement>) => (
 )
 
 
-export const Instagram  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const Instagram = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
     <title>{"Instagram"}</title>
     <path d="M7.03.084c-1.277.06-2.149.264-2.91.563a5.874 5.874 0 0 0-2.124 1.388 5.878 5.878 0 0 0-1.38 2.127C.321 4.926.12 5.8.064 7.076.008 8.354-.005 8.764.001 12.023c.007 3.259.021 3.667.083 4.947.061 1.277.264 2.149.563 2.911.308.789.72 1.457 1.388 2.123a5.872 5.872 0 0 0 2.129 1.38c.763.295 1.636.496 2.913.552 1.278.056 1.689.069 4.947.063 3.257-.007 3.668-.021 4.947-.082 1.28-.06 2.147-.265 2.91-.563a5.881 5.881 0 0 0 2.123-1.388 5.881 5.881 0 0 0 1.38-2.129c.295-.763.496-1.636.551-2.912.056-1.28.07-1.69.063-4.948-.006-3.258-.02-3.667-.081-4.947-.06-1.28-.264-2.148-.564-2.911a5.892 5.892 0 0 0-1.387-2.123 5.857 5.857 0 0 0-2.128-1.38C19.074.322 18.202.12 16.924.066 15.647.009 15.236-.006 11.977 0 8.718.008 8.31.021 7.03.084m.14 21.693c-1.17-.05-1.805-.245-2.228-.408a3.736 3.736 0 0 1-1.382-.895 3.695 3.695 0 0 1-.9-1.378c-.165-.423-.363-1.058-.417-2.228-.06-1.264-.072-1.644-.08-4.848-.006-3.204.006-3.583.061-4.848.05-1.169.246-1.805.408-2.228.216-.561.477-.96.895-1.382a3.705 3.705 0 0 1 1.379-.9c.423-.165 1.057-.361 2.227-.417 1.265-.06 1.644-.072 4.848-.08 3.203-.006 3.583.006 4.85.062 1.168.05 1.804.244 2.227.408.56.216.96.475 1.382.895.421.42.681.817.9 1.378.165.422.362 1.056.417 2.227.06 1.265.074 1.645.08 4.848.005 3.203-.006 3.583-.061 4.848-.051 1.17-.245 1.805-.408 2.23-.216.56-.477.96-.896 1.38a3.705 3.705 0 0 1-1.378.9c-.422.165-1.058.362-2.226.418-1.266.06-1.645.072-4.85.079-3.204.007-3.582-.006-4.848-.06m9.783-16.192a1.44 1.44 0 1 0 1.437-1.442 1.44 1.44 0 0 0-1.437 1.442M5.839 12.012a6.161 6.161 0 1 0 12.323-.024 6.162 6.162 0 0 0-12.323.024M8 12.008A4 4 0 1 1 12.008 16 4 4 0 0 1 8 12.008" />
   </svg>
 )
 
-export const Tiktok  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const Tiktok = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
     <title>{"TikTok"}</title>
     <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
   </svg>
 )
 
-export const Threads  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const Threads = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
     <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32l-1.757-1.18c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z" />
   </svg>
 )
 
 
-export const X  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const X = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
     <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" />
   </svg>
 )
 
-export const Discord  = (props:  React.SVGProps<SVGSVGElement>) => (
+export const Discord = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
     <title>{"Discord"}</title>
     <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z" />
+  </svg>
+)
+
+export const AppStore  = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+    <title>{"App Store"}</title>
+    <path d="m8.809 14.92 6.11-11.037c.084-.152.168-.302.244-.459.069-.142.127-.285.165-.44.08-.326.058-.666-.066-.977a1.511 1.511 0 0 0-.62-.735 1.417 1.417 0 0 0-.922-.193c-.32.043-.613.194-.844.43-.11.11-.2.235-.283.368-.092.146-.175.298-.259.45l-.386.697-.387-.698c-.084-.151-.167-.303-.259-.449a2.168 2.168 0 0 0-.283-.369 1.449 1.449 0 0 0-.844-.429 1.418 1.418 0 0 0-.921.193 1.512 1.512 0 0 0-.62.735c-.125.311-.147.651-.066.977.038.155.096.298.164.44.076.157.16.307.244.459l1.248 2.254-4.862 8.782H2.029c-.167 0-.335 0-.502.01-.152.009-.3.028-.448.071-.31.09-.582.28-.778.548-.195.267-.301.593-.301.928 0 .335.106.661.3.928.197.268.468.457.779.548.148.043.296.062.448.071.167.01.335.01.503.01h13.097c.017-.037.059-.13.1-.27.415-1.416-.616-2.844-2.035-2.844zm-5.696 3.622-.792 1.5c-.082.156-.165.31-.239.471a2.36 2.36 0 0 0-.16.452c-.08.335-.058.684.064 1.003.121.318.334.583.607.755.272.172.589.242.901.197.314-.044.6-.198.826-.44.108-.115.196-.242.278-.378.09-.15.171-.306.253-.462L6 19.464c-.09-.15-.947-1.47-2.887-.922m20.586-3.006a1.47 1.47 0 0 0-.779-.54 2.031 2.031 0 0 0-.448-.071c-.168-.01-.335-.01-.503-.01h-3.321L14.258 7.1a4.064 4.064 0 0 0-1.076 2.198 4.645 4.645 0 0 0 .546 3l5.274 9.393c.084.15.167.3.259.444.084.13.174.253.283.364.231.232.524.38.845.423.32.042.643-.024.922-.19a1.5 1.5 0 0 0 .621-.726c.125-.307.146-.642.066-.964a2.173 2.173 0 0 0-.165-.434c-.075-.155-.16-.303-.244-.453l-1.216-2.166h1.596c.168 0 .335 0 .503-.009.152-.009.3-.028.448-.07a1.47 1.47 0 0 0 .78-.541 1.539 1.539 0 0 0 .3-.916 1.539 1.539 0 0 0-.3-.916Z" />
   </svg>
 )
