@@ -1,6 +1,8 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { iosAppId, macAppId } from "@/app/config"
+import { ImageFlow } from "@/components/custom-mdx"
+import { AppStore } from "@/components/icons"
 
 export default function Guide01() {
     return (
@@ -59,7 +61,7 @@ export default function Guide01() {
                     </Link>
                     <Link href={`https://apps.apple.com/app/protato/id${macAppId}`}>
                         <Button className="text-sm" variant="outline">
-                             Download macOS app
+                            <AppStore/> Download macOS app
                         </Button>
                     </Link>
                 </div>
@@ -68,7 +70,7 @@ export default function Guide01() {
             <hr className="my-14 border-border/40" />
 
             {/* Steps */}
-            <div className="space-y-16">
+            <div className="space-y-12">
                 <Step
                     number="01"
                     title="Create a new project and choose a device model."
@@ -78,6 +80,7 @@ export default function Guide01() {
                         "For a first tutorial, the iPhone frame is the clearest path because it matches the most common App Store screenshot workflow.",
                     ]}
                 />
+              
                 <Step
                     number="02"
                     title="Set the canvas size and choose a background."
@@ -93,6 +96,15 @@ export default function Guide01() {
                         "Image — use a photo from your library as the backdrop",
                     ]}
                 />
+                <ImageFlow
+                    images={[
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/v1781172784/IMG_0876_jgh7dz.jpg',
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/v1781172785/IMG_0878_xgfi0o.jpg',
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/v1781172799/IMG_0877_qk0cp0.jpg'
+                    ]}
+                    rounded="3xl"
+                />
+                 
                 <Step
                     number="03"
                     title="Import your screenshot and fit it onto the device."
@@ -102,6 +114,15 @@ export default function Guide01() {
                         "This is where the project stops being a blank template and starts becoming a usable marketing asset.",
                     ]}
                 />
+
+                 <ImageFlow
+                    images={[
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/v1781180699/IMG_0883_h55pll.jpg',
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/v1781183148/IMG_0885_foznwn.jpg'
+                    ]}
+                    rounded="3xl"
+                />
+
                 <Step
                     number="04"
                     title="Add the headline and supporting copy."
@@ -117,6 +138,14 @@ export default function Guide01() {
                         "Style — choose from System, Rounded, Serif, or Monospaced fonts; adjust weight, alignment, and tracking",
                         "Layout — position the text on screen, scale it, rotate it, and choose whether it appears behind or in front of the device",
                     ]}
+                />
+                <ImageFlow
+                    images={[
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/v1781172793/IMG_0882_mvd3ei.jpg',
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/v1781172794/IMG_0880_pwafwf.jpg'
+                        
+                    ]}
+                    rounded="3xl"
                 />
                 <Step
                     number="05"
@@ -136,6 +165,13 @@ export default function Guide01() {
                         "Tap Export. The iOS Share Sheet appears — save to Photos, send in Messages, AirDrop to your Mac, or upload directly to App Store Connect.",
                         "This closes the loop on your first project. The same project can now grow into a full screenshot set, a localization pass, or an animated variant.",
                     ]}
+                />
+                 <ImageFlow
+                    images={[
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/v1781183148/IMG_0886_gx4tks.jpg',
+                        
+                    ]}
+                    rounded="3xl"
                 />
             </div>
 

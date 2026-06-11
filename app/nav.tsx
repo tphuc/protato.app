@@ -24,6 +24,7 @@ import {
 
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu"
+import { AppStore } from '@/components/icons'
 
 const Download = () => {
   return <DropdownMenu>
@@ -54,7 +55,7 @@ const Download = () => {
           className='font-medium'
 
         >
-          <span className='px-1'></span> Download macOS app
+          <AppStore/> Download macOS app
         </Link>
       </DropdownMenuItem>
     </DropdownMenuContent>

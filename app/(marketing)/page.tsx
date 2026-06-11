@@ -91,7 +91,7 @@ export default function Home() {
             <Link
               href={`https://apps.apple.com/app/protato/id${iosAppId}`}>
               <Button className="text-md fill-background rounded-full px-4">
-                <AppStore  /> Download iOS app
+               Download iOS app
               </Button>
             </Link>
 

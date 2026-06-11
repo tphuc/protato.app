@@ -6,7 +6,7 @@ import React, { FC } from 'react';
 import remarkGfm from 'remark-gfm';
 import { cn } from '@/lib/utils';
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { StyledImage } from './styled-image';
+import { StyledImage, ImageRounded } from './styled-image';
 import { AppStoreBtn } from './appstore-btn';
 
 
@@ -130,9 +130,10 @@ export function ImageGrid({ images, alt }: ImageGridProps) {
 type ImageFlowProps = {
 	images: string[];
 	alt?: string;
+	rounded?: ImageRounded;
 };
 
-function FlowImage({ src: _src, alt }: { src: string; alt?: string }) {
+function FlowImage({ src: _src, alt, rounded }: { src: string; alt?: string; rounded?: ImageRounded }) {
 	let src = _src?.startsWith('http') ? _src : `https://storage.googleapis.com/tubememo-public/rewritemate/${_src}`
 	return (
 		<Dialog >
@@ -142,6 +143,7 @@ function FlowImage({ src: _src, alt }: { src: string; alt?: string }) {
 						src={src}
 						alt={alt || ""}
 						width={440}
+						rounded={rounded || 'lg'}
 						style={{ width: "auto", height: 400 }}
 						className="object-cover h-[300px] w-auto border dark:border-none"
 					/>
@@ -162,14 +164,14 @@ function FlowImage({ src: _src, alt }: { src: string; alt?: string }) {
 	);
 }
 
-export function ImageFlow({ images, alt, ...props }: ImageFlowProps) {
+export function ImageFlow({ images, alt, rounded, ...props }: ImageFlowProps) {
 	return (
 		<div className='relative'>
 			<div className="
 					flex overflow-x-auto gap-4 py-2 snap-x snap-mandatory px-2
 				" >
 				{images?.map?.((url: any, idx: any) => (
-					<FlowImage key={idx} src={url} alt={alt} />
+					<FlowImage key={idx} src={url} alt={alt} rounded={rounded} />
 				))}
 
 			</div>
