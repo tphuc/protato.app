@@ -7,15 +7,15 @@ import Script from "next/script"
 import React from "react"
 
 export const metadata: Metadata = {
-    title: "How to Create Mockups for Your Product Hunt Launch | Protato Guide",
+    title: "How to Save and Reuse Mockup Scenes with Presets | Protato Guide",
     description:
-        "Create stunning device mockups for your Product Hunt launch. Stand out in the PH gallery with 3D device shots, multi-device scenes, and branded text overlays.",
+        "Save your full scene — devices, camera angle, lighting, materials, and text — as a reusable preset. Apply presets to new projects or share them with your team.",
     openGraph: {
         type: "article",
-        title: "How to Create Mockups for Your Product Hunt Launch | Protato Guide",
+        title: "How to Save and Reuse Mockup Scenes with Presets | Protato Guide",
         description:
-            "Create stunning device mockups for your Product Hunt launch. Stand out in the PH gallery with 3D device shots, multi-device scenes, and branded text overlays.",
-        images: [{ url: `https://protato.app/og?title=${encodeURIComponent("How to create mockups for your Product Hunt launch")}`, width: 1200, height: 630 }],
+            "Save your full scene — devices, camera angle, lighting, materials, and text — as a reusable preset. Apply presets to new projects or share them with your team.",
+        images: [{ url: `https://protato.app/og?title=${encodeURIComponent("How to save and reuse mockup scenes with presets")}`, width: 1200, height: 630 }],
     },
 }
 
@@ -23,7 +23,7 @@ export default function Guide08() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
 
-            <GuideBreadcrumb title="How to create mockups for your Product Hunt launch." />
+            <GuideBreadcrumb title="How to save and reuse mockup scenes with presets." />
 
             <div className="mb-4">
                 <span className="text-xs font-medium text-muted-foreground tracking-widest uppercase">
@@ -32,15 +32,15 @@ export default function Guide08() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-                How to create mockups for your Product Hunt launch.
+                How to save and reuse mockup scenes with presets.
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Product Hunt is visual-first. The first image in your gallery becomes the thumbnail in every feed, collection, and newsletter. A strong 3D device mockup can be the difference between a scroll-by and a click-through.
+                Once you dial in the perfect lighting, camera angle, and device arrangement, you never want to rebuild it from scratch. Scene presets capture the entire scene so you can apply it to any project instantly — and keep every release visually consistent.
             </p>
 
             <div className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">
-                <span className="font-medium text-foreground">6 steps</span>
+                <span className="font-medium text-foreground">5 steps</span>
                 <span className="w-1 h-1 rounded-full bg-muted-foreground/30" />
                 <span>iPhone & Mac</span>
             </div>
@@ -51,7 +51,7 @@ export default function Guide08() {
                         What you&apos;ll build
                     </p>
                     <p className="text-base leading-relaxed">
-                        A complete Product Hunt image set — a hero device mockup, a multi-device ecosystem shot, and branded text overlays — all sized and styled for the PH gallery.
+                        A reusable scene preset that saves your device setup, camera position, lighting, materials, and aspect ratio — ready to apply to any future project.
                     </p>
                 </div>
                 <div className="rounded-2xl border border-border/60 bg-secondary/20 p-6">
@@ -59,14 +59,14 @@ export default function Guide08() {
                         What you&apos;ll use
                     </p>
                     <p className="text-base leading-relaxed">
-                        Device model picker, multi-device scene, text overlays, aspect ratio presets, lighting and materials, and PNG/JPEG export.
+                        Scene presets panel, preset JSON import/export, auto-save, aspect ratio picker, and multi-device scene tools.
                     </p>
                 </div>
             </div>
 
             <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-2xl border border-border/60 bg-secondary/30 p-5">
                 <p className="text-sm text-muted-foreground flex-1">
-                    Product Hunt launches work best when you have 4-6 polished images ready. Open Protato to build your set, or use this guide as a planning reference.
+                    Scene presets are available now in Protato. Open the app to follow along — or use this guide as a reference for your preset workflow.
                 </p>
                 <div className="flex items-center gap-3 shrink-0">
                     <Link href={`https://apps.apple.com/app/protato/id${iosAppId}`}>
@@ -87,62 +87,59 @@ export default function Guide08() {
             <div className="space-y-16">
                 <Step
                     number="01"
-                    title="Understand Product Hunt's visual format."
+                    title="Understand what a preset captures."
                     description={[
-                        "Product Hunt displays your first gallery image as the thumbnail across the site — in the homepage feed, topic collections, emails, and social shares. This single image does most of the visual work.",
-                        "The gallery supports up to 10 images. They display in a 16:9 aspect ratio container, so design for 16:9 or 4:3 to avoid awkward cropping. Portrait 9:16 images get letterboxed, which wastes screen space.",
-                        "Browse successful launches in your category before you start. Notice how the top posts use device mockups, consistent branding, and clear text overlays that are readable at thumbnail size.",
+                        "A scene preset saves the complete state of your current project — not just the device model, but every setting that defines the visual. When you apply a preset later, Protato restores everything exactly as you saved it.",
+                    ]}
+                    items={[
+                        "Camera — FOV, distance, yaw, pitch, target offset",
+                        "Devices — for each device: model name, position, scale, rotation, all material values (metallic, roughness, emissive, clearcoat, specular)",
+                        "Aspect ratio — the canvas shape",
+                        "Lighting — the active preset and all per-light intensities",
                     ]}
                 />
                 <Step
                     number="02"
-                    title="Create a hero mockup that stands out."
+                    title="Set up your scene before saving."
                     description={[
-                        "Start with a single device — the iPhone that matches your target audience. Import your app screenshot onto the screen.",
-                        "Choose a bold, clean background. Gradients and mesh backgrounds work well because they add visual interest without distracting from the device. Avoid busy backgrounds that compete with the device at thumbnail size.",
-                        "Set the aspect ratio to 16:9 in the Ratio tab. This matches Product Hunt's gallery container and ensures your full composition is visible without cropping.",
-                        "Use the Dramatic lighting preset to make the device pop against the background. A darker background with strong rim lighting creates depth that reads well at small sizes.",
+                        "Presets are most useful when the scene is polished and repeatable. Before saving, make sure your scene represents a look you'll want to reuse:",
                     ]}
-                />
+                    items={[
+                        "Choose a lighting preset and adjust individual light intensities to your taste",
+                        "Position the camera at your preferred angle and FOV",
+                        "Select the aspect ratio that matches your target platform (9:16, 16:9, 1:1)",
+                        "Apply materials — metallic, roughness, clearcoat — to each device",
+                    ]}
+                >
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                        A preset replaces all current devices when applied, so save any work-in-progress separately before testing presets.
+                    </p>
+                </Step>
                 <Step
                     number="03"
-                    title="Add your tagline as a text overlay."
+                    title="Save the current scene as a preset."
                     description={[
-                        "Add a text element with your product's one-liner — the same phrase that appears under your logo on Product Hunt. Keep it to 4-6 words so it's readable at thumbnail size.",
-                        "Position the text in front of the device, below or beside it, depending on your composition. Use the Layout tab to fine-tune the placement.",
-                        "Choose a font weight that's bold enough to read at small sizes (Semibold or Bold). If your background is dark, use white text; if light, use dark text. Add a subtle gradient fill to the text for a premium look.",
+                        "In the Editor sidebar, find the Scene Presets section. Bundle presets are listed here by default, matched to your current aspect ratio.",
+                        "To save your current scene, locate the save option in the presets panel. Give it a descriptive name — something that captures the visual style or campaign name, like 'Product Hunt Launch — Dramatic' or 'SaaS Hero — Flat Light'.",
+                        "The preset is stored as a JSON file on your device. You can export it to share with your team or keep as a backup.",
                     ]}
                 />
                 <Step
                     number="04"
-                    title="Build a multi-device ecosystem shot."
+                    title="Apply a preset to a new project."
                     description={[
-                        "Product Hunt hunters respond well to ecosystem shots — iPhone + MacBook, or iPhone + iPad + MacBook. It signals that your product works across devices.",
-                        "Follow the multi-device workflow: add devices one at a time, position them with transform controls, and import a relevant screenshot onto each screen.",
-                        "Arrange the devices so they form a natural visual hierarchy — the primary device (usually iPhone) centered and slightly larger, with supporting devices angled toward it.",
-                        "Apply the same lighting preset and background across all devices for a cohesive look. The Studio preset works well for multi-device scenes because it lights everything evenly.",
+                        "Open a fresh project or navigate to an existing one. In the Scene Presets section, tap the preset you want to apply.",
+                        "When you apply a preset: all current devices are removed, new devices are created from the preset data, the camera resets to the preset position, and the aspect ratio changes to match the preset.",
+                        "After applying, the project window shows the new scene. From here, swap in your new screenshots via the Media tab, adjust the text overlay copy, and make any campaign-specific tweaks.",
                     ]}
                 />
                 <Step
                     number="05"
-                    title="Create supporting gallery images."
+                    title="Export and share presets as JSON files."
                     description={[
-                        "Beyond the hero shot and ecosystem image, prepare 2-4 supporting frames that show different aspects of your product:",
-                    ]}
-                    items={[
-                        "Feature close-up — zoom in on a key screen with a callout label",
-                        "Onboarding flow — 2-3 devices showing the first-time user experience",
-                        "Social proof — a mockup with a testimonial quote overlaid",
-                        "Comparison — side-by-side before/after or old/new",
-                    ]}
-                />
-                <Step
-                    number="06"
-                    title="Export and upload to Product Hunt."
-                    description={[
-                        "Export each image as JPEG (smaller file, faster loading) or PNG (higher quality). Use 2x quality scale for retina-sharp images.",
-                        "Name your files descriptively: product-name-hero.jpg, product-name-ecosystem.jpg, etc. Product Hunt doesn't require specific dimensions, but 1920 × 1080 px (16:9) is a safe target that looks good on all screens.",
-                        "When uploading to Product Hunt, order your images strategically: hero shot first (becomes the thumbnail), ecosystem shot second, feature details next. The first two images are visible without clicking into the gallery.",
+                        "You can export the current scene as a preset JSON file. This file contains all the device, camera, material, and aspect ratio data in a portable format.",
+                        "Share the JSON file with team members — they can import it into their Protato app and apply the exact same scene setup. This keeps multi-person campaigns visually consistent without manual recreation.",
+                        "To import, place the JSON file in the presets directory or use the import option in the Scene Presets panel. The imported preset appears alongside your saved and bundled presets.",
                     ]}
                 />
             </div>
@@ -154,23 +151,23 @@ export default function Guide08() {
                     Continue
                 </p>
                 <p className="text-lg font-semibold mb-6">
-                    Take your Product Hunt visuals further.
+                    Build on your preset workflow.
                 </p>
                 <div className="space-y-4">
                     <ContinueCard
-                        title="How to build a multi-device scene with iPhone, iPad, and MacBook."
-                        description="Ecosystem shots are the most upvoted type of PH gallery image. Master multi-device positioning and composition."
-                        href="/guides/multi-device-scene"
-                    />
-                    <ContinueCard
                         title="How to get professional 3D lighting on your mockup."
-                        description="Make your hero device pop with dramatic lighting that reads well at thumbnail size."
+                        description="Fine-tune the lighting settings that your preset captures — master Studio, Dramatic, and Flat presets with per-light adjustments."
                         href="/guides/studio-lighting-and-materials"
                     />
                     <ContinueCard
-                        title="How to create mockups for your SaaS landing page."
-                        description="Repurpose your PH hero shot as the hero image on your landing page — keep your visual consistent across channels."
-                        href="/guides/mockups-for-saas-landing-page"
+                        title="How to build a multi-device scene with iPhone, iPad, and MacBook."
+                        description="Multi-device setups are ideal candidates for presets. Build a reusable ecosystem shot once, apply it to every campaign."
+                        href="/guides/multi-device-scene"
+                    />
+                    <ContinueCard
+                        title="How to add text overlays and branding to your mockups."
+                        description="Add text layers that your preset can carry forward — headlines, callouts, and branding that stay consistent across projects."
+                        href="/guides/text-overlays-and-branding"
                     />
                 </div>
             </div>
@@ -181,17 +178,16 @@ export default function Guide08() {
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "HowTo",
-                        "name": "How to Create Mockups for Your Product Hunt Launch",
-                        "description": "Create stunning device mockups for your Product Hunt launch with 3D device shots, multi-device scenes, and branded text overlays.",
-                        "totalTime": "PT20M",
+                        "name": "How to Save and Reuse Mockup Scenes with Presets",
+                        "description": "Save your full scene — devices, camera angle, lighting, materials, and text — as a reusable preset. Apply presets to new projects or share them with your team.",
+                        "totalTime": "PT15M",
                         "tool": { "@type": "HowToTool", "name": "Protato" },
                         "step": [
-                            { "@type": "HowToStep", "position": 1, "name": "Understand Product Hunt's visual format.", "text": "Design for 16:9 aspect ratio. Your first gallery image becomes the thumbnail across the site, feeds, and emails." },
-                            { "@type": "HowToStep", "position": 2, "name": "Create a hero mockup that stands out.", "text": "Set aspect ratio to 16:9. Use a gradient or mesh background with the Dramatic lighting preset for depth at thumbnail size." },
-                            { "@type": "HowToStep", "position": 3, "name": "Add your tagline as a text overlay.", "text": "Add a 4-6 word text element with your product one-liner. Use bold weight, high contrast, and position in front of the device." },
-                            { "@type": "HowToStep", "position": 4, "name": "Build a multi-device ecosystem shot.", "text": "Add iPhone plus MacBook or iPad. Position with transform controls. Apply consistent lighting and background across all devices." },
-                            { "@type": "HowToStep", "position": 5, "name": "Create supporting gallery images.", "text": "Prepare 2-4 additional frames: feature close-ups, onboarding flow, social proof, or before/after comparisons." },
-                            { "@type": "HowToStep", "position": 6, "name": "Export and upload to Product Hunt.", "text": "Export as JPEG or PNG at 2x quality. Target 1920x1080 px. Order images with hero first, ecosystem second, features next." }
+                            { "@type": "HowToStep", "position": 1, "name": "Understand what a preset captures.", "text": "A preset captures camera position, devices with materials, aspect ratio, and lighting. When applied, it restores the full scene state." },
+                            { "@type": "HowToStep", "position": 2, "name": "Set up your scene before saving.", "text": "Polish your lighting, camera angle, aspect ratio, and device materials before saving. A preset is most useful when the scene is refined and repeatable." },
+                            { "@type": "HowToStep", "position": 3, "name": "Save the current scene as a preset.", "text": "Use the Scene Presets section in the Editor sidebar to save your scene. Give it a descriptive name matching the visual style or campaign." },
+                            { "@type": "HowToStep", "position": 4, "name": "Apply a preset to a new project.", "text": "Open a project and tap a preset to apply it. All devices are replaced, camera and aspect ratio reset to the saved values, and materials are restored." },
+                            { "@type": "HowToStep", "position": 5, "name": "Export and share presets as JSON files.", "text": "Export the scene as a JSON file and share it with your team. Import the file to apply the same scene setup across multiple projects." }
                         ]
                     })
                 }}

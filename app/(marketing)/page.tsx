@@ -8,6 +8,7 @@ import Footer2 from "./footer";
 import { iosAppId, macAppId } from "../config";
 import Backlinks from "./backlinks";
 import UseCases from "./use-cases";
+import Guides from "./guides";
 
 const roles = [
   {
@@ -189,80 +190,11 @@ export default function Home() {
       </div>
 
 
-      <section className="bg-gradient-to-b from-secondary to-secondary py-24">
-        <div className="mx-auto max-w-5xl px-6">
-          <div className="max-w-2xl mb-16">
-            <p className="text-sm font-medium text-muted-foreground tracking-widest uppercase mb-4">
-              Guides
-            </p>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
-              Step-by-step walkthroughs
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground max-w-lg">
-              From your first mockup to launch-ready assets — follow along with your Protato project open.
-            </p>
-          </div>
-
-          <div className="grid gap-x-6 gap-y-6 md:grid-cols-3">
-            <Link
-              href="/guides/your-first-app-store-screenshot"
-              className="group block rounded-3xl bg-background p-6 hover:bg-background/80 transition-colors"
-            >
-              <p className="text-xs font-medium text-muted-foreground tracking-widest uppercase mb-3">
-                Getting started
-              </p>
-              <h3 className="text-xl font-semibold tracking-tight group-hover:text-foreground transition-colors">
-                Your first App Store screenshot
-              </h3>
-              <p className="mt-3 text-muted-foreground text-base leading-relaxed">
-                Create a device mockup with your screenshot, add a background and headline, and export a finished image in six steps.
-              </p>
-            </Link>
-
-            <Link
-              href="/guides/mockups-for-product-hunt"
-              className="group block rounded-3xl bg-background p-6 hover:bg-background/80 transition-colors"
-            >
-              <p className="text-xs font-medium text-muted-foreground tracking-widest uppercase mb-3">
-                Launch
-              </p>
-              <h3 className="text-xl font-semibold tracking-tight group-hover:text-foreground transition-colors">
-                Product Hunt launch mockups
-              </h3>
-              <p className="mt-3 text-muted-foreground text-base leading-relaxed">
-                Stand out on Product Hunt with 3D device mockups, multi-device ecosystem shots, and branded gallery images.
-              </p>
-            </Link>
-
-            <Link
-              href="/guides/make-app-promo-video"
-              className="group block rounded-3xl bg-background p-6 hover:bg-background/80 transition-colors"
-            >
-              <p className="text-xs font-medium text-muted-foreground tracking-widest uppercase mb-3">
-                Video
-              </p>
-              <h3 className="text-xl font-semibold tracking-tight group-hover:text-foreground transition-colors">
-                App promo video in minutes
-              </h3>
-              <p className="mt-3 text-muted-foreground text-base leading-relaxed">
-                Create a cinematic promo video with keyframe animation, camera orbits, screen recordings, and timed text overlays.
-              </p>
-            </Link>
-          </div>
-
-          <div className="mt-16 text-center">
-            <Link
-              href="/guides"
-              className="inline-flex items-center gap-2 text-lg font-medium text-blue-500 hover:text-blue-600 transition-colors"
-            >
-              Browse all 18 guides
-              <span className="text-sm" aria-hidden="true">→</span>
-            </Link>
-          </div>
-        </div>
-      </section>
+     
 
       <UseCases />
+
+      <Guides />
       <PricingCard />
       {/* <PricingPlansPage /> */}
       <FaqSection />

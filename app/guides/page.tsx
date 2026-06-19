@@ -59,9 +59,9 @@ const guides = [
     },
     {
         number: "08",
-        title: "How to create mockups for your Product Hunt launch",
-        description: "Stand out on Product Hunt with 3D device mockups, multi-device ecosystem shots, and branded gallery images that drive clicks.",
-        steps: 6,
+        title: "How to save and reuse mockup scenes with presets",
+        description: "Save your full scene — devices, camera angle, lighting, materials, and text — as a preset. Reuse it across campaigns or share as JSON with your team.",
+        steps: 5,
         device: "iPhone & Mac",
         slug: "mockups-for-product-hunt",
     },
