@@ -1,115 +1,192 @@
+"use client"
+
+import { useState } from "react"
 import Link from "next/link"
-import { iosAppId } from "../config"
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion"
 
 const useCases = [
-  {
-    title: "iPhone mockup generator and device frames",
-    description:
-      "Turn raw app screenshots into framed iPhone, iPad, and MacBook marketing visuals without leaving the project. Swap devices, colors, and angles in seconds.",
-    slug: "iphone-mockup-generator",
-  },
-  {
-    title: "Multi-device scene composer",
-    description:
-      "Place iPhone, iPad, and MacBook in a single scene to create rich product shots, comparison visuals, or ecosystem hero images — all in real time.",
-    slug: "multi-device-scene-composer",
-  },
-  {
-    title: "App Store preview video maker",
-    description:
-      "Animate camera moves, record keyframes, and export smooth product reveal clips directly from your mockup scene — no video editing skills required.",
-    slug: "app-store-preview-video-maker",
-  },
-  {
-    title: "Studio lighting presets for product shots",
-    description:
-      "Switch between Studio, Dramatic, and Flat lighting with one tap. Fine-tune each preset to match your brand's visual tone and product aesthetic.",
-    slug: "studio-lighting-presets",
-  },
-  {
-    title: "High-res export for any channel",
-    description:
-      "Export images up to 4K at 1x, 2x, or 3x density and videos at 720p, 1080p, or 1440p — ready for App Store, social media, pitch decks, or print.",
-    slug: "high-res-export",
-  },
-  {
-    title: "PBR material and reflection control",
-    description:
-      "Adjust metallic, roughness, clearcoat, and specular on every device model. Choose from Glossy, Matte, or Default presets for photorealistic results.",
-    slug: "material-and-reflection-control",
-  },
-  {
-    title: "Scene presets and project templates",
-    description:
-      "Save and reuse lighting, camera, and device configurations across projects. Keep your brand look consistent from one release to the next.",
-    slug: "scene-presets-and-templates",
-  },
-  {
-    title: "Animation timeline and keyframe editing",
-    description:
-      "Record camera moves, layer keyframes with 5 easing curves, and create cinematic product animations that bring your mockups to life.",
-    slug: "animation-timeline-keyframing",
-  },
-  {
-    title: "iCloud sync and cross-device workflow",
-    description:
-      "Start a mockup on your iPhone during a commute, open it on your Mac for detailed editing, and export from either device — projects sync seamlessly.",
-    slug: "icloud-sync-cross-device",
-  },
-  {
-    title: "Offline mockup creation",
-    description:
-      "Create and export full-quality mockups without an internet connection. Your screenshots and projects never leave your device unless you choose to sync.",
-    slug: "offline-mockup-creation",
-  },
+    {
+        label: "Devices",
+        title: "Device frames & screen media",
+        description:
+            "Swap between 18+ iPhone, iPad, and MacBook models in a single tap. Load your screenshots or videos onto any device screen — it curves to match the display with realistic reflections and perspective.",
+        slug: "device-frames",
+          imageUrl: "/20260619_1743.avif",
+      
+    },
+    {
+        label: "Materials",
+        title: "Material & reflection control",
+        description:
+            "Adjust metallic, roughness, clearcoat, and specular on every device independently. Switch between Glossy, Matte, or Default presets and see environment reflections update in real time on the device glass.",
+        slug: "material-reflection",
+        imageUrl: "/20260620_0112.avif",
+      
+    },
+    {
+        label: "Text",
+        title: "Text overlays & typography",
+        description:
+            "Add headlines, callouts, and branding behind or in front of your device. Style fonts, apply gradient fills, add stroke outlines, and adjust opacity, scale, and position — all without leaving the canvas.",
+        slug: "text-overlays",
+        imageUrl: "/20260619_2044.avif",
+    },
+    {
+        label: "Animation",
+        title: "Keyframe animation & motion",
+        description:
+            "Record camera moves and device transforms on a frame-accurate timeline. Add keyframes with easing curves, layer synchronized media clips, and export a smooth product reveal video at up to 1440p.",
+        slug: "animation-motion",
+        imageUrl: "/20260620_0024.avif",
+    },
+    // {
+    //     label: "Presets",
+    //     title: "Scene presets & templates",
+    //     description:
+    //         "Save the full scene — devices, camera angle, lighting, materials, and text — as a named preset. Reuse it across campaigns or share presets as JSON files with your team for consistent launch visuals.",
+    //     slug: "scene-presets",
+    //     imageUrl: "/20260619_1744.jpeg",
+    // },
+    {
+        label: "Background",
+        title: "Backgrounds & canvas styling",
+        description:
+            "Choose from Solid, Gradient, Mesh, or Image backgrounds to match your brand identity. The gradient editor supports multi-stop color blends with directional control. Set to None for transparent PNG export with alpha.",
+        slug: "background-styling",
+        imageUrl: "/20260620_0031.avif",
+    },
+    {
+        label: "Camera",
+        title: "Camera framing & composition",
+        description:
+            "Orbit around your scene, pinch to zoom, and roll to find the perfect angle. Adjust the Field of View from telephoto (cinematic) to wide-angle (dramatic). Lock aspect ratio to 9:16, 16:9, or 1:1 for your target platform.",
+        slug: "camera-framing",
+        imageUrl: "/20260620_0036.avif",
+    },
 ]
 
 export default function UseCases() {
-  return (
-    <section className="bg-background py-24">
-      <div className="mx-auto max-w-5xl px-6">
-        <div className="max-w-2xl mb-16">
-          <p className="text-sm font-medium text-muted-foreground tracking-widest uppercase mb-4">
-            Feature paths
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
-            Jump straight into the workflows that matter to you
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-lg">
-            Each use case matches a clear intent — pick the one that fits what you are building right now.
-          </p>
-        </div>
+    const [activeIndex, setActiveIndex] = useState(0)
 
-        <div className="grid gap-x-8 gap-y-10 md:grid-cols-2">
-          {useCases.map((useCase) => (
-            <Link
-              key={useCase.slug}
-              href={`/blog/${useCase.slug}`}
-              className="group block rounded-2xl border border-border/60 bg-secondary/30 p-6 hover:bg-secondary/60 hover:border-border transition-colors"
-            >
-              <p className="text-xs font-medium text-muted-foreground tracking-widest uppercase mb-3">
-                Feature
-              </p>
-              <h3 className="text-xl font-semibold tracking-tight group-hover:text-foreground transition-colors">
-                {useCase.title}
-              </h3>
-              <p className="mt-3 text-muted-foreground text-base leading-relaxed">
-                {useCase.description}
-              </p>
-            </Link>
-          ))}
-        </div>
+    return (
+        <section className="bg-secondary py-24">
+            <div className="mx-auto max-w-6xl px-6">
+                <div className="max-w-2xl mb-16">
+                    <p className="text-sm font-medium text-muted-foreground tracking-widest uppercase mb-4">
+                        Use cases
+                    </p>
+                    <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
+                        Workflows for every product showcase
+                    </h2>
+                    <p className="mt-4 text-lg text-muted-foreground max-w-lg">
+                        Device framing, materials, text, animation, backgrounds, and camera — all in one app.
+                    </p>
+                </div>
 
-        <div className="mt-16 text-center">
-          <Link
-            href={`https://apps.apple.com/app/protato/id${iosAppId}`}
-            className="inline-flex items-center gap-2 text-lg font-medium text-blue-500 hover:text-blue-600 transition-colors"
-          >
-            Start with the iPhone mockup generator
-            <span className="text-sm" aria-hidden="true">→</span>
-          </Link>
-        </div>
-      </div>
-    </section>
-  )
+                {/* Desktop: side-by-side */}
+                <div className="hidden md:flex bg-background rounded-3xl  gap-4 items-start">
+                    <div className="w-[380px] p-4 md:p-10 shrink-0 divide-y divide-border/40">
+                        {useCases.map((item, i) => (
+                            <button
+                                key={item.slug}
+                                onClick={() => setActiveIndex(i)}
+                                className="w-full text-left py-6 transition-all duration-300 group"
+                            >
+                                <div
+                                    className={`transition-opacity duration-300 ${
+                                        activeIndex === i
+                                            ? "opacity-100"
+                                            : "opacity-40 hover:opacity-60"
+                                    }`}
+                                >
+                                    <p className="text-xs font-medium text-muted-foreground tracking-widest uppercase mb-1">
+                                        {item.label}
+                                    </p>
+                                    <h3 className="text-xl font-semibold tracking-tight">
+                                        {item.title}
+                                    </h3>
+                                    {activeIndex === i && (
+                                        <p className="mt-3 text-muted-foreground text-base leading-relaxed">
+                                            {item.description}
+                                        </p>
+                                    )}
+                                </div>
+                            </button>
+                        ))}
+                    </div>
+
+                    <div className="flex-1 flex items-center justify-center rounded-3xl overflow-hidden aspect-square relative">
+                        {useCases.map((item, i) => (
+                            <img
+                                key={item.slug}
+                                src={item.imageUrl}
+                                alt={item.title}
+                                style={{objectFit:"contain"}}
+                                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                                    i === activeIndex
+                                        ? "opacity-100"
+                                        : "opacity-0 pointer-events-none"
+                                }`}
+                            />
+                        ))}
+                    </div>
+                </div>
+
+                {/* Mobile: shadcn accordion */}
+                <div className="md:hidden space-y-3">
+                    <Accordion type="single" collapsible defaultValue="0" className="bg-background rounded-3xl">
+                        {useCases.map((item, i) => (
+                            <AccordionItem
+                                key={item.slug}
+                                value={String(i)}
+                                className="border-none rounded-2xl overflow-hidden"
+                            >
+                                <AccordionTrigger className="px-5 py-5 hover:no-underline [&[data-state=open]>svg]:text-foreground [&>svg]:size-5">
+                                    <div className="flex-1 text-left">
+                                        <p className="text-xs font-medium text-muted-foreground tracking-widest uppercase mb-0.5">
+                                            {item.label}
+                                        </p>
+                                        <h3 className="text-lg font-semibold tracking-tight">
+                                            {item.title}
+                                        </h3>
+                                    </div>
+                                </AccordionTrigger>
+                                <AccordionContent className="pb-0">
+                                    <div className="px-5 pb-5 space-y-4">
+                                        <div className="rounded-xl overflow-hidden bg-secondary/30 relative">
+                                            <img
+                                                src={item.imageUrl}
+                                                alt={item.title}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        </div>
+                                        <p className="text-muted-foreground text-base leading-relaxed">
+                                            {item.description}
+                                        </p>
+                                    </div>
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
+                </div>
+
+                <div className="mt-16 text-center">
+                    <Link
+                        href="/guides"
+                        className="inline-flex bg-background px-4 py-2 rounded-full items-center gap-2 text-lg font-medium text-blue-500 hover:text-blue-600 transition-colors"
+                    >
+                        Explore all features
+                        <span className="text-md font-medium" aria-hidden="true">
+                            →
+                        </span>
+                    </Link>
+                </div>
+            </div>
+        </section>
+    )
 }

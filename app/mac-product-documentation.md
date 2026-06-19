@@ -52,7 +52,7 @@ The canvas area renders the scene in a layered Z-stack:
 **Timeline**:
 - Appears at the bottom of the canvas when `isAnimationMode == true`
 - Animated with `.spring()` transition, slides in from bottom edge
-- Contains: `TimelineHeader` (add block/clip, undo/redo, zoom controls), `TimeRulerView` (adaptive ticks), vertically scrollable track list with `TimelineSidebar` (device labels), `PlayheadView` (orange draggable playhead), per-device `AnimationBlock` tracks + `MediaClip` bars + `TextAnimationTrackView`
+- Contains: `TimelineHeader` (Animate View/clip, undo/redo, zoom controls), `TimeRulerView` (adaptive ticks), vertically scrollable track list with `TimelineSidebar` (device labels), `PlayheadView` (orange draggable playhead), per-device `AnimationBlock` tracks + `MediaClip` bars + `TextAnimationTrackView`
 
 **Export Overlay**:
 - When `animationController.isExporting == true`, a full-screen modal dims the canvas (80% black) and shows a linear `ProgressView` with percentage and "Please do not close" warning

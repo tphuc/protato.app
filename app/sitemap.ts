@@ -1,17 +1,43 @@
 
+import fs from "fs"
+import path from "path"
 import { getBlogPosts } from '@/lib/blog';
 import { POSTS_PER_PAGE } from './const';
 export const baseUrl = 'https://protato.app';
+
+const GUIDE_DIR = path.join(process.cwd(), "app/guides")
+
+const NON_GUIDE_DIRS = new Set([
+	"guide-breadcrumb.tsx",
+	"guide-sidebar.tsx",
+	"layout.tsx",
+	"page.tsx",
+])
+
+function getGuideSlugs(): string[] {
+	const entries = fs.readdirSync(GUIDE_DIR, { withFileTypes: true })
+	return entries
+		.filter((e) => e.isDirectory() && !NON_GUIDE_DIRS.has(e.name))
+		.map((e) => e.name)
+}
 
 export default async function sitemap() {
 	console.log('🛠️ [SITEMAP] Generating sitemap...');
 
 	// Static routes
-	const routes = ['', '/blog'].map((route) => ({
+	const routes = ['', '/blog', '/guides'].map((route) => ({
 		url: `${baseUrl}${route}`,
 		lastModified: new Date().toISOString().split('T')[0],
 	}));
 	console.log('✅ [SITEMAP] Static routes:', routes);
+
+	// Guide pages — dynamically read from app/guides/ directories
+	const guideSlugs = getGuideSlugs()
+	const guides = guideSlugs.map((slug) => ({
+		url: `${baseUrl}/guides/${slug}`,
+		lastModified: new Date().toISOString().split('T')[0],
+	}));
+	console.log('✅ [SITEMAP] Guide pages:', guides.length);
 
 	// Blog posts
 	let blogs: any[] = [];
@@ -38,7 +64,7 @@ export default async function sitemap() {
 		console.error('❌ [SITEMAP] Failed to load blog posts:', err);
 	}
 
-	const all = [...routes, ...blogs, ...paginatedBlogRoutes];
+	const all = [...routes, ...blogs, ...paginatedBlogRoutes, ...guides];
 	console.log('✅ [SITEMAP] Total entries:', all.length);
 
 	return all;

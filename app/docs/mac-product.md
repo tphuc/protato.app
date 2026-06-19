@@ -189,7 +189,7 @@ In the toolbar, there's a segmented switch:
 - The timeline has:
   - **Play/Pause button** to preview your animation
   - **Time ruler** with tick marks showing seconds
-  - **Add Block button** — captures the current state (camera angle, phone position) at that moment
+  - **Animate View button** — captures the current state (camera angle, phone position) at that moment
   - **Add Clip button** — for video segments playing on the phone screen
   - **Undo/Redo buttons** — just in case
   - **Zoom slider** — zoom in/out on the timeline itself

@@ -1,10 +1,28 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { iosAppId, macAppId } from "@/app/config"
+import type { Metadata } from "next"
+import GuideBreadcrumb from "../guide-breadcrumb"
+import Script from "next/script"
+
+export const metadata: Metadata = {
+    title: "How to Create a Product Reveal Video with Keyframe Animation | Protato Guide",
+    description:
+        "Learn how to create a cinematic product reveal animation in Protato. Set keyframes, animate camera orbits, and export 4K video — no video editor needed.",
+    openGraph: {
+        type: "article",
+        title: "How to Create a Product Reveal Video with Keyframe Animation | Protato Guide",
+        description:
+            "Learn how to create a cinematic product reveal animation in Protato. Set keyframes, animate camera orbits, and export 4K video — no video editor needed.",
+        images: [{ url: `https://protato.app/og?title=${encodeURIComponent("How to create a product reveal video with keyframe animation")}`, width: 1200, height: 630 }],
+    },
+}
 
 export default function Guide03() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+
+            <GuideBreadcrumb title="How to create a product reveal video with keyframe animation." />
 
             <div className="mb-4">
                 <span className="text-xs font-medium text-muted-foreground tracking-widest uppercase">
@@ -40,7 +58,7 @@ export default function Guide03() {
                         What you&apos;ll use
                     </p>
                     <p className="text-base leading-relaxed">
-                        Animation mode toggle, timeline panel, keyframe (Add Block) button, play/pause preview, camera orbit, and video export.
+                        Animation mode toggle, timeline panel, keyframe (Animate View) button, play/pause preview, camera orbit, and video export.
                     </p>
                 </div>
             </div>
@@ -79,7 +97,7 @@ export default function Guide03() {
                     title="Switch to Animation mode."
                     description={[
                         "Tap the toolbar toggle in the center and switch from Photo to Animation. A timeline panel appears at the bottom of the canvas.",
-                        "The timeline shows a time ruler with tick marks, a play/pause button, an Add Block button (keyframe), an Add Clip button (for video-on-screen), and undo/redo arrows.",
+                        "The timeline shows a time ruler with tick marks, a play/pause button, an Animate View button (keyframe), an Add Clip button (for video-on-screen), and undo/redo arrows.",
                     ]}
                 />
                 <Step
@@ -87,7 +105,7 @@ export default function Guide03() {
                     title="Set your opening keyframe."
                     description={[
                         "Position the camera where you want the animation to start — for example, zoomed out to show the full device from a slight angle.",
-                        "Tap Add Block on the timeline. This captures the current camera position and device layout as the first keyframe. A small diamond appears on the timeline at the 0-second mark.",
+                        "Tap Animate View on the timeline. This captures the current camera position and device layout as the first keyframe. A small diamond appears on the timeline at the 0-second mark.",
                     ]}
                 />
                 <Step
@@ -95,7 +113,7 @@ export default function Guide03() {
                     title="Move the playhead and set a second keyframe."
                     description={[
                         "Drag the playhead (the red line on the timeline) forward to about the 2-second mark. Orbit and zoom the camera to a new position — closer to the device, or a different angle that reveals the screen.",
-                        "Tap Add Block again. Protato automatically creates a smooth animated transition between the first and second keyframes.",
+                        "Tap Animate View again. Protato automatically creates a smooth animated transition between the first and second keyframes.",
                         "For more complex animations, repeat this process — add 3, 4, or more keyframes to create a camera path that orbits, zooms, and reveals different parts of your scene.",
                     ]}
                 />
@@ -146,6 +164,58 @@ export default function Guide03() {
                     />
                 </div>
             </div>
+
+            <Script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "HowTo",
+                        "name": "How to create a product reveal video with keyframe animation.",
+                        "description": "A short product reveal animation — the camera orbits around a device with smooth motion, synced to a timeline, exported as a video file.",
+                        "totalTime": "PT15M",
+                        "tool": { "@type": "HowToTool", "name": "Protato" },
+                        "step": [
+                            {
+                                "@type": "HowToStep",
+                                "position": 1,
+                                "name": "Set up your scene in Photo mode first.",
+                                "text": "Build your mockup — choose a device, import your screenshot, set the background, adjust lighting, and add text overlays. Everything carries over to Animation mode."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 2,
+                                "name": "Switch to Animation mode.",
+                                "text": "Tap the toolbar toggle and switch from Photo to Animation. A timeline panel appears at the bottom of the canvas with a time ruler, play/pause, and Animate View button."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 3,
+                                "name": "Set your opening keyframe.",
+                                "text": "Position the camera where you want the animation to start. Tap Animate View on the timeline to capture the current camera position as the first keyframe."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 4,
+                                "name": "Move the playhead and set a second keyframe.",
+                                "text": "Drag the playhead forward, orbit and zoom the camera to a new position, then tap Animate View again. Protato creates a smooth animated transition between keyframes."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 5,
+                                "name": "Preview and fine-tune the animation.",
+                                "text": "Tap Play to preview. Adjust timing by dragging keyframe diamonds on the timeline. Use the zoom slider for a closer view. On Mac, adjust easing curves for natural motion."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 6,
+                                "name": "Export the video.",
+                                "text": "Tap Export, choose resolution (720p, 1080p, or 1440p), and wait for the render to complete. Save or share the polished product reveal clip."
+                            }
+                        ]
+                    })
+                }}
+            />
 
         </main>
     )

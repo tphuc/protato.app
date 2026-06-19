@@ -64,9 +64,9 @@ Timeline appears at the bottom of the canvas.
 Text overlay: "animation mode. hidden in plain sight."
 
 [0:10-0:20] Adding keyframes
-Cursor clicks Add Block — first keyframe at 0s.
+Cursor clicks Animate View — first keyframe at 0s.
 Cursor orbits the camera view to a new angle.
-Clicks Add Block again — second keyframe at 2s.
+Clicks Animate View again — second keyframe at 2s.
 Timeline shows two diamonds connected by a line.
 
 [0:20-0:25] Preview

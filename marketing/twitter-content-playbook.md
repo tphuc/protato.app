@@ -1,296 +1,481 @@
 # Twitter Content Playbook — Protato
 
 **Target audience**: Indie builders, solo founders, UI/UX enthusiasts
-**Voice**: Peer who ships. Not a brand. Not a vendor.
-**Goal**: Make Protato the default mockup tool the builder crowd recommends to each other.
+**Voice**: Someone who noticed something real and is sharing it simply.
+**Goal**: Make Protato feel like a discovery, not a pitch.
+
+---
+
+## The Structure That Works
+
+```
+Observation
+  ↓
+Unexpected insight
+  ↓
+Short conclusion
+```
 
 ---
 
 ## Content Buckets
 
-### Bucket 1: The Build Log (40%)
+### Bucket 1: Observations (35%)
 
-You are building Protato in public. This is the highest trust content you can post. Indie builders follow other builders. Show the work.
+Not build logs. Not feature announcements.
+Something you noticed while building.
 
-| Tweet Idea | Why It Works |
-|---|---|
-| "just shipped animation timeline v2 — keyframe easing curves. before: linear only. after: ease-in, ease-out, custom bezier. feels 10x smoother." | Builders love seeing iteration. Shows you care about craft. |
-| "the device picker in protato now has 18 models. trying to decide what to add next — ipad mini or apple watch?" | Invites participation and makes people feel heard. |
-| "spent the weekend rewriting the lighting engine. went from 3 presets to per-light sliders + IBL. the difference is night and day." | Technical depth. Positions you as someone who builds quality things. |
-| "shipped metal compute shader compositing today. 5 render layers merged in real time. feels like witchcraft on an M1." | Appeals to the technical crowd. Shows native performance. |
-| "design decision: default scene should ship with dramatic lighting, not flat. first impression matters more than neutrality." | Design thinking. Relatable to UI/UX folks. |
-| "bug i fixed today: shadow opacity was resetting when switching devices. tiny thing but drove me crazy." | Humanizes you. Builders relate to shipping fixes. |
-| "protato is still just me. no team. no funding. just a mac app and a lot of late nights." | Vulnerability builds connection. Indie devs root for solo founders. |
+**Tweet Ideas:**
 
-### Bucket 2: Before & After (25%)
+I noticed something about mockup tools.
 
-The most reliable format on builder Twitter. Show the transformation.
+Most of them give you one camera angle.
+Frontal. Flat. Static.
 
-| Tweet Idea | Visual | Copy |
-|---|---|---|
-| Raw screenshot → Protato mockup | Side-by-side image | "before: flat screenshot on a white background. after: same screenshot, 3d iphone frame, studio lighting, mesh gradient. 60 seconds of work." |
-| Old mockup tool → Protato | Comparison of outputs | "my mockups before protato vs after. same screenshot. same app. completely different feeling." |
-| Multi-device flex | Single image: iPhone + iPad + MacBook | "one scene. three devices. one export. protato does this in 5 minutes." |
-| No text → With text | Same mockup, before/after adding headline | "text makes the mockup. headline in front, subheading behind the device. layered depth in 2 taps." |
-| Flat lighting → Dramatic | Same scene with different presets | "the same screenshot under 3 lighting presets. studio (clean), dramatic (bold), flat (soft). one tap each." |
+Every screenshot ends up looking the same.
 
-### Bucket 3: Hot Takes & Opinions (15%)
+Protato lets you orbit around the device freely.
+Same screenshot. Completely different feel.
 
-Position Protato's design philosophy. Take sides. Builders respect conviction.
+---
 
-| Tweet Idea |
-|---|
-| "hot take: most app screenshots look bad because the mockup is an afterthought. you spent 6 months on the app. spend 6 minutes on the screenshots." |
-| "every indie dev should own exactly one mockup tool. not figma + photoshop + 3 browser tabs. one tool that does device frames, lighting, text, and export. thats it." |
-| "you don't need a designer for app store screenshots. you need a screenshot on a 3d phone with decent lighting. thats it. protato exists for this reason." |
-| "the best mockup tool is the one you dont have to think about. open → drag → export. if it takes more than 3 steps, it's too many." |
-| "mockups should look like the product, not like a template. generic device frames with no lighting kill trust before the user reads a word." |
-| "design tools should adapt to you, not the other way around. protato has no layers panel. no artboards. no learning curve. just a device and your screenshot." |
+Three lighting presets in Protato:
+Studio. Dramatic. Flat.
 
-### Bucket 4: Tips & Workflow (15%)
+Most people tap Dramatic once and never look back.
 
-Teach something useful. These get saved and shared.
+The other two exist for the people who care.
 
-| Tweet Idea |
-|---|
-| "protato tip: use the dramatic lighting preset + a dark mesh background for app store screenshots. the contrast makes your UI pop without extra work." |
-| "protato tip: put your headline in front of the phone and your subhead behind it. creates instant depth. takes 2 seconds in the text layout tab." |
-| "protato tip: export at 3x even if you only need 1x. you can always downscale. you cant upscale without losing quality." |
-| "protato tip: use the grid overlay (⊞ icon) to center your device. your composition will look 10x more intentional." |
-| "protato tip: add a macbook to your iphone mockup scene. even if the macbook screen is blank. the ecosystem visual sells the product better." |
-| "protato tip: the animation timeline works for subtle camera moves too. a 3-second orbit around your device feels cinematic with almost no effort." |
-| "protato tip: duplicate a text element instead of creating a new one from scratch. it preserves your font, color, and style settings." |
+I like that kind of design.
 
-### Bucket 5: Community & Shoutouts (5%)
+---
 
-Amplify people using Protato. This is the most powerful long-term content.
+I spent months adding features to Protato.
 
-| Tweet Idea |
-|---|
-| "@user just shipped their app using protato mockups. this looks incredible. → link" |
-| "love seeing what protato users are building. tagged #madewithprotato if you want to share yours." |
-| "someone told me protato saved them 3 hours on their app store submission. that's the whole reason i built this." |
+Growth started when I made the first 30 seconds obvious.
+
+Open → drag → export.
+
+Everything else is supporting that.
+
+---
+
+I rebuilt the lighting engine 4 times.
+
+Users never asked for it.
+
+But the output kept bugging me.
+
+Most of building software is fixing things nobody asked for.
+
+---
+
+Every mockup tool asks you to create a "new project."
+
+Protato opens to a ready scene.
+
+Because the hardest part of any creative tool is starting.
+
+That should be the tool's job to solve.
+
+---
+
+### Bucket 2: Before / After (25%)
+
+The most reliable format. But not "before was bad, after is good."
+Let the reader feel the gap.
+
+**Tweet Ideas:**
+
+Before:
+Open Figma. Find a device frame. Resize the screenshot. Fix the perspective. Add a background. Export at the wrong size. Start over.
+
+After:
+Open Protato. Drag screenshot onto the device. Tap export.
+
+Speed is a feature.
+
+---
+
+Same screenshot.
+Flat lighting vs Dramatic.
+
+One looks like a template.
+The other looks like Apple's marketing.
+
+2 taps.
+
+---
+
+Multi-device scene before:
+Composite in Photoshop. Pray the lighting matches. Export.
+
+Multi-device scene after:
+Add iPhone. Add iPad. Add MacBook. One lighting preset.
+
+5 minutes.
+
+---
+
+A user showed me their landing page.
+
+The hero was a Protato mockup.
+
+They said it took 5 minutes.
+
+The rest of the page took 2 weeks.
+
+The mockup was never the bottleneck.
+
+---
+
+### Bucket 3: Personal Discoveries (20%)
+
+The pattern: "I believed X. Then I discovered Y."
+
+**Tweet Ideas:**
+
+I thought users wanted more device models.
+
+Turns out they wanted better lighting.
+
+3 presets and 4 light sliders mattered more than 18 devices.
+
+The wrong problem is easy to optimize.
+
+---
+
+I used to think mockups needed to be complex to look professional.
+
+Then I put a screenshot on a 3D iPhone with dramatic lighting.
+
+That was it. No textures. No compositing.
+
+Professional is not the same as complicated.
+
+---
+
+The best feature in Protato was almost not built.
+
+Animation mode started as a personal experiment.
+
+Now it's what users mention most.
+
+Sometimes you build the wrong thing on purpose and it becomes the right thing.
+
+---
+
+I spent weeks on the device picker.
+
+Horizontal scroll. 3D previews. Accurate colors.
+
+Users interact with it for 3 seconds.
+
+Worth every minute.
+
+Most of design is invisible effort.
+
+---
+
+### Bucket 4: Small Truths (15%)
+
+Short. Specific. No grand claims.
+
+**Tweet Ideas:**
+
+Nobody wants another design tool.
+They want the mockup done.
+
+---
+
+The best mockup tool is the one you don't think about.
+If the tool makes you think about the tool, it's in the way.
+
+---
+
+App Store screenshots convert better than almost any other asset.
+Most indie devs treat them as an afterthought.
+
+That is a weird market inefficiency.
+
+---
+
+You don't need a designer for App Store screenshots.
+You need a screenshot on a 3D phone with decent lighting.
+
+That's it.
+
+---
+
+18 devices in Protato.
+Users use 3.
+
+The other 15 exist so you don't feel limited.
+
+Choice is a feeling.
+
+---
+
+### Bucket 5: Build Log (5%)
+
+Short. Infrequent. Let people see you working without telling them what to learn from it.
+
+**Tweet Ideas:**
+
+Fixed a bug where shadows rendered behind the background.
+
+Nobody will notice.
+
+But the shadows know.
+
+---
+
+Most requested feature this week: more device colors.
+
+Protato users are my people.
+
+---
+
+Protato is just me. No team. No funding.
+
+Shipping v4 of the lighting engine.
+
+The difference from v1 is invisible.
+
+Worth it.
 
 ---
 
 ## Thread Structures
 
-### Thread 1: "How I Ship App Store Screenshots in 90 Seconds"
+### Thread 1: The Gap
 
-```
-Tweet 1
-i make an app. i hate making screenshots for it.
-so i built a tool that does it in 90 seconds.
-here is the exact workflow ↓
+Most indie devs spend 6 months on the app.
 
-Tweet 2
-step 1: open protato.
-it opens to a 3d iphone. thats it. no new project dialog. no template picker.
+Then 6 minutes on the screenshots.
 
-Tweet 3
-step 2: drag your screenshot from finder onto the phone.
-it snaps onto the display with real reflections and perspective. curved glass. accurate lighting.
+—
 
-Tweet 4
-step 3: pick a background.
-solid, gradient, or mesh. 80+ gradient presets. takes 1 tap.
+The screenshots are the first thing a potential user sees.
 
-Tweet 5
-step 4: add a headline.
-switch to text mode, type your message, pick a font. front of phone for hero copy. behind for depth.
+But they feel like an afterthought.
 
-Tweet 6
-step 5: export.
-png or jpeg. 1x, 2x, or 3x. 4k if you want it.
-done. 90 seconds. maybe less.
+—
 
-Tweet 7
-protato is free to try (5 exports).
-pro is $4.99/mo or $29.99/yr.
-mac + ios. icloud sync. native apple app.
-→ protato.app
-```
+I built Protato to close that gap.
 
-### Thread 2: "The Mockup Stack I Use Instead of Figma + Photoshop"
+Drop a screenshot onto a 3D iPhone. Pick a lighting preset. Export.
 
-```
-Tweet 1
-every indie dev has a "mockup stack."
-mine used to be: figma (frame) + photoshop (lighting) + some random png generator (screen).
-now it is: protato.
+30 seconds.
 
-Tweet 2
-protato does 3 things in one app:
-1. realistic 3d device frames (18 models)
-2. studio lighting (presets + per-light sliders)
-3. text overlays (fonts, gradients, placement)
+—
 
-Tweet 3
-no layers. no artboards. no plugins. no templates.
-just a 3d device, your screenshot, and export.
+That's it. No Figma. No Photoshop. No template hunting.
 
-Tweet 4
-it runs on realitykit + metal.
-native mac app. no electron. no webview.
-feels like an apple app because it is.
+Just the mockup.
 
-Tweet 5
-free to try → protato.app
-```
+---
 
-### Thread 3: "What I Learned About App Store Screenshots After Shipping 5 Apps"
+### Thread 2: Things I Noticed Building Protato
 
-```
-Tweet 1
-i've shipped 5 apps. my screenshots went from terrible to decent to actually good.
-here is what changed:
+I thought features mattered most.
 
-Tweet 2
-1. lighting matters more than the frame.
-a screenshot on a flat png frame looks fake.
-a screenshot on a 3d device with studio lighting looks like apples marketing.
-protato has 3 lighting presets and per-light sliders.
+Turns out the first 30 seconds matter most.
 
-Tweet 3
-2. one device is boring. three devices tell a story.
-iphone, ipad, macbook in one scene = your app lives everywhere.
-protato lets you put all three in one shot with matching lighting.
+—
 
-Tweet 4
-3. text is not optional.
-a headline in front of the phone + a subhead behind it = instant depth.
-protato handles text placement, fonts, gradients, and stroke.
+If a user opens your app and doesn't know what to do, you lost them.
 
-Tweet 5
-4. animation converts better than stills.
-a 3-second camera orbit around your device in the app store preview? way better than a static image.
-protato has a keyframe timeline. record camera moves. export video.
+Protato opens to a ready scene. Device loaded. Camera positioned. Lighting set.
 
-Tweet 6
-protato handles all of this in one app.
-free to try → protato.app
-```
+—
+
+The user just drags their screenshot in and exports.
+
+Everything else is secondary.
+
+—
+
+That's the insight.
+
+Not more features. Less friction.
+
+---
+
+### Thread 3: The Mockup Stack
+
+My mockup stack used to be:
+Figma (frame) + Photoshop (lighting) + some random PNG generator (screen).
+
+Now it's Protato.
+
+—
+
+One app handles:
+• 3D device frames (18 models)
+• Studio lighting (presets + per-light sliders)
+• Text overlays (fonts, gradients, placement)
+
+—
+
+No layers. No artboards. No plugins.
+
+Just a device and your screenshot.
+
+—
+
+Runs on RealityKit + Metal.
+
+Native Mac app. No Electron. No WebView.
+
+Feels like an Apple app because it is.
+
+---
+
+### Thread 4: What Changed
+
+My screenshots went from terrible to decent to actually good.
+
+Here is what changed:
+
+—
+
+1. Lighting matters more than the frame.
+
+A screenshot on a flat PNG frame looks fake.
+A screenshot on a 3D device with studio lighting looks like Apple's marketing.
+
+—
+
+2. One device is boring. Three devices tell a story.
+
+iPhone, iPad, MacBook in one scene = your app lives everywhere.
+
+—
+
+3. Text is not optional.
+
+A headline in front of the phone + a subhead behind it = instant depth.
+
+—
+
+4. Animation converts better than stills.
+
+A 3-second camera orbit in your App Store preview? Way better than a static image.
 
 ---
 
 ## Viral Formats
 
-### The "Underrated App" Template
-```
-app i tried this week that actually surprised me: protato
+### The "Notice" Format
 
-it turns app screenshots into 3d device mockups with studio lighting.
+I noticed something weird.
 
-dropped a screenshot in, picked dramatic lighting, exported in 4k.
+Most mockup tools make you work harder than the screenshot deserves.
+Import. Crop. Resize. Position. Adjust.
 
-total time: under 2 minutes.
+Protato does it in one step.
+Drag onto the device. It fits. It reflects. It's done.
 
-honestly? best mockup experience i've had.
+The best tools remove steps, not add them.
 
-→ protato.app
-```
-**Why it works**: Third-party recommendation frame. Discovery format. Indie devs love finding underrated tools.
+---
 
-### The "Build Log" Template
-```
-the thing nobody tells you about building a mac app:
-you spend 60% of the time on things users will never see.
+### The "I Thought — Then I Realized" Format
 
-rewrote the lighting engine 3 times this month.
+I thought making professional mockups required:
+• Photoshop
+• A design background
+• 30 minutes per image
 
-protato v1: 3 presets
-protato v2: per-light sliders
-protato v3: IBL + environment reflections
+Then I put a screenshot on a 3D iPhone in Protato.
+Tapped "Dramatic" lighting.
+Exported.
 
-users will just tap "dramatic" and move on.
+I was wrong.
 
-worth it.
-```
-**Why it works**: Relatable struggle. Shows craft. Humanizes the builder.
+---
 
-### The "Hot Take" Template
-```
-unpopular opinion:
+### The "Short Sentences" Format
 
-most "app store screenshot" tools are over-engineered.
+Most mockup tools are over-engineered.
 
-you dont need templates.
-you dont need presets.
-you dont need 47 export options.
+You don't need templates.
+You don't need presets.
+You don't need 47 export settings.
 
-you need a 3d phone, your screenshot, good lighting, and an export button.
+You need a 3D phone.
+Your screenshot.
+Good lighting.
+And an export button.
 
-everything else is noise.
-```
-**Why it works**: Takes a stance. Invites engagement. Gets quote-tweeted by people who agree or disagree.
+That's Protato.
 
-### The "Before/After" Template
-```
-before:
-- opened figma
-- found a device frame
-- manually positioned the screenshot
-- added a gradient background
-- exported at the wrong size
-- started over
+---
 
-after:
-- opened protato
-- dragged screenshot onto the phone
-- tapped dramatic lighting
-- exported
+### The "Single Line With a Turn" Format
 
-same result. 1/10th of the time.
-```
-**Why it works**: Relatable pain. Clear contrast. Easy to retweet.
+The best feature in my app was an accident.
+
+Animation mode started as a weekend experiment.
+Now it's what users mention most.
+
+Sometimes the wrong idea becomes the right feature.
+
+---
+
+### The "Observation → Insight → Conclusion" Format
+
+Every feature request sounded important.
+
+Most were actually users describing the same problem in different words.
+
+They didn't want more settings.
+
+They wanted a better default.
 
 ---
 
 ## Posting Cadence
 
-| Day | Content Type | Example |
-|-----|-------------|---------|
-| Monday | Build log | Shipped a feature, fixed a bug, design decision |
-| Tuesday | Before/after | Side-by-side comparison |
-| Wednesday | Hot take | Opinion about mockups, design, or indie building |
-| Thursday | Tip | Protato workflow tip |
-| Friday | Community | Shoutout to someone using Protato or building something cool |
-| Saturday | Thread | Deep dive (use one of the thread structures above) |
-| Sunday | Off or build log | Personal, reflective, or "what i'm working on" |
+| Day | Type | Example |
+|-----|------|---------|
+| Mon | Observation | Something I noticed about mockups / devs / design |
+| Tue | Before / After | Side-by-side with short contrast |
+| Wed | Personal discovery | I believed X, then I discovered Y |
+| Thu | Small truth | Short, specific, true |
+| Fri | Build log or off | Ship log or community shoutout |
+| Sat | Thread | 3-4 tweet thread |
+| Sun | Rest | |
 
 ## Hashtag Strategy
-- Primary: `#protato` `#protatoapp`
-- Discovery: `#indiedev` `#buildinpublic` `#appstore` `#mockup` `#macapps`
-- Occasional: `#SaaS` `#uidesign` `#productivity` `#devtools`
-- Never: `#marketing` `#growthhacking` `#startup` (washes out credibility)
+- 1-2 max
+- `#protato` always
+- One discovery tag: `#indiedev` or `#buildinpublic`
 
 ## Engagement Loop
 
-When someone replies to your tweet:
-1. **Acknowledge** — "good question" / "great point" / "thanks"
-2. **Answer** — Direct answer. No fluff. If relevant, show a screenshot.
-3. **Invite** — "what tool do you use for mockups?" or "what does your setup look like?"
+| Scenario | Reply |
+|----------|-------|
+| Someone asks about mockup tools | "Protato handles frames, lighting, text, and export in one app. Free to try." |
+| Someone ships an app | "Congrats. Clean screenshots 🔥" |
+| Someone complains about mockups | "Protato skips all of that. Drag screenshot onto device. Export." |
+| Someone replies | Answer the question. Don't pitch. |
 
-When someone tweets about mockup pain:
-1. **Empathize** — "yeah that part is frustrating"
-2. **Show** — Share a Protato result (not a link). Let the output speak.
-3. **Offer** — "protato handles that part. free to try if you want."
+## Bio
 
-When someone ships their app:
-1. **Congratulate** — Genuine. Personal. Reference their app.
-2. **Subtle** — "if you want a quick mockup to go with the launch thread, protato does it in 60s"
-3. **Only if** — Their screenshots are clearly an afterthought. If they look good, just congratulate.
-
-## Bio & Profile Strategy
-
-**Bio format**:
 ```
-Building @protatoapp — 3D mockups for indie devs
-macOS + iOS • RealityKit • Metal
-↓ try it free
-protato.app
+building protato — 3d mockups for mac + ios
+        ↓
+   protato.app
 ```
 
-**Pinned tweet**: The latest "before/after" or "how i ship screenshots in 90 seconds" thread. Update monthly.
+## Voice Reference
 
-**Header image**: A clean Protato mockup showing a multi-device scene. No text overlay on the header — just the visual. Let it sell itself.
+| Do | Don't |
+|----|-------|
+| "I noticed something weird about mockup tools" | "Let me teach you how mockups work" |
+| "Turns out users wanted better lighting" | "Good lighting is essential for mockups" |
+| "Before: 30 minutes. After: 30 seconds." | "Protato saves you 95% of your time" |
+| "Short lines. One thought per post." | Long paragraphs. Multiple ideas. |
+| End with the observation, not the link | End every tweet with "download now" |

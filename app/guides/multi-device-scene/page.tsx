@@ -1,10 +1,29 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { iosAppId, macAppId } from "@/app/config"
+import { ImageFlow } from "@/components/custom-mdx"
+import type { Metadata } from "next"
+import GuideBreadcrumb from "../guide-breadcrumb"
+import Script from "next/script"
+
+export const metadata: Metadata = {
+    title: "How to Build a Multi-Device Scene with iPhone, iPad & MacBook | Protato Guide",
+    description:
+        "Learn how to create a multi-device mockup scene with iPhone, iPad, and MacBook in Protato. Position devices, import screenshots per device, and export a polished hero shot.",
+    openGraph: {
+        type: "article",
+        title: "How to Build a Multi-Device Scene with iPhone, iPad & MacBook | Protato Guide",
+        description:
+            "Learn how to create a multi-device mockup scene with iPhone, iPad, and MacBook in Protato. Position devices, import screenshots per device, and export a polished hero shot.",
+        images: [{ url: `https://protato.app/og?title=${encodeURIComponent("How to build a multi-device scene with iPhone, iPad, and MacBook")}`, width: 1200, height: 630 }],
+    },
+}
 
 export default function Guide02() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+
+            <GuideBreadcrumb title="How to build a multi-device scene with iPhone, iPad, and MacBook." />
 
             <div className="mb-4">
                 <span className="text-xs font-medium text-muted-foreground tracking-widest uppercase">
@@ -65,7 +84,7 @@ export default function Guide02() {
 
             <hr className="my-14 border-border/40" />
 
-            <div className="space-y-16">
+            <div className="space-y-4">
                 <Step
                     number="01"
                     title="Start with a single device and set your canvas."
@@ -73,6 +92,18 @@ export default function Guide02() {
                         "Open Protato and pick your primary device — the one that will anchor the composition. iPhone is a natural starting point, but you can start with any model.",
                         "Set the aspect ratio to a wide canvas like 16:9 so you have room to place multiple devices without crowding. Choose a solid or gradient background that gives the scene depth.",
                     ]}
+                />
+                <ImageFlow
+                    images={[
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/20260618_1119.jpg',
+                    ]}
+                    rounded="3xl"
+                />
+                <ImageFlow
+                    images={[
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/20260618_1356.jpg',
+                    ]}
+                    rounded="3xl"
                 />
                 <Step
                     number="02"
@@ -82,6 +113,13 @@ export default function Guide02() {
                         "On iPhone: Tap the Devices button (phone icon above the canvas), then tap + to add another device.",
                         "Each new device appears in the scene with its own position, rotation, and screen content. They stack on top of each other initially — you will arrange them next.",
                     ]}
+                />
+
+                <ImageFlow
+                    images={[
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/20260618_1120.jpg',
+                    ]}
+                    rounded="3xl"
                 />
                 <Step
                     number="03"
@@ -96,22 +134,37 @@ export default function Guide02() {
                         "Offset X/Y/Z — nudge each device into its final position without moving the camera",
                     ]}
                 />
+
+                
                 <Step
                     number="04"
                     title="Import screenshots onto each device."
                     description={[
                         "Select a device, open the Media tab in settings, and import a screenshot. Each device can show a different screen — use this to highlight different features or views of your product.",
-                        "On Mac, you can also drag and drop images directly from Finder onto individual devices. Repeat for every device in your scene.",
+                        "On Mac, you can import screenshots directly from your device or from files by clicking the upload file button",
                     ]}
+                />
+                <ImageFlow
+                    images={[
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/20260618_1122.jpg',
+                    ]}
+                    rounded="3xl"
                 />
                 <Step
                     number="05"
-                    title="Adjust the camera and export."
+                    title="Adjust the lighting and export."
                     description={[
-                        "Use Orbit mode to find the best camera angle that captures all devices in a balanced frame. Switch to Pan mode to fine-tune individual device positions if something feels off.",
-                        "Once the composition looks right, tap Export. Choose PNG for transparency (useful if you want to composite the scene later) or JPEG for a ready-to-use file.",
+                        "Fine-tune how light hits each device using the Lighting section in the left sidebar. Choose from presets like Studio (balanced), Dramatic (strong contrasts), or Flat (even, soft). Adjust individual lights — Key, Fill, Rim, and Back — using sliders from 0 to 10,000, and tweak the global exposure multiplier.",
+                        "For realistic reflections, enable IBL (Image-Based Lighting) which adds a virtual studio environment. This makes all devices in your scene look consistent and professional.",
+                        "Once the lighting looks right, click the Export button in the toolbar. Choose PNG for transparency (useful if you want to composite the scene later) or JPEG for a ready-to-use file. Select quality scale (1×, 2×, or 3×) for sharper output.",
                         "The result is a single, polished multi-device hero shot — perfect for landing pages, pitch decks, or ecosystem marketing.",
                     ]}
+                />
+                <ImageFlow
+                    images={[
+                        'https://res.cloudinary.com/diq74hzgo/image/upload/20260618_1136.jpg',
+                    ]}
+                    rounded="3xl"
                 />
             </div>
 
@@ -143,13 +196,59 @@ export default function Guide02() {
                 </div>
             </div>
 
+            <Script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "HowTo",
+                        "name": "How to build a multi-device scene with iPhone, iPad, and MacBook.",
+                        "description": "A three-device scene with an iPhone, iPad, and MacBook, each showing different screens, positioned in a balanced composition, exported as a single image.",
+                        "totalTime": "PT15M",
+                        "tool": { "@type": "HowToTool", "name": "Protato" },
+                        "step": [
+                            {
+                                "@type": "HowToStep",
+                                "position": 1,
+                                "name": "Start with a single device and set your canvas.",
+                                "text": "Open Protato and pick your primary device. Set the aspect ratio to a wide canvas like 16:9 so you have room to place multiple devices without crowding."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 2,
+                                "name": "Add a second and third device to the scene.",
+                                "text": "On Mac, click the + button in the right inspector. On iPhone, tap the Devices button then tap +. Choose from iPhone 17, iPad A16, MacBook Pro 14\", and more."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 3,
+                                "name": "Position each device using transform controls.",
+                                "text": "Select a device and adjust Scale, Yaw, Pitch, and Offset X/Y/Z to arrange them in a balanced composition. Scale secondary devices smaller to create depth."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 4,
+                                "name": "Import screenshots onto each device.",
+                                "text": "Select a device, open the Media tab in settings, and import a screenshot. Each device can show a different screen to highlight different features of your product."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 5,
+                                "name": "Adjust the lighting and export.",
+                                "text": "Fine-tune lighting using presets (Studio, Dramatic, Flat) or adjust individual lights. Enable IBL for realistic reflections. Export as PNG or JPEG at 1x, 2x, or 3x quality."
+                            }
+                        ]
+                    })
+                }}
+            />
+
         </main>
     )
 }
 
 function Step({ number, title, description, items }: { number: string; title: string; description: string[]; items?: string[] }) {
     return (
-        <div>
+        <div className="pt-10">
             <p className="text-xs font-medium text-muted-foreground tracking-widest uppercase mb-3">Step {number}</p>
             <h2 className="text-2xl font-semibold tracking-tight mb-4">{title}</h2>
             <div className="space-y-4">

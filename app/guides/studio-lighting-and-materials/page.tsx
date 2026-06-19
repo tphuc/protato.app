@@ -1,10 +1,28 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { iosAppId, macAppId } from "@/app/config"
+import type { Metadata } from "next"
+import GuideBreadcrumb from "../guide-breadcrumb"
+import Script from "next/script"
+
+export const metadata: Metadata = {
+    title: "How to Get Professional 3D Lighting on Your Mockup | Protato Guide",
+    description:
+        "Learn how to light your 3D device mockups like a pro. Compare Studio, Dramatic, and Flat presets, adjust per-light sliders, and control screen gloss for premium results.",
+    openGraph: {
+        type: "article",
+        title: "How to Get Professional 3D Lighting on Your Mockup | Protato Guide",
+        description:
+            "Learn how to light your 3D device mockups like a pro. Compare Studio, Dramatic, and Flat presets, adjust per-light sliders, and control screen gloss for premium results.",
+        images: [{ url: `https://protato.app/og?title=${encodeURIComponent("How to get professional 3D lighting on your mockup")}`, width: 1200, height: 630 }],
+    },
+}
 
 export default function Guide04() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+
+            <GuideBreadcrumb title="How to get professional 3D lighting on your mockup." />
 
             <div className="mb-4">
                 <span className="text-xs font-medium text-muted-foreground tracking-widest uppercase">
@@ -13,7 +31,7 @@ export default function Guide04() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-                How to polish your mockup with studio lighting and materials.
+                How to get professional 3D lighting on your mockup.
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">
@@ -158,6 +176,52 @@ export default function Guide04() {
                     />
                 </div>
             </div>
+
+            <Script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "HowTo",
+                        "name": "How to polish your mockup with studio lighting and materials.",
+                        "description": "The same device mockup with three different lighting treatments — Studio, Dramatic, and Flat — plus a custom material setup that makes the screen look glossy or matte.",
+                        "totalTime": "PT10M",
+                        "tool": { "@type": "HowToTool", "name": "Protato" },
+                        "step": [
+                            {
+                                "@type": "HowToStep",
+                                "position": 1,
+                                "name": "Start with a basic mockup.",
+                                "text": "Set up a simple device mockup — pick an iPhone or iPad, import your screenshot, and choose a neutral background. Leave lighting on the default Studio preset."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 2,
+                                "name": "Try each lighting preset.",
+                                "text": "Open Lighting settings and tap through Studio (balanced), Dramatic (strong contrasts), and Flat (soft, diffused) presets. The scene updates instantly."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 3,
+                                "name": "Fine-tune individual lights.",
+                                "text": "Use per-light sliders to adjust Key, Fill, Rim, and Back lights independently. Adjust Exposure for global brightness and IBL Intensity for environment reflections."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 4,
+                                "name": "Adjust the device material.",
+                                "text": "Go to Material settings and control Metallic, Roughness, Glow (Emissive), Clearcoat, and Shine (Specular). Use quick presets for Glossy, Matte, or Default finishes."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 5,
+                                "name": "Tweak the shadow and export.",
+                                "text": "Adjust shadow Opacity and Radius for a softer or sharper shadow. Export your image and compare with the default mockup — the lighting and material work transforms the result."
+                            }
+                        ]
+                    })
+                }}
+            />
 
         </main>
     )

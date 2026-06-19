@@ -1,10 +1,28 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { iosAppId, macAppId } from "@/app/config"
+import type { Metadata } from "next"
+import GuideBreadcrumb from "../guide-breadcrumb"
+import Script from "next/script"
+
+export const metadata: Metadata = {
+    title: "How to Add Text Overlays and Branding to Mockups | Protato Guide",
+    description:
+        "Add headlines, feature callouts, and branding to your device mockups. Control fonts, gradient fills, layer placement behind or in front of the device, and fade animations.",
+    openGraph: {
+        type: "article",
+        title: "How to Add Text Overlays and Branding to Mockups | Protato Guide",
+        description:
+            "Add headlines, feature callouts, and branding to your device mockups. Control fonts, gradient fills, layer placement behind or in front of the device, and fade animations.",
+        images: [{ url: `https://protato.app/og?title=${encodeURIComponent("How to add text overlays and branding to your mockups")}`, width: 1200, height: 630 }],
+    },
+}
 
 export default function Guide05() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+
+            <GuideBreadcrumb title="How to add text overlays and branding to your mockups." />
 
             <div className="mb-4">
                 <span className="text-xs font-medium text-muted-foreground tracking-widest uppercase">
@@ -145,6 +163,52 @@ export default function Guide05() {
                     />
                 </div>
             </div>
+
+            <Script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "HowTo",
+                        "name": "How to add text overlays and branding to your mockups.",
+                        "description": "A device mockup with a layered text composition — a gradient headline in front of the device, a subtle subheading behind it, and feature labels with custom fonts and colors.",
+                        "totalTime": "PT10M",
+                        "tool": { "@type": "HowToTool", "name": "Protato" },
+                        "step": [
+                            {
+                                "@type": "HowToStep",
+                                "position": 1,
+                                "name": "Set up your device mockup first.",
+                                "text": "Start with a completed device mockup — import your screenshot, set the background, and adjust lighting. Choose a background with negative space for text placement."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 2,
+                                "name": "Add your first headline.",
+                                "text": "Tap the Add Text button. Type a benefit-driven headline. In the Style tab, choose a font family (System, Rounded, Serif, or Monospaced), adjust weight and tracking."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 3,
+                                "name": "Style the text with color and stroke.",
+                                "text": "Go to the Color tab for solid fill or multi-stop gradient. Enable Stroke to add an outline around letters. The preview updates in real time."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 4,
+                                "name": "Position the text in front or behind the device.",
+                                "text": "Use the Layout tab to control X/Y position, Scale, Rotation, Opacity, and Placement (Behind Phone or In Front of Phone) for depth and hierarchy."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 5,
+                                "name": "Add supporting text and layer the composition.",
+                                "text": "Add a second text element — smaller, lighter weight. Use placement strategically. In Animation mode, text can fade in and out across keyframes. Export as image or video."
+                            }
+                        ]
+                    })
+                }}
+            />
 
         </main>
     )

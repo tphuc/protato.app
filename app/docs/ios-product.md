@@ -219,7 +219,7 @@ The segmented switch in the center of the toolbar toggles between two modes:
   - ▶️ **Play/Pause** button to preview
   - ⏪ **Go to start** button
   - **Time ruler** with tick marks showing seconds
-  - **Add Block** — captures the current camera angle + phone position as a keyframe
+  - **Animate View** — captures the current camera angle + phone position as a keyframe
   - **Add Clip** — adds a video segment to play on the phone screen during the animation
   - **Undo/Redo** arrows
   - **Zoom** slider to zoom in/out on the timeline

@@ -3,10 +3,29 @@ import { Button } from "@/components/ui/button"
 import { iosAppId, macAppId } from "@/app/config"
 import { ImageFlow } from "@/components/custom-mdx"
 import { AppStore } from "@/components/icons"
+import type { Metadata } from "next"
+import GuideBreadcrumb from "../guide-breadcrumb"
+import Script from "next/script"
+import React from "react"
+
+export const metadata: Metadata = {
+    title: "How to Create Your First App Store Screenshot | Protato Guide",
+    description:
+        "Step-by-step tutorial to create your first App Store screenshot mockup on iPhone. Learn device selection, background styling, text overlays, and export in 6 steps.",
+    openGraph: {
+        type: "article",
+        title: "How to Create Your First App Store Screenshot | Protato Guide",
+        description:
+            "Step-by-step tutorial to create your first App Store screenshot mockup on iPhone. Learn device selection, background styling, text overlays, and export in 6 steps.",
+        images: [{ url: `https://protato.app/og?title=${encodeURIComponent("How to create your first App Store screenshot on iPhone")}`, width: 1200, height: 630 }],
+    },
+}
 
 export default function Guide01() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+
+            <GuideBreadcrumb title="How to create your first App Store screenshot project on iPhone." />
 
             <div className="mb-4">
                 <span className="text-xs font-medium text-muted-foreground tracking-widest uppercase">
@@ -173,6 +192,25 @@ export default function Guide01() {
                     ]}
                     rounded="3xl"
                 />
+                <Step
+                    number="07"
+                    title="Verify your screenshot sizes and upload to the store."
+                    description={[
+                        "Before uploading, check that your exported image matches the required dimensions for your target device. Apple now only requires the 6.9-inch iPhone size (1320 × 2868 px) — it scales down automatically for smaller models.",
+                    ]}
+                    items={[
+                        "iPhone 6.9\" (primary) — 1320 × 2868 px",
+                        "iPhone 6.7\" (legacy) — 1290 × 2796 px",
+                        "iPad Pro 13\" — 2064 × 2752 px",
+                        "Format — PNG, RGB, no alpha channel, under 8 MB",
+                        "App Store Connect — My Apps → version → Previews and Screenshots → 6.9\" tab → drag files in order",
+                        "Google Play Console — Store presence → Main store listing → upload phone & tablet sets",
+                    ]}
+                >
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                        Your first 2-3 screenshots appear in App Store search results. Put your strongest frame first. For the full size reference with every device class, see the <Link href="/guides/app-store-screenshot-sizes" className="text-blue-500 hover:underline">App Store Screenshot Sizes guide</Link>.
+                    </p>
+                </Step>
             </div>
 
             <hr className="my-16 border-border/40" />
@@ -205,6 +243,58 @@ export default function Guide01() {
                 </div>
             </div>
 
+            <Script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "HowTo",
+                        "name": "How to create your first App Store screenshot project on iPhone.",
+                        "description": "One clean device mockup with your screenshot on a 3D iPhone frame, a background treatment, a headline, and an export-ready image.",
+                        "totalTime": "PT10M",
+                        "tool": { "@type": "HowToTool", "name": "Protato" },
+                        "step": [
+                            {
+                                "@type": "HowToStep",
+                                "position": 1,
+                                "name": "Create a new project and choose a device model.",
+                                "text": "Open Protato and you will see the default scene with a device already loaded. If you want a different device, tap the Devices button and choose from iPhone 17 Pro Max, iPhone 17 Air, iPad A16, MacBook Pro 14\", and more."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 2,
+                                "name": "Set the canvas size and choose a background.",
+                                "text": "Open the Settings sheet and go to the Ratio tab to pick a canvas shape. Then go to the Background tab to choose from None, Solid, Gradient, Mesh, or Image backgrounds."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 3,
+                                "name": "Import your screenshot and fit it onto the device.",
+                                "text": "In the Settings sheet, go to the Media tab and import your app screenshot from Photos or Files. The image appears on the device screen instantly with realistic reflections."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 4,
+                                "name": "Add the headline and supporting copy.",
+                                "text": "Tap the Add Text button above the canvas and type your headline. Use the Text Editor to adjust font family, weight, color, gradient fill, stroke, alignment, and tracking."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 5,
+                                "name": "Refine spacing, hierarchy, and layer placement.",
+                                "text": "Use Orbit and Pan modes to adjust the camera angle and device position. Use the Layout tab's placement setting to order text behind or in front of the device. Toggle the Grid overlay to check alignment."
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "position": 6,
+                                "name": "Export the finished still image.",
+                                "text": "Tap the Export button, choose PNG or JPEG format, select quality scale (1x, 2x, or 3x), and export. The iOS Share Sheet lets you save to Photos, send in Messages, or upload to App Store Connect."
+                            }
+                        ]
+                    })
+                }}
+            />
+
         </main>
     )
 }
@@ -214,11 +304,13 @@ function Step({
     title,
     description,
     items,
+    children,
 }: {
     number: string
     title: string
     description: string[]
     items?: string[]
+    children?: React.ReactNode
 }) {
     return (
         <div>
@@ -243,6 +335,7 @@ function Step({
                         ))}
                     </ul>
                 )}
+                {children}
             </div>
         </div>
     )
