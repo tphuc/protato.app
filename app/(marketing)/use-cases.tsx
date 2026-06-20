@@ -16,7 +16,7 @@ const useCases = [
         description:
             "Swap between 18+ iPhone, iPad, and MacBook models in a single tap. Load your screenshots or videos onto any device screen — it curves to match the display with realistic reflections and perspective.",
         slug: "device-frames",
-          imageUrl: "/20260619_1743.avif",
+          imageUrl: "https://res.cloudinary.com/diq74hzgo/image/upload/20260619_1743.avif",
       
     },
     {
@@ -25,7 +25,7 @@ const useCases = [
         description:
             "Adjust metallic, roughness, clearcoat, and specular on every device independently. Switch between Glossy, Matte, or Default presets and see environment reflections update in real time on the device glass.",
         slug: "material-reflection",
-        imageUrl: "/20260620_0112.avif",
+        imageUrl: "https://res.cloudinary.com/diq74hzgo/image/upload/20260620_0112.avif",
       
     },
     {
@@ -34,7 +34,7 @@ const useCases = [
         description:
             "Add headlines, callouts, and branding behind or in front of your device. Style fonts, apply gradient fills, add stroke outlines, and adjust opacity, scale, and position — all without leaving the canvas.",
         slug: "text-overlays",
-        imageUrl: "/20260619_2044.avif",
+        imageUrl: "https://res.cloudinary.com/diq74hzgo/image/upload/20260619_2044.avif",
     },
     {
         label: "Animation",
@@ -42,7 +42,7 @@ const useCases = [
         description:
             "Record camera moves and device transforms on a frame-accurate timeline. Add keyframes with easing curves, layer synchronized media clips, and export a smooth product reveal video at up to 1440p.",
         slug: "animation-motion",
-        imageUrl: "/20260620_0024.avif",
+        imageUrl: "https://res.cloudinary.com/diq74hzgo/image/upload/20260620_0024.avif",
     },
     // {
     //     label: "Presets",
