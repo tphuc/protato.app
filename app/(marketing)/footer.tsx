@@ -80,6 +80,10 @@ export default function Footer2() {
             <a href="https://x.com/protato.app" target="_blank" rel="noopener noreferrer" aria-label="X">
               <X className="w-4 h-4" />
             </a>
+
+            <a href="https://discord.gg/VFfyFN34Gj" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+              <Discord className="w-4 h-4" />
+            </a>
           </div>
 
         </div>
