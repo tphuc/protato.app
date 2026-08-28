@@ -34,14 +34,14 @@ export default function Guide03() {
                 How to create a product reveal video with keyframe animation.
             </h1>
 
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">
+<p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">
                 A still mockup is clean. An animated one is unforgettable. Record camera moves across your scene, layer keyframes with easing, and export a cinematic product reveal video — all inside Protato, no video editor needed.
             </p>
 
             <div className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">
                 <span className="font-medium text-foreground">6 steps</span>
                 <span className="w-1 h-1 rounded-full bg-muted-foreground/30" />
-                <span>iPhone & Mac</span>
+                <span>iPhone 17 Pro Max & MacBook Pro 14"</span>
             </div>
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -58,7 +58,7 @@ export default function Guide03() {
                         What you&apos;ll use
                     </p>
                     <p className="text-base leading-relaxed">
-                        Animation mode toggle, timeline panel, keyframe (Animate View) button, play/pause preview, camera orbit, and video export.
+                        Animation mode toggle, timeline panel, keyframe (Animate View) button, play/pause preview, camera orbit, video export, IBL (Image-Based Lighting), and lighting presets (Studio, Dramatic, Flat) with per-light sliders.
                     </p>
                 </div>
             </div>
@@ -99,13 +99,13 @@ export default function Guide03() {
                         "Tap the toolbar toggle in the center and switch from Photo to Animation. A timeline panel appears at the bottom of the canvas.",
                         "The timeline shows a time ruler with tick marks, a play/pause button, an Animate View button (keyframe), an Add Clip button (for video-on-screen), and undo/redo arrows.",
                     ]}
-                />
+/>
                 <Step
-                    number="03"
-                    title="Set your opening keyframe."
+                    number="01"
+                    title="Set up your scene in Photo mode first."
                     description={[
-                        "Position the camera where you want the animation to start — for example, zoomed out to show the full device from a slight angle.",
-                        "Tap Animate View on the timeline. This captures the current camera position and device layout as the first keyframe. A small diamond appears on the timeline at the 0-second mark.",
+                        "Build your mockup as you normally would — choose a device, import your screenshot, set the background, adjust lighting, and add any text overlays. Use the iPhone 17 Pro Max for mobile or MacBook Pro 14\" for desktop.",
+                        "Everything you set up in Photo mode carries over to Animation mode. This way you focus on composition first and motion second. The Studio lighting preset provides a balanced base that works well for most product reveal videos.",
                     ]}
                 />
                 <Step
@@ -123,7 +123,8 @@ export default function Guide03() {
                     description={[
                         "Tap the Play button to preview your animation. Watch the camera move between keyframes in real time.",
                         "If the motion is too fast or too slow, drag keyframe diamonds left or right on the timeline to adjust timing. Use the timeline zoom slider to get a closer view of your keyframes.",
-                        "On Mac, you can adjust the easing curve for each keyframe — choose from linear, ease-in, ease-out, or custom curves for more natural motion.",
+                        "On Mac, you can adjust the easing curve for each keyframe — choose from linear, ease-in, ease-out, or custom curves for more natural motion. This matches the '90-Second App Store Screenshot' video script timing guidance.",
+                        "For the 'Multi-Device Flex' style animation, ensure each device in the scene has consistent lighting (Studio preset recommended) and IBL enabled for unified reflections across the camera orbit.",
                     ]}
                 />
                 <Step
@@ -132,7 +133,8 @@ export default function Guide03() {
                     description={[
                         "Tap the Export button. Choose your resolution — 720p, 1080p, or 1440p. Higher resolutions look sharper but create larger files.",
                         "Tap Export and wait for the render to complete. A progress bar appears — do not close the app while rendering.",
-                        "When it finishes, save the video to your device or share it directly. The result is a polished product reveal clip ready for App Store previews, social media, or pitch decks.",
+                        "When it finishes, save the video to your device or share it directly. The result is a polished product reveal clip ready for App Store previews, social media, or pitch decks. This matches the '90-Second App Store Screenshot' and 'POV: Indie Dev Discovers Protato' video script formats.",
+                        "For multi-device scenes, enable IBL (Image-Based Lighting) before exporting to ensure consistent reflections across all devices during the camera orbit.",
                     ]}
                 />
             </div>

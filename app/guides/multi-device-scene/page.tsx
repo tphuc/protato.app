@@ -42,7 +42,7 @@ export default function Guide02() {
             <div className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">
                 <span className="font-medium text-foreground">5 steps</span>
                 <span className="w-1 h-1 rounded-full bg-muted-foreground/30" />
-                <span>iPhone & Mac</span>
+                <span>iPhone 17 Pro Max, iPad A16, MacBook Pro 14"</span>
             </div>
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -59,7 +59,7 @@ export default function Guide02() {
                         What you&apos;ll use
                     </p>
                     <p className="text-base leading-relaxed">
-                        Device list (add/remove), model picker, transform controls, media import per device, camera orbit/pan, and still export.
+                        Device list (add/remove), iPhone 17 / iPad A16 / MacBook Pro 14\" model picker, transform controls, media import per device, camera orbit/pan, still export, IBL (Image-Based Lighting), and lighting presets (Studio, Dramatic, Flat) with per-light sliders.
                     </p>
                 </div>
             </div>
@@ -89,7 +89,7 @@ export default function Guide02() {
                     number="01"
                     title="Start with a single device and set your canvas."
                     description={[
-                        "Open Protato and pick your primary device — the one that will anchor the composition. iPhone is a natural starting point, but you can start with any model.",
+                        "Open Protato and pick your primary device — iPhone 17 Pro Max is a natural starting point, but you can start with any model.",
                         "Set the aspect ratio to a wide canvas like 16:9 so you have room to place multiple devices without crowding. Choose a solid or gradient background that gives the scene depth.",
                     ]}
                 />
@@ -109,7 +109,7 @@ export default function Guide02() {
                     number="02"
                     title="Add a second and third device to the scene."
                     description={[
-                        "On Mac: In the right inspector (Devices mode), click the + button below the device list. A sheet opens where you can choose the next model — pick an iPad or a different iPhone color variant.",
+                        "On Mac: In the right inspector (Devices mode), click the + button below the device list. A sheet opens where you can choose the next model — pick an iPad A16 or iPhone 17 Pro Max color variant.",
                         "On iPhone: Tap the Devices button (phone icon above the canvas), then tap + to add another device.",
                         "Each new device appears in the scene with its own position, rotation, and screen content. They stack on top of each other initially — you will arrange them next.",
                     ]}
@@ -128,7 +128,7 @@ export default function Guide02() {
                         "Select a device by tapping it on the canvas or clicking it in the device list. In the Transform section, adjust:",
                     ]}
                     items={[
-                        "Scale — make secondary devices smaller to create depth (e.g., iPad at 0.8x, MacBook at 0.6x)",
+                        "Scale — make secondary devices smaller to create depth (e.g., iPad A16 at 0.8x, MacBook Pro 14\" at 0.6x)",
                         "Yaw — rotate devices slightly toward each other for a natural conversation layout",
                         "Pitch — tilt devices at matching angles for a consistent look",
                         "Offset X/Y/Z — nudge each device into its final position without moving the camera",
@@ -177,10 +177,10 @@ export default function Guide02() {
                 <p className="text-lg font-semibold mb-6">
                     Take the scene further.
                 </p>
-                <div className="space-y-4">
+<div className="space-y-4">
                     <ContinueCard
                         title="How to create a product reveal video with keyframe animation."
-                        description="Animate the multi-device scene — orbit the camera, reveal each device, and export a cinematic product video."
+                        description="Animate the multi-device scene — orbit between devices to create a cinematic product family reveal."
                         href="/guides/product-reveal-video"
                     />
                     <ContinueCard
@@ -190,8 +190,13 @@ export default function Guide02() {
                     />
                     <ContinueCard
                         title="How to add text overlays and branding to your mockups."
-                        description="Label each device with feature callouts and add a hero headline that anchors the entire scene."
+                        description="Label each device in a multi-device scene with feature callouts and add a hero headline that anchors the entire scene."
                         href="/guides/text-overlays-and-branding"
+                    />
+                    <ContinueCard
+                        title="How to make an app promo video in minutes."
+                        description="Create a cinematic promo video with keyframe animation, camera orbits, and timed text overlays."
+                        href="/guides/make-app-promo-video"
                     />
                 </div>
             </div>

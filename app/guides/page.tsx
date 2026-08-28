@@ -6,7 +6,7 @@ const guides = [
         title: "How to create your first App Store screenshot on iPhone",
         description: "The cleanest starting point. Create a device mockup with your screenshot, add a background and headline, and export a finished image.",
         steps: 7,
-        device: "iPhone",
+        device: "iPhone 17 Pro Max",
         slug: "your-first-app-store-screenshot",
     },
     {
@@ -14,7 +14,7 @@ const guides = [
         title: "How to build a multi-device scene with iPhone, iPad, and MacBook",
         description: "Place multiple devices in one scene, position them precisely, and export a single hero shot for your landing page or pitch deck.",
         steps: 5,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, iPad A16, MacBook Pro 14\"",
         slug: "multi-device-scene",
     },
     {
@@ -22,15 +22,15 @@ const guides = [
         title: "How to create a product reveal video with keyframe animation",
         description: "Switch to animation mode, record camera moves with keyframes, preview your clip, and export a cinematic video ready for social or App Store.",
         steps: 6,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, MacBook Pro 14\"",
         slug: "product-reveal-video",
     },
     {
         number: "04",
         title: "How to get professional 3D lighting on your mockup",
-        description: "Apply lighting presets, adjust individual lights, control screen gloss and reflections — and transform a flat mockup into a premium visual.",
+        description: "Apply lighting presets (Studio, Dramatic, Flat), adjust individual lights, control screen gloss and reflections — and transform a flat mockup into a premium visual.",
         steps: 5,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, MacBook Pro 14\"",
         slug: "studio-lighting-and-materials",
     },
     {
@@ -38,7 +38,7 @@ const guides = [
         title: "How to add text overlays and branding to your mockups",
         description: "Add headlines, captions, and branding to your scene. Style fonts, apply gradient fills, position text in front or behind devices, and animate it.",
         steps: 5,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, MacBook Pro 14\"",
         slug: "text-overlays-and-branding",
     },
     {
@@ -46,7 +46,7 @@ const guides = [
         title: "App Store screenshot sizes & requirements 2026",
         description: "Complete reference for every required dimension and format spec. Includes iPhone, iPad, Google Play, and upload steps for App Store Connect.",
         steps: 6,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, iPad A16, MacBook Pro 14\"",
         slug: "app-store-screenshot-sizes",
     },
     {
@@ -54,7 +54,7 @@ const guides = [
         title: "How to export transparent PNG mockups",
         description: "Export device mockups with a transparent background for websites, pitch decks, and compositing. Covers shadow settings, PNG format, and use cases.",
         steps: 5,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, MacBook Pro 14\"",
         slug: "export-transparent-png-mockups",
     },
     {
@@ -62,7 +62,7 @@ const guides = [
         title: "How to save and reuse mockup scenes with presets",
         description: "Save your full scene — devices, camera angle, lighting, materials, and text — as a preset. Reuse it across campaigns or share as JSON with your team.",
         steps: 5,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, MacBook Pro 14\"",
         slug: "mockups-for-product-hunt",
     },
     {
@@ -70,7 +70,7 @@ const guides = [
         title: "How to create mockups for your SaaS landing page",
         description: "Build a complete landing page visual set — hero section, feature mockups, ecosystem shots, and transparent PNGs ready for web dev.",
         steps: 6,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, iPad A16, MacBook Pro 14\"",
         slug: "mockups-for-saas-landing-page",
     },
     {
@@ -78,7 +78,7 @@ const guides = [
         title: "How to create a hero image for your app website",
         description: "Design a scroll-stopping hero image with a 3D device mockup, branded text overlay, and export settings optimized for web performance.",
         steps: 6,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, MacBook Pro 14\"",
         slug: "hero-image-for-app-website",
     },
     {
@@ -86,7 +86,7 @@ const guides = [
         title: "How to showcase your app on Dribbble and Behance",
         description: "Present your app like a pro on Dribbble and Behance with multiple-angle device shots, presentation layouts, and annotation callouts.",
         steps: 6,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, MacBook Pro 14\"",
         slug: "showcase-app-on-dribbble",
     },
     {
@@ -94,7 +94,7 @@ const guides = [
         title: "How to create social media graphics for your app launch",
         description: "Design a complete social launch kit — Instagram, Twitter/X, LinkedIn, and more — from a single master device mockup with consistent branding.",
         steps: 6,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, MacBook Pro 14\"",
         slug: "social-media-graphics-app-launch",
     },
     {
@@ -102,7 +102,7 @@ const guides = [
         title: "How to make an app promo video in minutes",
         description: "Create a cinematic promo video with keyframe animation, camera orbits, screen recordings on the device, and timed text overlays — no video editor needed.",
         steps: 6,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, MacBook Pro 14\"",
         slug: "make-app-promo-video",
     },
     {
@@ -110,7 +110,7 @@ const guides = [
         title: "How to make an Instagram Reel for your app",
         description: "Design a 15-second vertical Reel with a 3D device mockup, smooth camera animation, text callouts, and a screen recording on the display.",
         steps: 6,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, MacBook Pro 14\"",
         slug: "instagram-reel-app-mockup",
     },
     {
@@ -118,8 +118,48 @@ const guides = [
         title: "How to create App Preview videos for the App Store",
         description: "Build 15-30 second App Preview videos that auto-play in search results. Meet Apple's requirements and boost your App Store conversion rate.",
         steps: 6,
-        device: "iPhone & Mac",
+        device: "iPhone 17 Pro Max, MacBook Pro 14\"",
         slug: "app-preview-video-app-store",
+    },
+    {
+        number: "16",
+        title: "How to create an iPhone mockup",
+        description: "Make a realistic iPhone mockup from your app screenshot. Choose a device, set the right canvas, refine the camera and lighting, then export for web, social, or the App Store.",
+        steps: 6,
+        device: "iPhone 17 Pro Max",
+        slug: "create-iphone-mockup",
+    },
+    {
+        number: "17",
+        title: "How to create a MacBook mockup",
+        description: "Turn a website or desktop-app screenshot into a polished MacBook mockup for your SaaS landing page, launch assets, portfolio, or pitch deck.",
+        steps: 6,
+        device: "MacBook Pro 14\"",
+        slug: "create-macbook-mockup",
+    },
+    {
+        number: "18",
+        title: "3D mockup vs. flat screenshot: which should you use?",
+        description: "Learn when a 3D device mockup adds impact, when a flat screenshot is clearer, and how to choose the right format for App Store pages, websites, social posts, and documentation.",
+        steps: 6,
+        device: "iPhone & Mac",
+        slug: "3d-mockup-vs-flat-screenshot",
+    },
+    {
+        number: "19",
+        title: "How to create Product Hunt mockups for your launch",
+        description: "Plan a focused launch gallery, make polished app mockups that explain your product at a glance, and reuse the assets across your website and social launch campaign.",
+        steps: 6,
+        device: "iPhone & Mac",
+        slug: "product-hunt-launch-mockups",
+    },
+    {
+        number: "20",
+        title: "How to make App Store screenshots for a subscription app",
+        description: "Build a six-frame App Store screenshot sequence that explains your subscription app's outcome, ongoing value, premium features, and accurate free-trial offer.",
+        steps: 6,
+        device: "iPhone & Mac",
+        slug: "app-store-screenshots-subscription-app",
     },
 ]
 
@@ -131,10 +171,10 @@ export default function GuidesIndex() {
                     Guides
                 </p>
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-                    Quickstart guides
+                    App mockup and App Store screenshot guides
                 </h1>
                 <p className="mt-4 text-lg text-muted-foreground max-w-xl">
-                    Step-by-step walkthroughs to get you from zero to production-ready mockups on iPhone and Mac.
+                    Practical guides for creating App Store screenshots, device mockups, launch graphics, and app promo videos on iPhone and Mac.
                 </p>
             </div>
 

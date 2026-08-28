@@ -41,7 +41,7 @@ export default function Guide05() {
             <div className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">
                 <span className="font-medium text-foreground">5 steps</span>
                 <span className="w-1 h-1 rounded-full bg-muted-foreground/30" />
-                <span>iPhone & Mac</span>
+                <span>iPhone 17 Pro Max & MacBook Pro 14"</span>
             </div>
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -58,7 +58,7 @@ export default function Guide05() {
                         What you&apos;ll use
                     </p>
                     <p className="text-base leading-relaxed">
-                        Add Text button, Text Editor panel (font, weight, color/gradient, stroke, alignment, scale, rotation, opacity, placement), and Text mode for canvas interaction.
+                        Add Text button, Text Editor panel (font, weight, color/gradient, stroke, alignment, scale, rotation, opacity, placement), Text mode for canvas interaction, and Text mode for layer placement (Behind Phone / In Front of Phone).
                     </p>
                 </div>
             </div>
@@ -89,7 +89,7 @@ export default function Guide05() {
                     title="Set up your device mockup first."
                     description={[
                         "Start with a completed device mockup — import your screenshot, set the background, and adjust lighting. Text is the last layer of polish, so get the visual foundation right first.",
-                        "Choose a background that gives text room to breathe. A gradient or mesh background with some negative space works well for text overlays.",
+                        "Choose a background that gives text room to breathe. A gradient or mesh background with some negative space works well for text overlays. The Studio lighting preset provides balanced light that's flattering for text readability.",
                     ]}
                 />
                 <Step
@@ -97,7 +97,7 @@ export default function Guide05() {
                     title="Add your first headline."
                     description={[
                         "Tap the Add Text button (T icon in the toolbar on Mac, T+ above the canvas on iPhone). A text label appears on the canvas with placeholder text, and the editor opens.",
-                        "Tap the text directly and type your headline — something benefit-driven that summarizes what the screenshot shows (e.g., \"Track Every Expense\" or \"Design in 3D\").",
+                        "Tap the text directly and type your headline — something benefit-driven that summarizes what the screenshot shows (e.g., \"Track Every Expense\" or \"Design in 3D\"). Keep it under 6 words for readability at small sizes.",
                         "In the Style tab, choose a font family — System for clean modern, Rounded for friendly, Serif for premium, or Monospaced for technical. Adjust the weight (9 options from Ultra Light to Black) and tracking (letter spacing) to match your brand.",
                     ]}
                 />
@@ -108,6 +108,7 @@ export default function Guide05() {
                         "Go to the Color tab. Choose a solid fill that contrasts with your background, or tap Gradient to create a multi-color text effect — useful for hero headlines that need to stand out.",
                         "For extra emphasis, enable Stroke in the Stroke tab. This adds an outline around each letter. Adjust the width and pick a stroke color that complements the fill.",
                         "The preview updates in real time, so experiment freely — you can always reset from the Presets tab.",
+                        "Consider the Dramatic lighting preset when choosing text colors — strong shadows require higher contrast fill colors for readability.",
                     ]}
                 />
                 <Step
@@ -121,7 +122,7 @@ export default function Guide05() {
                         "Scale — make text bigger or smaller (0.2x to 4x)",
                         "Rotation — spin the text from -180° to 180°",
                         "Opacity — fade the text from invisible (0) to solid (1)",
-                        "Placement — choose Behind Phone or In Front of Phone. Text behind the device creates depth; text in front works as a clear headline or caption",
+                        "Placement — choose Behind Phone or In Front of Phone. Text behind the device creates depth; text in front works as a clear headline or caption. Consider the Design-Curious Maker persona — they often prefer text in front for immediate readability.",
                     ]}
                 />
                 <Step
@@ -129,9 +130,10 @@ export default function Guide05() {
                     title="Add supporting text and layer the composition."
                     description={[
                         "Add a second text element — a subheading or feature label. Make it smaller, lighter in weight, and position it below or beside the headline.",
-                        "Use placement strategically: put the main headline in front and supporting copy behind the device for a sophisticated layered look.",
+                        "Use placement strategically: put the main headline in front and supporting copy behind the device for a sophisticated layered look. The Agency PM persona appreciates this consistent approach across multiple deliverables.",
                         "If you are in Animation mode, text can also fade in and out. Select a text element and adjust its opacity at different keyframes — it fades automatically between them.",
                         "Export as an image or video. The text becomes a permanent part of the composition, just like the device and background.",
+                        "Consider the Bootstrapped Founder persona — they need consistent branded templates across campaigns, so use the same font and gradient settings for all social media visuals.",
                     ]}
                 />
             </div>

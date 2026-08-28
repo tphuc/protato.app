@@ -150,23 +150,23 @@ export default function Guide18() {
                         Section 4
                     </p>
                     <h2 className="text-2xl font-semibold tracking-tight mb-4">
-                        What the data says about conversion.
+                        How to evaluate conversion without guessing.
                     </h2>
                     <p className="text-base text-muted-foreground leading-relaxed mb-4">
-                        While specific numbers depend on your audience and context, several patterns emerge from A/B tests across the industry:
+                        There is no universal conversion lift for either format. The right choice depends on the audience, channel, screen clarity, and surrounding message. Treat the guidance below as a hypothesis to test with your own audience, not a benchmark to promise.
                     </p>
                     <div className="space-y-4">
                         <div className="rounded-xl border border-border/60 bg-secondary/20 p-4">
                             <p className="font-semibold mb-1">Landing page conversion</p>
-                            <p className="text-sm text-muted-foreground">Multiple A/B tests show that 3D device mockups in hero sections increase time-on-page by 20-40% and click-through to the App Store by 15-30% compared to flat screenshots. The depth and realism create a stronger first impression.</p>
+                            <p className="text-sm text-muted-foreground">A 3D device mockup can create a stronger first impression when it supports a focused headline and leaves the screen readable. Test it against a flat or straight-on version with the same message and call to action; measure click-through to your download or signup path.</p>
                         </div>
                         <div className="rounded-xl border border-border/60 bg-secondary/20 p-4">
                             <p className="font-semibold mb-1">Social media engagement</p>
-                            <p className="text-sm text-muted-foreground">Instagram and Twitter posts with 3D mockups consistently outperform flat screenshots in engagement metrics. The visual contrast against flat feed content drives higher tap-through rates.</p>
+                            <p className="text-sm text-muted-foreground">In a fast-scrolling feed, depth and motion can help an image earn attention, but clarity still wins. Compare saves, shares, profile visits, and link taps—not just likes—between a 3D mockup and a clear flat-screen treatment.</p>
                         </div>
                         <div className="rounded-xl border border-border/60 bg-secondary/20 p-4">
                             <p className="font-semibold mb-1">Pitch deck effectiveness</p>
-                            <p className="text-sm text-muted-foreground">Investors consistently rank startups with 3D mockups higher on \"perceived polish\" in blind tests. While this doesn't directly correlate with funding, it influences the first impression that determines whether an investor reads further.</p>
+                            <p className="text-sm text-muted-foreground">A polished mockup helps a deck feel considered, especially before a product is in someone&apos;s hands. Keep the screen legible and pair the visual with a concise statement of the problem, product, and traction; presentation alone should never carry the pitch.</p>
                         </div>
                     </div>
                 </div>

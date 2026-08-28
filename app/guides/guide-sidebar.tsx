@@ -24,16 +24,18 @@ const clusters = [
         guides: [
             { number: "06", title: "Screenshot Sizes 2026", slug: "app-store-screenshot-sizes" },
             { number: "07", title: "Export Transparent PNG", slug: "export-transparent-png-mockups" },
+            { number: "20", title: "Subscription App Screenshots", slug: "app-store-screenshots-subscription-app" },
         ],
     },
     {
         name: "Use Cases",
         guides: [
-            { number: "08", title: "Product Hunt Launch", slug: "mockups-for-product-hunt" },
+            { number: "08", title: "Save Scene Presets", slug: "mockups-for-product-hunt" },
             { number: "09", title: "SaaS Landing Page", slug: "mockups-for-saas-landing-page" },
             { number: "10", title: "Hero Image for Website", slug: "hero-image-for-app-website" },
             { number: "11", title: "Dribbble & Behance", slug: "showcase-app-on-dribbble" },
             { number: "12", title: "Social Media Graphics", slug: "social-media-graphics-app-launch" },
+            { number: "19", title: "Product Hunt Launch", slug: "product-hunt-launch-mockups" },
         ],
     },
     {

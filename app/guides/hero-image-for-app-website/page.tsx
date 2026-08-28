@@ -42,7 +42,7 @@ export default function Guide10() {
             <div className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">
                 <span className="font-medium text-foreground">6 steps</span>
                 <span className="w-1 h-1 rounded-full bg-muted-foreground/30" />
-                <span>iPhone & Mac</span>
+                <span>iPhone 17 Pro Max & MacBook Pro 14\"</span>
             </div>
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -59,7 +59,7 @@ export default function Guide10() {
                         What you&apos;ll use
                     </p>
                     <p className="text-base leading-relaxed">
-                        Aspect ratio presets, device model picker, background types (gradient, mesh, solid), text editor, lighting presets, and PNG/JPEG export.
+                        Aspect ratio presets, iPhone 17 Pro Max device model picker, background types (gradient, mesh, solid), text editor, lighting presets (Studio, Dramatic, Flat), and PNG/JPEG export.
                     </p>
                 </div>
             </div>
@@ -111,9 +111,9 @@ export default function Guide10() {
                     number="03"
                     title="Set up the device mockup."
                     description={[
-                        "Pick the device model that matches your primary platform. For a mobile app, use the latest iPhone. For a desktop app, use the MacBook Pro.",
+                        "Pick the iPhone 17 Pro Max for mobile apps or MacBook Pro 14\" for desktop apps — the latest models with accurate RealityKit rendering.",
                         "Import your most impactful app screen — the one that shows your product's core value. Adjust the camera angle to show the screen clearly. A slight 3/4 angle (not straight-on) looks more natural and professional.",
-                        "Choose a background that makes the device stand out. A mesh gradient (like Apple's marketing style) adds depth without distracting. If your brand has a signature color, use it as a solid background or the starting color of a gradient.",
+                        "Choose a background that makes the device stand out. A mesh gradient (like Apple's marketing style) adds depth without distracting. If your brand has a signature color, use it as a solid background or the starting color of a gradient. The Studio lighting preset balanced background works well for most hero images.",
                     ]}
                 />
                 <Step
@@ -132,6 +132,7 @@ export default function Guide10() {
                         "The Dramatic lighting preset creates contrast that makes the device pop against the background — ideal for hero images where you want the device to be the focal point.",
                         "If your background has strong colors, switch to the Flat preset to avoid color conflicts. The Flat preset diffuses light evenly and keeps the focus on the device and text.",
                         "Adjust the shadow Opacity to around 60-70% and Radius to a medium setting. A visible but soft shadow anchors the device in the scene and adds a premium feel.",
+                        "For even more control, enable Image-Based Lighting (IBL) to add a virtual studio environment — this makes the device reflections consistent with the background environment.",
                     ]}
                 />
 
@@ -170,6 +171,11 @@ export default function Guide10() {
                         title="How to showcase your app on Dribbble and Behance."
                         description="Repurpose your hero image as your Dribbble shot — the same visual works across your website and portfolio."
                         href="/guides/showcase-app-on-dribbble"
+                    />
+                    <ContinueCard
+                        title="How to build a multi-device scene with iPhone, iPad, and MacBook."
+                        description="Create ecosystem hero shots with iPhone, iPad, and MacBook for your landing page."
+                        href="/guides/multi-device-scene"
                     />
                 </div>
             </div>

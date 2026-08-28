@@ -35,14 +35,14 @@ export default function Guide12() {
                 How to create social media graphics for your app launch.
             </h1>
 
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                When you launch your app, you need visuals for every channel — Instagram, Twitter, LinkedIn, and maybe TikTok or Threads. Creating each from scratch in a different tool is exhausting. Protato lets you design one mockup and adapt it to every platform.
+<p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">
+                When you launch your app, you need visuals for every channel — Instagram, Twitter/X, LinkedIn, and maybe TikTok or Threads. Creating each from scratch in a different tool is exhausting. Protato lets you design one mockup and adapt it to every platform.
             </p>
 
             <div className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">
                 <span className="font-medium text-foreground">6 steps</span>
                 <span className="w-1 h-1 rounded-full bg-muted-foreground/30" />
-                <span>iPhone & Mac</span>
+                <span>iPhone 17 Pro Max & MacBook Pro 14"</span>
             </div>
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -59,7 +59,7 @@ export default function Guide12() {
                         What you&apos;ll use
                     </p>
                     <p className="text-base leading-relaxed">
-                        Aspect ratio presets, device model picker, text overlays, background types, lighting presets, transparent PNG export, and multi-device scene.
+                        Aspect ratio presets (Instagram post 1:1, Story 9:16, Twitter/X 16:9, LinkedIn 1.91:1), iPhone 17 Pro Max device model picker, text overlays, background types (gradient, mesh), lighting presets (Studio for professional look), transparent PNG export, and multi-device scene composition.
                     </p>
                 </div>
             </div>
@@ -90,6 +90,7 @@ export default function Guide12() {
                     title="Know the sizes for each platform."
                     description={[
                         "Each social platform has different optimal dimensions. Design your master mockup at the largest canvas you need, then adapt for smaller formats:",
+                        "Refer to the social-content-bank.md for the complete platform size guide — Instagram post 1080×1080 (1:1), Instagram story/TikTok 1080×1920 (9:16), Twitter/X card 1200×675 (16:9), LinkedIn post 1200×627 (1.91:1), LinkedIn banner 1584×396, Facebook post 1200×630.",
                     ]}
                     items={[
                         "Instagram post — 1080 × 1080 px (1:1 square)",
@@ -106,8 +107,8 @@ export default function Guide12() {
                     description={[
                         "Start with a single high-quality device mockup that will be the centerpiece of every social graphic. Choose your primary device and import your best app screen.",
                         "Design at the largest canvas you need — 1080 × 1080 px for Instagram works well as a master since it crops easily to other formats.",
-                        "Use a clean, brand-consistent background. A gradient or mesh background with your brand colors ensures the graphic is recognizable even without your logo. Apply the Studio lighting preset for a balanced, professional look.",
-                        "Export this master mockup as a transparent PNG (set background to None) so you can place it onto different backgrounds for each platform without rebuilding the device shot.",
+                        "Use a clean, brand-consistent background. A gradient or mesh background with your brand colors ensures the graphic is recognizable even without your logo. Apply the Studio lighting preset for a balanced, professional look. This matches the 'Carousel 3: The 3 Lighting Presets Every Mockup Needs' from social-content-bank.md.",
+                        "Export this master mockup as a transparent PNG (set background to None) so you can place it onto different backgrounds for each platform without rebuilding the device shot. This matches the 'before/after' and 'transparent PNG' guidance in social-content-bank.md.",
                     ]}
                 />
                 <Step
@@ -116,8 +117,8 @@ export default function Guide12() {
                     description={[
                         "Open a new project and set the aspect ratio to 1:1 for the Instagram post. Place your master device mockup (or rebuild the scene) centered in the square canvas.",
                         "Add your app name as a bold text overlay. Keep it short — one or two words maximum. Below the app name, add your tagline in a lighter weight. Position the text below the device so it reads naturally.",
-                        "For the Instagram story, set the aspect ratio to 9:16. Position the device higher on the canvas to leave room for text below. Stories are vertical, so the device should take up about 60% of the upper frame.",
-                        "Use bright, high-contrast colors for story graphics — stories are viewed in full-screen on phones, and visibility at a glance matters more than subtlety.",
+                        "For the Instagram story, set the aspect ratio to 9:16. Position the device higher on the canvas to leave room for text below. Stories are viewed in full-screen on phones, so the 'Before/After' comparison from social-content-bank.md Concept 2 works well here — same screenshot, 10x the impact.",
+                        "Use bright, high-contrast colors for story graphics — stories are viewed in full-screen on phones, and visibility at a glance matters more than subtlety. This aligns with the 'Design-Curious Maker' persona guidance from personas.md.",
                     ]}
                 />
                 <Step
@@ -125,8 +126,8 @@ export default function Guide12() {
                     title="Design the Twitter/X card."
                     description={[
                         "Twitter cards display at 16:9 in the feed and are often the first thing people see when your tweet appears. Set your canvas to 16:9 aspect ratio.",
-                        "Position the device on the left side of the frame with text on the right. This split composition works well on Twitter because the text remains readable at small sizes in the feed.",
-                        "Keep the text minimal — your app name and a single benefit statement. Use bold font weights and high contrast. Twitter cards are frequently viewed on mobile, so test readability at small sizes.",
+                        "Position the device on the left side of the frame with text on the right. This split composition works well on Twitter because the text remains readable at small sizes in the feed. This matches the 'Carousel 2: 5 Features Protato Has That Blender Doesn't' from social-content-bank.md.",
+                        "Keep the text minimal — your app name and a single benefit statement. Use bold font weights and high contrast. Twitter cards are frequently viewed on mobile, so test readability at small sizes. Refer to the tweet-guidelines.md for viral tweet structure.",
                     ]}
                 />
                 <Step
