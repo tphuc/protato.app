@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide16() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a polished three-quarter iPhone mockup hero with a real app screen, a subtle brand gradient, natural reflection, and enough negative space to make the device silhouette immediately clear. */}
 
             <GuideBreadcrumb title="How to create an iPhone mockup." />
 

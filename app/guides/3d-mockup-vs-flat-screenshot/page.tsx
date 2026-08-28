@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide18() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a side-by-side comparison hero: the same app screen shown once as a clean flat screenshot and once inside a realistic, softly lit 3D iPhone mockup. Use a neutral background and clear labels for each treatment. */}
 
             <GuideBreadcrumb title="3D mockup vs flat screenshot: which performs better?" />
 

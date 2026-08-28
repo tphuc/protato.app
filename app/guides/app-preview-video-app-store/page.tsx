@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide15() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a vertical App Store Preview storyboard: an iPhone mockup with a visible timeline or play control, a clean app screen, and subtle motion cues. Keep the 9:16 composition and screen content readable. */}
 
             <GuideBreadcrumb title="How to create App Preview videos for the App Store." />
 

@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide02() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a layered multi-device scene with iPhone, iPad, and MacBook displaying complementary product screens. Use one lighting direction, balanced scale, and visible depth without obscuring the interfaces. */}
 
             <GuideBreadcrumb title="How to build a multi-device scene with iPhone, iPad, and MacBook." />
 

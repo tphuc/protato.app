@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide12() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a social launch-kit overview with the same app mockup adapted into square Instagram, vertical Story/Reel, wide X, and LinkedIn card formats. Use one consistent color, type, and device system. */}
 
             <GuideBreadcrumb title="How to create social media graphics for your app launch." />
 

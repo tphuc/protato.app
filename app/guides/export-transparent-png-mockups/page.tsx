@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide07() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a before-and-after export visual: a device mockup on a checkerboard transparency background beside the same asset composited over a colorful website background. Make the transparent edges and shadow treatment visible. */}
 
             <GuideBreadcrumb title="How to export transparent PNG mockups." />
 

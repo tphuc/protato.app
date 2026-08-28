@@ -54,6 +54,7 @@ const steps = [
 export default function SubscriptionAppScreenshotsGuide() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-20">
+      {/* IMAGE BRIEF: Add a six-frame App Store gallery preview for a subscription app: outcome-led hero, core workflow, result, premium feature, supporting proof, and a clear trial/upgrade frame. Keep each headline large and readable. */}
       <GuideBreadcrumb title="How to make App Store screenshots for a subscription app" />
       <div className="mb-4">
         <span className="text-xs font-medium uppercase tracking-widest text-muted-foreground">

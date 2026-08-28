@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 export default function Guide03() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a product-reveal frame with a device emerging into view, cinematic studio lighting, a clearly visible app screen, and subtle keyframe or playback cues that suggest motion. */}
 
             <GuideBreadcrumb title="How to create a product reveal video with keyframe animation." />
 

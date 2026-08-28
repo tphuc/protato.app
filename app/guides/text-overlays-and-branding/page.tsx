@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 export default function Guide05() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a branded mockup composition that demonstrates a large benefit headline, a small supporting label, and text positioned both behind and in front of a device without compromising readability. */}
 
             <GuideBreadcrumb title="How to add text overlays and branding to your mockups." />
 

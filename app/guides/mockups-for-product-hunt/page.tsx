@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide08() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a preset-workflow visual showing the same polished device scene saved as a reusable preset and then applied to a second project. Include a small, readable preset panel or saved-scene indicator. */}
 
             <GuideBreadcrumb title="How to save and reuse mockup scenes with presets." />
 

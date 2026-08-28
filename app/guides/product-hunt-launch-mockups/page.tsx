@@ -67,6 +67,7 @@ const steps = [
 export default function ProductHuntLaunchMockupsGuide() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-20">
+      {/* IMAGE BRIEF: Add a Product Hunt launch-gallery hero: a strong device mockup with an outcome-led headline and three smaller supporting gallery cards. Keep it visually polished but make the product screen the focal point. */}
       <GuideBreadcrumb title="How to create Product Hunt mockups for your launch" />
 
       <div className="mb-4">

@@ -35,6 +35,7 @@ const sizes = [
 export default function Guide06() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a clean visual size-reference hero showing iPhone and iPad device outlines with portrait pixel dimensions beside each. Use a simple neutral background; the image should clarify, not duplicate, the table below. */}
 
             <GuideBreadcrumb title="App Store Screenshot Sizes & Requirements 2026" />
 

@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide09() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a complete SaaS landing-page mockup set: hero device shot, two smaller feature shots, and one multi-device ecosystem image arranged in a cohesive branded layout. */}
 
             <GuideBreadcrumb title="How to create mockups for your SaaS landing page." />
 

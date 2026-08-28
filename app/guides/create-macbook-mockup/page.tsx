@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide17() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a wide MacBook Pro mockup hero with a SaaS dashboard or website visible on screen, a slight top-down angle, soft studio lighting, and a background that leaves the display readable. */}
 
             <GuideBreadcrumb title="How to create a MacBook mockup." />
 

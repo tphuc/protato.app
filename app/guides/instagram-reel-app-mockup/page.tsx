@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide14() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a 9:16 Instagram Reel cover with an animated-looking iPhone mockup, bold short headline, visible app screen, and safe space kept clear at the top and bottom for Instagram UI. */}
 
             <GuideBreadcrumb title="How to make an Instagram Reel for your app." />
 

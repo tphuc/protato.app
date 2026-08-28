@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide11() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a portfolio presentation board for Dribbble or Behance: one hero device mockup, two alternate-angle shots, simple annotations, and generous whitespace in a refined editorial layout. */}
 
             <GuideBreadcrumb title="How to showcase your app on Dribbble and Behance." />
 

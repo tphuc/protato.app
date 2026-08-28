@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 export default function Guide04() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a lighting comparison showing one identical device mockup in Studio, Dramatic, and Flat lighting. Keep the screen and camera angle fixed so viewers can see the material, reflection, and shadow differences. */}
 
             <GuideBreadcrumb title="How to get professional 3D lighting on your mockup." />
 

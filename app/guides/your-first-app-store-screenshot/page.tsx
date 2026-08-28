@@ -30,6 +30,7 @@ export const metadata: Metadata = {
 export default function Guide01() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-20">
+      {/* IMAGE BRIEF: Add a finished App Store screenshot hero with a readable app screen inside a mostly straight-on iPhone mockup, a large outcome-led headline, and a clean brand gradient background. Show the complete final composition. */}
       <GuideBreadcrumb title="How to make App Store screenshots that convert" />
 
       <div className="mb-4">

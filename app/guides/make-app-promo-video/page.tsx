@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide13() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a cinematic promo-video keyframe scene: a phone mockup in a dramatic but readable environment, an app screen recording on the device, small timeline/keyframe cues, and a 16:9 layout. */}
 
             <GuideBreadcrumb title="How to make an app promo video in minutes." />
 

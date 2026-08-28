@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 export default function Guide10() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
+            {/* IMAGE BRIEF: Add a landing-page hero composition with a large 3D device mockup, a short benefit-led headline, a restrained brand gradient, and clear space for a CTA—show the finished website-like layout, not only the device. */}
 
             <GuideBreadcrumb title="How to create a hero image for your app website." />
 
