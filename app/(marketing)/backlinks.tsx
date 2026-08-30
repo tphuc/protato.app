@@ -65,6 +65,10 @@ export default function Backlinks() {
         <img src="https://aitoolboxer.com/aitoolboxer/images/badges/featured-on-light.svg" alt="Featured on AI Tool Boxer" />
       </a>
 
+      <a href="https://golanz.com/projects/protato?utm_source=badge" target="_blank" rel="noopener noreferrer">
+  <img src="https://golanz.com/golanz/images/badges/featured-on-light.svg" alt="Featured on Go Lanz" />
+</a>
+
     </div>
   );
 }
