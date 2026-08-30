@@ -7,14 +7,14 @@ import Script from "next/script"
 import React from "react"
 
 export const metadata: Metadata = {
-    title: "3D Mockup vs Flat Screenshot: Which Performs Better? | Protato Guide",
+    title: "App Store Screenshot Examples: Mockups vs Flat UI | Protato",
     description:
-        "Compare 3D device mockups vs flat screenshots for conversion, engagement, and professionalism. Learn when to use each format and how to choose the right approach for your app.",
+        "Use App Store screenshot examples to decide when a flat UI screen or a device mockup will make your app easier to understand.",
     openGraph: {
         type: "article",
-        title: "3D Mockup vs Flat Screenshot: Which Performs Better? | Protato Guide",
+        title: "App Store Screenshot Examples: Mockups vs Flat UI | Protato",
         description:
-            "Compare 3D device mockups vs flat screenshots for conversion, engagement, and professionalism. Learn when to use each format and how to choose the right approach for your app.",
+            "Use App Store screenshot examples to decide when a flat UI screen or a device mockup will make your app easier to understand.",
         images: [{ url: `https://protato.app/og?title=${encodeURIComponent("3D mockup vs flat screenshot: which performs better?")}`, width: 1200, height: 630 }],
     },
 }
@@ -24,20 +24,20 @@ export default function Guide18() {
         <main className="mx-auto max-w-3xl px-6 py-20">
             {/* IMAGE BRIEF: Add a side-by-side comparison hero: the same app screen shown once as a clean flat screenshot and once inside a realistic, softly lit 3D iPhone mockup. Use a neutral background and clear labels for each treatment. */}
 
-            <GuideBreadcrumb title="3D mockup vs flat screenshot: which performs better?" />
+            <GuideBreadcrumb title="App Store screenshot examples: mockups vs flat UI" />
 
             <div className="mb-4">
                 <span className="text-xs font-medium text-muted-foreground tracking-widest uppercase">
-                    How-to guide 18
+                    App Store screenshot guide
                 </span>
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-                3D mockup vs flat screenshot: which performs better?
+                App Store screenshot examples: when to use mockups vs flat UI.
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Should you put your app screenshot inside a 3D device frame or show it flat? The answer depends on where the image appears, what you're trying to communicate, and who's viewing it. This guide breaks down the tradeoffs so you can choose the right approach for each context.
+                The strongest App Store screenshot examples make one thing immediately clear: show the app UI flat when clarity matters, and use a device mockup when it adds useful context. This guide helps you choose the right treatment for each frame.
             </p>
 
             <div className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">

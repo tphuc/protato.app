@@ -1,25 +1,22 @@
 
-import fs from "fs"
-import path from "path"
 import { getBlogPosts } from '@/lib/blog';
 import { POSTS_PER_PAGE } from './const';
 export const baseUrl = 'https://protato.app';
 
-const GUIDE_DIR = path.join(process.cwd(), "app/guides")
-
-const NON_GUIDE_DIRS = new Set([
-	"guide-breadcrumb.tsx",
-	"guide-sidebar.tsx",
-	"layout.tsx",
-	"page.tsx",
-])
-
-function getGuideSlugs(): string[] {
-	const entries = fs.readdirSync(GUIDE_DIR, { withFileTypes: true })
-	return entries
-		.filter((e) => e.isDirectory() && !NON_GUIDE_DIRS.has(e.name))
-		.map((e) => e.name)
-}
+// Only canonical guides belong in the sitemap. Older, unlinked guide URLs stay
+// live for existing visitors but are intentionally not promoted to search.
+const CANONICAL_GUIDE_SLUGS = [
+	"your-first-app-store-screenshot",
+	"app-store-screenshot-sizes",
+	"text-overlays-and-branding",
+	"3d-mockup-vs-flat-screenshot",
+	"app-store-screenshots-subscription-app",
+	"create-iphone-mockup",
+	"create-macbook-mockup",
+	"mockups-for-saas-landing-page",
+	"make-app-promo-video",
+	"app-preview-video-app-store",
+]
 
 export default async function sitemap() {
 	console.log('🛠️ [SITEMAP] Generating sitemap...');
@@ -31,9 +28,7 @@ export default async function sitemap() {
 	}));
 	console.log('✅ [SITEMAP] Static routes:', routes);
 
-	// Guide pages — dynamically read from app/guides/ directories
-	const guideSlugs = getGuideSlugs()
-	const guides = guideSlugs.map((slug) => ({
+	const guides = CANONICAL_GUIDE_SLUGS.map((slug) => ({
 		url: `${baseUrl}/guides/${slug}`,
 		lastModified: new Date().toISOString().split('T')[0],
 	}));

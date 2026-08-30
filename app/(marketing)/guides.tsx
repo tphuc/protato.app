@@ -3,14 +3,14 @@ import Link from "next/link"
 const featuredGuides = [
     {
         category: "Getting started",
-        title: "Your first App Store screenshot",
+                    title: "How to make App Store screenshots",
         description:
             "Create a device mockup with your screenshot, add a background and headline, and export a finished image in six steps.",
         href: "/guides/your-first-app-store-screenshot",
     },
     {
         category: "Platform",
-        title: "How to create an iPhone mockup",
+                    title: "How to create an iPhone mockup from a screenshot",
         description:
             "Choose the right iPhone model, import your screenshot, adjust lighting, and export a polished 3D device image.",
         href: "/guides/create-iphone-mockup",
@@ -24,10 +24,10 @@ const featuredGuides = [
     },
     {
         category: "Workflow",
-        title: "Scene presets & templates",
+                    title: "App Store screenshot design",
         description:
             "Save your full scene — devices, camera angle, lighting, and materials — as a reusable preset for consistent campaigns.",
-        href: "/guides/mockups-for-product-hunt",
+                    href: "/guides/text-overlays-and-branding",
     },
     {
         category: "Web",
@@ -45,10 +45,10 @@ const featuredGuides = [
     },
     {
         category: "Web",
-        title: "Hero image for your app website",
-        description:
-            "Design a scroll-stopping hero with a 3D device mockup, branded overlay, and export optimized for web.",
-        href: "/guides/hero-image-for-app-website",
+                    title: "App Store screenshot examples",
+                    description:
+                        "Learn the design patterns behind clear App Store screenshot sets and when a mockup or flat UI is the right choice.",
+                    href: "/guides/3d-mockup-vs-flat-screenshot",
     },
     {
         category: "Video",
@@ -100,7 +100,7 @@ export default function Guides() {
                         href="/guides"
                         className="inline-flex items-center gap-2 text-lg font-medium text-blue-500 hover:text-blue-600 transition-colors"
                     >
-                        Browse all 18 guides
+                        Browse all 10 guides
                         <span className="text-sm" aria-hidden="true">→</span>
                     </Link>
                 </div>

@@ -6,14 +6,14 @@ import GuideBreadcrumb from "../guide-breadcrumb"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-    title: "How to Add Text Overlays and Branding to Mockups | Protato Guide",
+    title: "App Store Screenshot Design: Headlines, Layouts & Branding | Protato",
     description:
-        "Add headlines, feature callouts, and branding to your device mockups. Control fonts, gradient fills, layer placement behind or in front of the device, and fade animations.",
+        "Design App Store screenshots with clear headlines, readable layouts, feature callouts, and consistent branding.",
     openGraph: {
         type: "article",
-        title: "How to Add Text Overlays and Branding to Mockups | Protato Guide",
+        title: "App Store Screenshot Design: Headlines, Layouts & Branding | Protato",
         description:
-            "Add headlines, feature callouts, and branding to your device mockups. Control fonts, gradient fills, layer placement behind or in front of the device, and fade animations.",
+            "Design App Store screenshots with clear headlines, readable layouts, feature callouts, and consistent branding.",
         images: [{ url: `https://protato.app/og?title=${encodeURIComponent("How to add text overlays and branding to your mockups")}`, width: 1200, height: 630 }],
     },
 }
@@ -23,20 +23,20 @@ export default function Guide05() {
         <main className="mx-auto max-w-3xl px-6 py-20">
             {/* IMAGE BRIEF: Add a branded mockup composition that demonstrates a large benefit headline, a small supporting label, and text positioned both behind and in front of a device without compromising readability. */}
 
-            <GuideBreadcrumb title="How to add text overlays and branding to your mockups." />
+            <GuideBreadcrumb title="App Store screenshot design: headlines, layouts & branding" />
 
             <div className="mb-4">
                 <span className="text-xs font-medium text-muted-foreground tracking-widest uppercase">
-                    How-to guide 05
+                    App Store screenshot guide
                 </span>
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-                How to add text overlays and branding to your mockups.
+                App Store screenshot design: headlines, layouts, and branding.
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                A device mockup shows your product. Text tells your story. Add headlines, feature callouts, and branding to your scene — then control every detail from font choice to gradient fill, layer position, and fade animation.
+                A good App Store screenshot design uses a short benefit-led headline, one focal point, and enough contrast to be readable at a glance. Use this workflow to add copy, feature callouts, and brand styling without obscuring the product.
             </p>
 
             <div className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">

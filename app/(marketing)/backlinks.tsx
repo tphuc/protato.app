@@ -57,6 +57,10 @@ export default function Backlinks() {
         <img src="https://postyourstartup.co/api/badge/protato-3d-mockup?theme=light" alt="Featured on PostYourStartup" width="212" height="55" />
       </a>
 
+      <a href="https://buildfinds.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer">
+  <img src="https://buildfinds.com/buildfinds/images/badges/featured-on-light.svg" alt="Featured on Build Finds" />
+</a>
+
     </div>
   );
 }
