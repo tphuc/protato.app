@@ -73,9 +73,48 @@ export default function Backlinks() {
       </a>
 
 
-<a href="https://launchfinds.com/projects/protato?utm_source=badge" target="_blank" rel="noopener noreferrer">
-  <img src="https://launchfinds.com/launchfinds/images/badges/featured-on-light.svg" alt="Featured on Launch Finds" />
-</a>
+      <a href="https://launchfinds.com/projects/protato?utm_source=badge" target="_blank" rel="noopener noreferrer">
+        <img src="https://launchfinds.com/launchfinds/images/badges/featured-on-light.svg" alt="Featured on Launch Finds" />
+      </a>
+
+      {/*  */}
+
+
+     <a href="https://makerpocket.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://buildfinds.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://saashunt.best/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://smolhunt.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://devhub.best/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://smollaunchpad.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://smollist.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://lookingfortools.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://smolstartup.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://theresatoolfor.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://smolspot.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://supalaun.ch/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://linksalad.me/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://findtoolfor.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://discovernewtools.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://smolshow.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+<a href="https://devtoolsdir.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
+
+
       
 
     </div>
