@@ -99,6 +99,9 @@ export default function Backlinks() {
 
 <a href="https://lookingfortools.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
 
+<a href="https://shipthing.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer">
+</a>
+
 <a href="https://smolstartup.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
 
 <a href="https://theresatoolfor.com/projects/protato-3d-mockup?utm_source=badge" target="_blank" rel="noopener noreferrer"></a>
